@@ -1,0 +1,27 @@
+.. include:: def.rst
+.. index:: pair: enum; io.Pcap.Defaults
+.. _doxid-type_io_pcap_defaults:
+.. _cid-io.pcap.defaults:
+
+enum io.Pcap.Defaults
+=====================
+
+
+
+
+
+.. _doxid-enum_member_io_pcap_defaults_snapshotsize:
+.. _cid-io.pcap.defaults.snapshotsize:
+.. _doxid-enum_member_io_pcap_defaults_promiscious:
+.. _cid-io.pcap.defaults.promiscious:
+.. _doxid-enum_member_io_pcap_defaults_readtimeout:
+.. _cid-io.pcap.defaults.readtimeout:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	SnapshotSize = 16* 1024
+	Promiscious = false
+	ReadTimeout = 200
+

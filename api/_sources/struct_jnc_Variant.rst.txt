@@ -1,0 +1,80 @@
+.. index:: pair: struct; jnc_Variant
+.. _doxid-structjnc___variant:
+.. _cid-jnc_variant:
+
+struct jnc_Variant
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___variant_1ab691531619a2f7df0cfa180761bc6948:
+.. _cid-jnc_variant::m_int8:
+.. _doxid-structjnc___variant_1a122a7dcd11b6a5bac4ab9853d676a651:
+.. _cid-jnc_variant::m_uint8:
+.. _doxid-structjnc___variant_1a801b43b85b1cb824d3158f00cd6882d3:
+.. _cid-jnc_variant::m_int16:
+.. _doxid-structjnc___variant_1a8e5c6e406ece8c87bda9b2062e157043:
+.. _cid-jnc_variant::m_uint16:
+.. _doxid-structjnc___variant_1a9cfdd527eb2dae0390519f28aad5fa25:
+.. _cid-jnc_variant::m_int32:
+.. _doxid-structjnc___variant_1ac6ad02bfa276406d0b96d56916b2c169:
+.. _cid-jnc_variant::m_uint32:
+.. _doxid-structjnc___variant_1a5a127195b973cbf7e16492a208c09615:
+.. _cid-jnc_variant::m_int64:
+.. _doxid-structjnc___variant_1a555a1b92e5b45b753ddbab4e9ed9a351:
+.. _cid-jnc_variant::m_uint64:
+.. _doxid-structjnc___variant_1ab2381ffba92f32a88a251f1a3a593506:
+.. _cid-jnc_variant::m_intptr:
+.. _doxid-structjnc___variant_1aa2baace66849165fc86ac259f3b43069:
+.. _cid-jnc_variant::m_uintptr:
+.. _doxid-structjnc___variant_1a2696879e73d692f5c16e52743da7bff0:
+.. _cid-jnc_variant::m_float:
+.. _doxid-structjnc___variant_1a83a9d87d78fd6410231002d10ebc3a8a:
+.. _cid-jnc_variant::m_double:
+.. _doxid-structjnc___variant_1a968d44df8c87b11dec671681b328e2a0:
+.. _cid-jnc_variant::m_p:
+.. _doxid-structjnc___variant_1ad0014b62af3265ecfe07f6c29cbd48c4:
+.. _cid-jnc_variant::m_classptr:
+.. _doxid-structjnc___variant_1ac61b9e215336c9d46395d5ae1bf06288:
+.. _cid-jnc_variant::m_dataptr:
+.. _doxid-structjnc___variant_1ad448e714a3dabf243883042e2408dfd0:
+.. _cid-jnc_variant::m_functionptr:
+.. _doxid-structjnc___variant_1a69c988df4d2d381eb91a14da3e2c3beb:
+.. _cid-jnc_variant::m_propertyptr:
+.. _doxid-structjnc___variant_1a815aaf2e078813f59d92e36f922488a2:
+.. _cid-jnc_variant::@9:
+.. _doxid-structjnc___variant_1a22284b6feb3b2f55aaa1a7d84f5b90b1:
+.. _cid-jnc_variant::m_type:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	union
+	{
+	    int8_t m_int8
+	    uint8_t m_uint8
+	    int16_t m_int16
+	    uint16_t m_uint16
+	    int32_t m_int32
+	    uint32_t m_uint32
+	    int64_t m_int64
+	    uint64_t m_uint64
+	    intptr_t m_intptr
+	    uintptr_t m_uintptr
+	    float m_float
+	    double m_double
+	    void* m_p
+	    :ref:`jnc_IfaceHdr<doxid-structjnc___iface_hdr>`* m_classPtr
+	    :ref:`jnc_DataPtr<doxid-structjnc___data_ptr>` m_dataPtr
+	    :ref:`jnc_FunctionPtr<doxid-structjnc___function_ptr>` m_functionPtr
+	    :ref:`jnc_PropertyPtr<doxid-structjnc___property_ptr>` m_propertyPtr
+	}
+
+	:ref:`jnc_Type<doxid-structjnc___type>`* m_type
+

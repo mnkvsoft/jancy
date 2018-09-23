@@ -1,0 +1,107 @@
+.. index:: pair: group; Runtime Structures
+.. _doxid-group__runtime-structs:
+.. _cid-runtime-structs:
+
+Runtime Structures
+==================
+
+.. toctree::
+	:hidden:
+
+	group_variant.rst
+	enum_jnc_BoxFlag.rst
+	struct_jnc_Box.rst
+	struct_jnc_CallSite.rst
+	struct_jnc_DataBox.rst
+	struct_jnc_DataPtr.rst
+	struct_jnc_DataPtrValidator.rst
+	struct_jnc_DynamicArrayBox.rst
+	struct_jnc_FmtLiteral.rst
+	struct_jnc_FunctionPtr.rst
+	struct_jnc_GcMutatorThread.rst
+	struct_jnc_GcShadowStackFrame.rst
+	struct_jnc_GcShadowStackFrameMapBuffer.rst
+	struct_jnc_IfaceHdr.rst
+	struct_jnc_McSnapshot.rst
+	struct_jnc_Multicast.rst
+	struct_jnc_OpaqueClassTypeInfo.rst
+	struct_jnc_PropertyPtr.rst
+	struct_jnc_ReactorBindSite.rst
+	struct_jnc_SjljFrame.rst
+	struct_jnc_StaticDataBox.rst
+	struct_jnc_Tls.rst
+	struct_jnc_TlsVariableTable.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_RuntimeStructs.h>
+
+
+
+
+|	:ref:`Variant<doxid-group__variant>`
+
+
+.. _doxid-group__runtime-structs_1ga541946d96a61bfe6c500246933a21620:
+.. _cid-jnc_markopaquegcrootsfunc:
+.. _doxid-group__runtime-structs_1ga5edb583d717af3ed24c1dfdd95b2ab0b:
+.. _cid-jnc_staticconstructfunc:
+.. _doxid-group__runtime-structs_1ga18544a702df951584b2f78cbec350b64:
+.. _cid-jnc_staticdestructfunc:
+.. _doxid-group__runtime-structs_1ga1389ed906e2bda2284bbe8c86804995c:
+.. _cid-jnc_destructfunc:
+.. _doxid-group__runtime-structs_1ga7ab114cefbef09fc91da0aa48d893cdb:
+.. _cid-jnc_g_nullptr:
+.. _doxid-group__runtime-structs_1gaed3df82473e64656253c9aeade50d969:
+.. _cid-jnc_g_nullfunctionptr:
+.. _doxid-group__runtime-structs_1gad53db598cc6f3770dfc6f9c799ffe27e:
+.. _cid-jnc_g_nullpropertyptr:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// typedefs
+
+	typedef void jnc_MarkOpaqueGcRootsFunc (
+	    jnc_IfaceHdr *iface,
+	    jnc_GcHeap *gcHeap
+	    )
+
+	typedef void jnc_StaticConstructFunc ()
+	typedef void jnc_StaticDestructFunc ()
+	typedef void jnc_DestructFunc (jnc_IfaceHdr *iface)
+
+	// enums
+
+	enum :ref:`jnc_BoxFlag<doxid-group__runtime-structs_1ga7688aba6ff22cec33210cec8cbf1bf7f>`
+
+	// structs
+
+	struct :ref:`jnc_Box<doxid-structjnc___box>` 
+	struct :ref:`jnc_CallSite<doxid-structjnc___call_site>` 
+	struct :ref:`jnc_DataBox<doxid-structjnc___data_box>` 
+	struct :ref:`jnc_DataPtr<doxid-structjnc___data_ptr>` 
+	struct :ref:`jnc_DataPtrValidator<doxid-structjnc___data_ptr_validator>` 
+	struct :ref:`jnc_DynamicArrayBox<doxid-structjnc___dynamic_array_box>` 
+	struct :ref:`jnc_FmtLiteral<doxid-structjnc___fmt_literal>` 
+	struct :ref:`jnc_FunctionPtr<doxid-structjnc___function_ptr>` 
+	struct :ref:`jnc_GcMutatorThread<doxid-structjnc___gc_mutator_thread>` 
+	struct :ref:`jnc_GcShadowStackFrame<doxid-structjnc___gc_shadow_stack_frame>` 
+	struct :ref:`jnc_GcShadowStackFrameMapBuffer<doxid-structjnc___gc_shadow_stack_frame_map_buffer>` 
+	struct :ref:`jnc_IfaceHdr<doxid-structjnc___iface_hdr>` 
+	struct :ref:`jnc_McSnapshot<doxid-structjnc___mc_snapshot>` 
+	struct :ref:`jnc_Multicast<doxid-structjnc___multicast>` 
+	struct :ref:`jnc_OpaqueClassTypeInfo<doxid-structjnc___opaque_class_type_info>` 
+	struct :ref:`jnc_PropertyPtr<doxid-structjnc___property_ptr>` 
+	struct :ref:`jnc_ReactorBindSite<doxid-structjnc___reactor_bind_site>` 
+	struct :ref:`jnc_SjljFrame<doxid-structjnc___sjlj_frame>` 
+	struct :ref:`jnc_StaticDataBox<doxid-structjnc___static_data_box>` 
+	struct :ref:`jnc_Tls<doxid-structjnc___tls>` 
+	struct :ref:`jnc_TlsVariableTable<doxid-structjnc___tls_variable_table>` 
+
+	// global variables
+
+	:ref:`JNC_SELECT_ANY<doxid-group__base-def_1gadf3ff658e277ca8ea2878349758bfdf5>` :ref:`jnc_DataPtr<doxid-structjnc___data_ptr>` jnc_g_nullPtr
+	:ref:`JNC_SELECT_ANY<doxid-group__base-def_1gadf3ff658e277ca8ea2878349758bfdf5>` :ref:`jnc_FunctionPtr<doxid-structjnc___function_ptr>` jnc_g_nullFunctionPtr
+	:ref:`JNC_SELECT_ANY<doxid-group__base-def_1gadf3ff658e277ca8ea2878349758bfdf5>` :ref:`jnc_FunctionPtr<doxid-structjnc___function_ptr>` jnc_g_nullPropertyPtr
+

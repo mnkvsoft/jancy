@@ -1,0 +1,28 @@
+.. index:: pair: group; Unit
+.. _doxid-group__unit:
+.. _cid-unit:
+
+Unit
+====
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Unit.h>
+
+
+
+
+.. _doxid-group__unit_1ga12f8781878e86f206f71194ca713a224:
+.. _cid-jnc_unit_getlib:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// global functions
+
+	:ref:`jnc_ExtensionLib<doxid-structjnc___extension_lib>`*
+	jnc_Unit_getLib (jnc_Unit* unit)
+

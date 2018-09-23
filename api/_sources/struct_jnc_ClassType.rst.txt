@@ -1,0 +1,20 @@
+.. index:: pair: struct; jnc_ClassType
+.. _doxid-structjnc___class_type:
+.. _cid-jnc_classtype:
+
+struct jnc_ClassType
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_ClassType.h>
+
+
+Opaque structure used as a handle to Jancy class type.
+
+    Use functions from the `Class Type` to access and manage the contents of this structure.
+

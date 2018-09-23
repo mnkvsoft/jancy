@@ -1,0 +1,30 @@
+.. include:: def.rst
+.. index:: pair: enum; io.SerialOptions
+.. _doxid-type_io_serialoptions:
+.. _cid-io.serialoptions:
+
+bitflag enum io.SerialOptions
+=============================
+
+
+
+
+
+.. _doxid-enum_member_io_serialoptions_keepreadblocksize:
+.. _cid-io.serialoptions.keepreadblocksize:
+.. _doxid-enum_member_io_serialoptions_keepwriteblocksize:
+.. _cid-io.serialoptions.keepwriteblocksize:
+.. _doxid-enum_member_io_serialoptions_winreadcheckcomstat:
+.. _cid-io.serialoptions.winreadcheckcomstat:
+.. _doxid-enum_member_io_serialoptions_winreadwaitfirstchar:
+.. _cid-io.serialoptions.winreadwaitfirstchar:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	KeepReadBlockSize 
+	KeepWriteBlockSize 
+	WinReadCheckComstat 
+	WinReadWaitFirstChar 
+

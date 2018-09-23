@@ -1,0 +1,33 @@
+.. include:: def.rst
+.. index:: pair: enum; io.UsbSpeed
+.. _doxid-type_io_usbspeed:
+.. _cid-io.usbspeed:
+
+enum io.UsbSpeed
+================
+
+
+
+
+
+.. _doxid-enum_member_io_usbspeed_unknown:
+.. _cid-io.usbspeed.unknown:
+.. _doxid-enum_member_io_usbspeed_low:
+.. _cid-io.usbspeed.low:
+.. _doxid-enum_member_io_usbspeed_full:
+.. _cid-io.usbspeed.full:
+.. _doxid-enum_member_io_usbspeed_high:
+.. _cid-io.usbspeed.high:
+.. _doxid-enum_member_io_usbspeed_super:
+.. _cid-io.usbspeed.super:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Unknown = 0
+	Low = 1
+	Full = 2
+	High = 3
+	Super = 4
+

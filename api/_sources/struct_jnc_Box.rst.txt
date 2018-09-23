@@ -1,0 +1,29 @@
+.. index:: pair: struct; jnc_Box
+.. _doxid-structjnc___box:
+.. _cid-jnc_box:
+
+struct jnc_Box
+==============
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___box_1aeb44261a370a1152a4a789a4145a9669:
+.. _cid-jnc_box::m_type:
+.. _doxid-structjnc___box_1ac72a53c0db9b9764be67ef9ddb64878d:
+.. _cid-jnc_box::m_flags:
+.. _doxid-structjnc___box_1ab3ebd6d56690c55688ce55650cbb7253:
+.. _cid-jnc_box::m_rootoffset:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_Type<doxid-structjnc___type>`* m_type
+	uintptr_t m_flags : 8
+	uintptr_t m_rootOffset : 24
+

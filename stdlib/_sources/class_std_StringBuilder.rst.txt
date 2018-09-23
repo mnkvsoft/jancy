@@ -1,0 +1,140 @@
+.. include:: def.rst
+.. index:: pair: class; std.StringBuilder
+.. _doxid-type_std_stringbuilder:
+.. _cid-std.stringbuilder:
+
+class std.StringBuilder
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_std_stringbuilder_iface_m_p:
+.. _cid-std.stringbuilder.m_p:
+.. _doxid-struct_member_std_stringbuilder_iface_m_length:
+.. _cid-std.stringbuilder.m_length:
+.. _doxid-struct_member_std_stringbuilder_iface_m_maxlength:
+.. _cid-std.stringbuilder.m_maxlength:
+.. _doxid-property_std_stringbuilder_m_sz:
+.. _cid-std.stringbuilder.m_sz:
+.. _doxid-function_std_stringbuilder_clear:
+.. _cid-std.stringbuilder.clear:
+.. _doxid-function_std_stringbuilder_reserve:
+.. _cid-std.stringbuilder.reserve:
+.. _doxid-function_std_stringbuilder_copy:
+.. _cid-std.stringbuilder.copy:
+.. _doxid-function_std_stringbuilder_copy_2:
+.. _cid-std.stringbuilder.copy-2:
+.. _doxid-function_std_stringbuilder_copy_3:
+.. _cid-std.stringbuilder.copy-3:
+.. _doxid-function_std_stringbuilder_copy_4:
+.. _cid-std.stringbuilder.copy-4:
+.. _doxid-function_std_stringbuilder_append:
+.. _cid-std.stringbuilder.append:
+.. _doxid-function_std_stringbuilder_append_2:
+.. _cid-std.stringbuilder.append-2:
+.. _doxid-function_std_stringbuilder_append_3:
+.. _cid-std.stringbuilder.append-3:
+.. _doxid-function_std_stringbuilder_append_4:
+.. _cid-std.stringbuilder.append-4:
+.. _doxid-function_std_stringbuilder_insert:
+.. _cid-std.stringbuilder.insert:
+.. _doxid-function_std_stringbuilder_insert_2:
+.. _cid-std.stringbuilder.insert-2:
+.. _doxid-function_std_stringbuilder_insert_3:
+.. _cid-std.stringbuilder.insert-3:
+.. _doxid-function_std_stringbuilder_insert_4:
+.. _cid-std.stringbuilder.insert-4:
+.. _doxid-function_std_stringbuilder_remove:
+.. _cid-std.stringbuilder.remove:
+.. _doxid-function_std_stringbuilder_detachstring:
+.. _cid-std.stringbuilder.detachstring:
+.. _doxid-function_std_stringbuilder_clonestring:
+.. _cid-std.stringbuilder.clonestring:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	char readonly* readonly m_p
+	:ref:`size_t<doxid-typedef_size_t>` readonly m_length
+	:ref:`size_t<doxid-typedef_size_t>` readonly m_maxLength
+
+	// properties
+
+	char const* const property m_sz 
+
+	// methods
+
+	void clear ()
+	bool errorcode reserve (:ref:`size_t<doxid-typedef_size_t>` length)
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode copy (
+	    char const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode copy (
+	    :ref:`utf16_t<doxid-typedef_utf16_t>` const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode copy (
+	    :ref:`utf32_t<doxid-typedef_utf32_t>` const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode copy (:ref:`utf32_t<doxid-typedef_utf32_t>` c)
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode append (
+	    char const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode append (
+	    :ref:`utf16_t<doxid-typedef_utf16_t>` const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode append (
+	    :ref:`utf32_t<doxid-typedef_utf32_t>` const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode append (:ref:`utf32_t<doxid-typedef_utf32_t>` c)
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode insert (
+	    :ref:`size_t<doxid-typedef_size_t>` offset,
+	    char const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode insert (
+	    :ref:`size_t<doxid-typedef_size_t>` offset,
+	    :ref:`utf16_t<doxid-typedef_utf16_t>` const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode insert (
+	    :ref:`size_t<doxid-typedef_size_t>` offset,
+	    :ref:`utf32_t<doxid-typedef_utf32_t>` const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode insert (
+	    :ref:`size_t<doxid-typedef_size_t>` offset,
+	    :ref:`utf32_t<doxid-typedef_utf32_t>` c
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` remove (
+	    :ref:`size_t<doxid-typedef_size_t>` offset,
+	    :ref:`size_t<doxid-typedef_size_t>` length = 1
+	    )
+
+	char* errorcode detachString ()
+	char* errorcode cloneString ()
+

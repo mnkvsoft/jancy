@@ -1,0 +1,23 @@
+.. index:: pair: struct; jnc_StructTypeFuncTable
+.. _doxid-structjnc___struct_type_func_table:
+.. _cid-jnc_structtypefunctable:
+
+struct jnc_StructTypeFuncTable
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___struct_type_func_table_1a29f8183675d615af885e175743d09c03:
+.. _cid-jnc_structtypefunctable::m_size:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+

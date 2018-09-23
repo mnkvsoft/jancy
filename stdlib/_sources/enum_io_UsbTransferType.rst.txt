@@ -1,0 +1,33 @@
+.. include:: def.rst
+.. index:: pair: enum; io.UsbTransferType
+.. _doxid-type_io_usbtransfertype:
+.. _cid-io.usbtransfertype:
+
+enum io.UsbTransferType
+=======================
+
+
+
+
+
+.. _doxid-enum_member_io_usbtransfertype_control:
+.. _cid-io.usbtransfertype.control:
+.. _doxid-enum_member_io_usbtransfertype_isochronous:
+.. _cid-io.usbtransfertype.isochronous:
+.. _doxid-enum_member_io_usbtransfertype_bulk:
+.. _cid-io.usbtransfertype.bulk:
+.. _doxid-enum_member_io_usbtransfertype_interrupt:
+.. _cid-io.usbtransfertype.interrupt:
+.. _doxid-enum_member_io_usbtransfertype_bulkstream:
+.. _cid-io.usbtransfertype.bulkstream:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Control = 0
+	Isochronous = 1
+	Bulk = 2
+	Interrupt = 3
+	BulkStream = 4
+

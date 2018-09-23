@@ -1,0 +1,40 @@
+.. index:: pair: group; Attribute Block
+.. _doxid-group__attribute-block:
+.. _cid-attribute-block:
+
+Attribute Block
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-group__attribute-block_1ga43e1485e1ede51fcc3bc75b795208623:
+.. _cid-jnc_attributeblock_getattributecount:
+.. _doxid-group__attribute-block_1gaa73ad9739269b61e67c855b646756ac5:
+.. _cid-jnc_attributeblock_getattribute:
+.. _doxid-group__attribute-block_1ga9a1a47ef58978ecdfa8cfb1f78fa390b:
+.. _cid-jnc_attributeblock_findattribute:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// global functions
+
+	size_t
+	jnc_AttributeBlock_getAttributeCount (jnc_AttributeBlock* block)
+
+	jnc_Attribute*
+	jnc_AttributeBlock_getAttribute (
+	    jnc_AttributeBlock* block,
+	    size_t index
+	    )
+
+	jnc_Attribute*
+	jnc_AttributeBlock_findAttribute (
+	    jnc_AttributeBlock* block,
+	    const char* name
+	    )
+

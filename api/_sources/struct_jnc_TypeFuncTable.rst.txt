@@ -1,0 +1,41 @@
+.. index:: pair: struct; jnc_TypeFuncTable
+.. _doxid-structjnc___type_func_table:
+.. _cid-jnc_typefunctable:
+
+struct jnc_TypeFuncTable
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___type_func_table_1abe7476f22b58408a99505be402e1fca8:
+.. _cid-jnc_typefunctable::m_size:
+.. _doxid-structjnc___type_func_table_1a987f9de6b925da09ec7bf3f3582e0d28:
+.. _cid-jnc_typefunctable::m_gettypekindfunc:
+.. _doxid-structjnc___type_func_table_1a0a5948d5707fa1de3effd651f73ac76f:
+.. _cid-jnc_typefunctable::m_getsizefunc:
+.. _doxid-structjnc___type_func_table_1a306de472dd397bbd0ccd614833c1d405:
+.. _cid-jnc_typefunctable::m_gettypestringfunc:
+.. _doxid-structjnc___type_func_table_1ac47829fc7875e3abeb337b46e76664af:
+.. _cid-jnc_typefunctable::m_cmpfunc:
+.. _doxid-structjnc___type_func_table_1abafc171433808e6c514e586b63705d5b:
+.. _cid-jnc_typefunctable::m_getdataptrtypefunc:
+.. _doxid-structjnc___type_func_table_1af563f217203da49980d50e374b5a06b8:
+.. _cid-jnc_typefunctable::m_markgcrootsfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_Type_GetTypeKindFunc* m_getTypeKindFunc
+	jnc_Type_GetSizeFunc* m_getSizeFunc
+	jnc_Type_GetTypeStringFunc* m_getTypeStringFunc
+	jnc_Type_CmpFunc* m_cmpFunc
+	jnc_Type_GetDataPtrTypeFunc* m_getDataPtrTypeFunc
+	jnc_Type_MarkGcRootsFunc* m_markGcRootsFunc
+

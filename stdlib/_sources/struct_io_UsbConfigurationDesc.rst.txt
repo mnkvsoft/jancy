@@ -1,0 +1,39 @@
+.. include:: def.rst
+.. index:: pair: struct; io.UsbConfigurationDesc
+.. _doxid-type_io_usbconfigurationdesc:
+.. _cid-io.usbconfigurationdesc:
+
+struct io.UsbConfigurationDesc
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_usbconfigurationdesc_m_interfacetable:
+.. _cid-io.usbconfigurationdesc.m_interfacetable:
+.. _doxid-struct_member_io_usbconfigurationdesc_m_interfacecount:
+.. _cid-io.usbconfigurationdesc.m_interfacecount:
+.. _doxid-struct_member_io_usbconfigurationdesc_m_configurationid:
+.. _cid-io.usbconfigurationdesc.m_configurationid:
+.. _doxid-struct_member_io_usbconfigurationdesc_m_descriptionstringid:
+.. _cid-io.usbconfigurationdesc.m_descriptionstringid:
+.. _doxid-struct_member_io_usbconfigurationdesc_m_attributes:
+.. _cid-io.usbconfigurationdesc.m_attributes:
+.. _doxid-struct_member_io_usbconfigurationdesc_m_maxpower:
+.. _cid-io.usbconfigurationdesc.m_maxpower:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`io.UsbInterfaceDesc<doxid-type_io_usbinterfacedesc>` const* m_interfaceTable
+	:ref:`size_t<doxid-typedef_size_t>` m_interfaceCount
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_configurationId
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_descriptionStringId
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_attributes
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_maxPower
+

@@ -1,0 +1,20 @@
+.. index:: pair: struct; jnc_Namespace
+.. _doxid-structjnc___namespace:
+.. _cid-jnc_namespace:
+
+struct jnc_Namespace
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Namespace.h>
+
+
+Opaque structure used as a handle to Jancy namespace.
+
+    Use functions from the :ref:`Namespace <cid-namespace>` to access and manage the contents of this structure.
+

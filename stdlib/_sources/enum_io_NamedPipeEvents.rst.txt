@@ -1,0 +1,60 @@
+.. include:: def.rst
+.. index:: pair: enum; io.NamedPipeEvents
+.. _doxid-type_io_namedpipeevents:
+.. _cid-io.namedpipeevents:
+
+bitflag enum io.NamedPipeEvents
+===============================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_FileStream.jnc"
+
+
+Overview
+~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.NamedPipe` object. The set of *active* events is accessible
+via `io.NamedPipe.m_activeEvents`. :ref:`More...<details-doxid-type_io_namedpipeevents>`
+
+.. _doxid-enum_member_io_namedpipeevents_incomingconnection:
+.. _cid-io.namedpipeevents.incomingconnection:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`IoError<doxid-enum_member_io_namedpipeevents_ioerror>` 
+	IncomingConnection 
+
+.. _details-doxid-type_io_namedpipeevents:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.NamedPipe` object. The set of *active* events is accessible
+via `io.NamedPipe.m_activeEvents`.
+
+
+
+.. rubric:: See also:
+
+`io.NamedPipe`
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_namedpipeevents_ioerror:
+.. _cid-io.namedpipeevents.ioerror:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IoError
+
+An IO error occured on the named pipe server; detailed information about
+the error is available at `io.NamedPipe.m_ioError`.
+

@@ -1,0 +1,104 @@
+.. include:: def.rst
+.. index:: pair: class; io.DeviceMonitor
+.. _doxid-type_io_devicemonitor:
+.. _cid-io.devicemonitor:
+
+class io.DeviceMonitor
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_devicemonitor_iface_m_devicename:
+.. _cid-io.devicemonitor.m_devicename:
+.. _doxid-struct_member_io_devicemonitor_iface_m_isconnected:
+.. _cid-io.devicemonitor.m_isconnected:
+.. _doxid-struct_member_io_devicemonitor_iface_m_unused:
+.. _cid-io.devicemonitor.m_unused:
+.. _doxid-struct_member_io_devicemonitor_iface_m_activeevents:
+.. _cid-io.devicemonitor.m_activeevents:
+.. _doxid-struct_member_io_devicemonitor_iface_m_ioerror:
+.. _cid-io.devicemonitor.m_ioerror:
+.. _doxid-struct_member_io_devicemonitor_iface_m_isopen:
+.. _cid-io.devicemonitor.m_isopen:
+.. _doxid-property_io_devicemonitor_m_readparallelism:
+.. _cid-io.devicemonitor.m_readparallelism:
+.. _doxid-property_io_devicemonitor_m_readblocksize:
+.. _cid-io.devicemonitor.m_readblocksize:
+.. _doxid-property_io_devicemonitor_m_readbuffersize:
+.. _cid-io.devicemonitor.m_readbuffersize:
+.. _doxid-property_io_devicemonitor_m_pendingnotifysizelimit:
+.. _cid-io.devicemonitor.m_pendingnotifysizelimit:
+.. _doxid-property_io_devicemonitor_m_filenamefilter:
+.. _cid-io.devicemonitor.m_filenamefilter:
+.. _doxid-property_io_devicemonitor_m_isenabled:
+.. _cid-io.devicemonitor.m_isenabled:
+.. _doxid-function_io_devicemonitor_open:
+.. _cid-io.devicemonitor.open:
+.. _doxid-function_io_devicemonitor_connect:
+.. _cid-io.devicemonitor.connect:
+.. _doxid-function_io_devicemonitor_close:
+.. _cid-io.devicemonitor.close:
+.. _doxid-function_io_devicemonitor_setioctldesctable:
+.. _cid-io.devicemonitor.setioctldesctable:
+.. _doxid-function_io_devicemonitor_read:
+.. _cid-io.devicemonitor.read:
+.. _doxid-function_io_devicemonitor_wait:
+.. _cid-io.devicemonitor.wait:
+.. _doxid-function_io_devicemonitor_cancelwait:
+.. _cid-io.devicemonitor.cancelwait:
+.. _doxid-function_io_devicemonitor_blockingwait:
+.. _cid-io.devicemonitor.blockingwait:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	char const* readonly m_deviceName
+	bool readonly m_isConnected
+	:ref:`uint_t<doxid-typedef_uint_t>` readonly m_unused
+	:ref:`io.DeviceMonitorEvents<doxid-type_io_devicemonitorevents>` readonly volatile m_activeEvents
+	:ref:`std.Error<doxid-type_std_error>` const* readonly volatile m_ioError
+	bool readonly m_isOpen
+
+	// properties
+
+	:ref:`uint_t<doxid-typedef_uint_t>` autoget property m_readParallelism 
+	:ref:`size_t<doxid-typedef_size_t>` autoget property m_readBlockSize 
+	:ref:`size_t<doxid-typedef_size_t>` autoget property m_readBufferSize 
+	:ref:`size_t<doxid-typedef_size_t>` autoget property m_pendingNotifySizeLimit 
+	char const* autoget property m_fileNameFilter 
+	bool autoget property m_isEnabled 
+
+	// methods
+
+	bool errorcode open ()
+	bool errorcode connect (char const* deviceName)
+	void close ()
+
+	void setIoctlDescTable (
+	    :ref:`io.psx.DeviceMonitorIoctlDesc<doxid-type_io_psx_devicemonitorioctldesc>` const* ioctlDesc,
+	    :ref:`size_t<doxid-typedef_size_t>` count
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode read (
+	    void* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+	long errorcode wait (
+	    :ref:`io.DeviceMonitorEvents<doxid-type_io_devicemonitorevents>` eventMask,
+	    void function* handler (io.DeviceMonitorEvents triggeredEvents)
+	    )
+
+	bool errorcode cancelWait (long handle)
+
+	:ref:`io.DeviceMonitorEvents<doxid-type_io_devicemonitorevents>` errorcode blockingWait (
+	    :ref:`io.DeviceMonitorEvents<doxid-type_io_devicemonitorevents>` eventMask,
+	    :ref:`uint_t<doxid-typedef_uint_t>` timeout
+	    )
+

@@ -1,0 +1,38 @@
+.. index:: pair: struct; jnc_FunctionTypeFuncTable
+.. _doxid-structjnc___function_type_func_table:
+.. _cid-jnc_functiontypefunctable:
+
+struct jnc_FunctionTypeFuncTable
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___function_type_func_table_1a587d4aa3a7c5af4b04245d9eaac51d91:
+.. _cid-jnc_functiontypefunctable::m_size:
+.. _doxid-structjnc___function_type_func_table_1aa415acb967b7c3ec40224f643fec8b6b:
+.. _cid-jnc_functiontypefunctable::m_getreturntypefunc:
+.. _doxid-structjnc___function_type_func_table_1ada3b313cfca2c7d8a442a46d1bc8fa75:
+.. _cid-jnc_functiontypefunctable::m_getargcountfunc:
+.. _doxid-structjnc___function_type_func_table_1a72b7d0f33cee6b14c4d587f3ae7321ab:
+.. _cid-jnc_functiontypefunctable::m_getargfunc:
+.. _doxid-structjnc___function_type_func_table_1acbf06a006285385472dffa5b37f94528:
+.. _cid-jnc_functiontypefunctable::m_getfunctionptrtypefunc:
+.. _doxid-structjnc___function_type_func_table_1a70a2f5f43ed36a16a2ec44103bad732e:
+.. _cid-jnc_functiontypefunctable::m_getshorttypefunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_FunctionType_GetReturnTypeFunc* m_getReturnTypeFunc
+	jnc_FunctionType_GetArgCountFunc* m_getArgCountFunc
+	jnc_FunctionType_GetArgFunc* m_getArgFunc
+	jnc_FunctionType_GetFunctionPtrTypeFunc* m_getFunctionPtrTypeFunc
+	jnc_FunctionType_GetShortTypeFunc* m_getShortTypeFunc
+

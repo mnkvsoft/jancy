@@ -1,0 +1,74 @@
+.. include:: def.rst
+.. index:: pair: class; std.Buffer
+.. _doxid-type_std_buffer:
+.. _cid-std.buffer:
+
+class std.Buffer
+================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_std_buffer_iface_m_p:
+.. _cid-std.buffer.m_p:
+.. _doxid-struct_member_std_buffer_iface_m_size:
+.. _cid-std.buffer.m_size:
+.. _doxid-struct_member_std_buffer_iface_m_maxsize:
+.. _cid-std.buffer.m_maxsize:
+.. _doxid-function_std_buffer_clear:
+.. _cid-std.buffer.clear:
+.. _doxid-function_std_buffer_detach:
+.. _cid-std.buffer.detach:
+.. _doxid-function_std_buffer_setsize:
+.. _cid-std.buffer.setsize:
+.. _doxid-function_std_buffer_reserve:
+.. _cid-std.buffer.reserve:
+.. _doxid-function_std_buffer_copy:
+.. _cid-std.buffer.copy:
+.. _doxid-function_std_buffer_append:
+.. _cid-std.buffer.append:
+.. _doxid-function_std_buffer_insert:
+.. _cid-std.buffer.insert:
+.. _doxid-function_std_buffer_remove:
+.. _cid-std.buffer.remove:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	char* readonly m_p
+	:ref:`size_t<doxid-typedef_size_t>` readonly m_size
+	:ref:`size_t<doxid-typedef_size_t>` readonly m_maxSize
+
+	// methods
+
+	void clear ()
+	void detach ()
+	bool errorcode setSize (:ref:`size_t<doxid-typedef_size_t>` size)
+	bool errorcode reserve (:ref:`size_t<doxid-typedef_size_t>` size)
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode copy (
+	    void const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode append (
+	    void const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode insert (
+	    :ref:`size_t<doxid-typedef_size_t>` offset,
+	    void const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode remove (
+	    :ref:`size_t<doxid-typedef_size_t>` offset,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+

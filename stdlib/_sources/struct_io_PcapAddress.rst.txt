@@ -1,0 +1,91 @@
+.. include:: def.rst
+.. index:: pair: struct; io.PcapAddress
+.. _doxid-type_io_pcapaddress:
+.. _cid-io.pcapaddress:
+
+struct io.PcapAddress
+=====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_pcap.jncx"
+
+
+Overview
+~~~~~~~~
+
+This struct holds information about single address of the Pcap
+device. :ref:`More...<details-doxid-type_io_pcapaddress>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`io.PcapAddress<doxid-type_io_pcapaddress>` const* :ref:`m_next<doxid-struct_member_io_pcapaddress_m_next>`
+	:ref:`io.Address_ip4<doxid-type_io_address_ip4>` :ref:`m_address<doxid-struct_member_io_pcapaddress_m_address>`
+	:ref:`io.Address_ip4<doxid-type_io_address_ip4>` :ref:`m_mask<doxid-struct_member_io_pcapaddress_m_mask>`
+	:ref:`io.Address_ip4<doxid-type_io_address_ip4>` :ref:`m_broadcast<doxid-struct_member_io_pcapaddress_m_broadcast>`
+
+.. _details-doxid-type_io_pcapaddress:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This struct holds information about single address of the Pcap
+device.
+
+A list of network adapter addresses is part of Pcap device description
+stored in `io.PcapDeviceDesc`.
+
+
+
+.. rubric:: See also:
+
+`io.PcapDeviceDesc`, `io.createPcapDeviceDescList`
+
+Fields
+------
+
+.. _doxid-struct_member_io_pcapaddress_m_next:
+.. _cid-io.pcapaddress.m_next:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`io.PcapAddress<doxid-type_io_pcapaddress>` const* m_next
+
+Holds a pointer to the next Pcap device or ``null`` if this is the last
+address.
+
+.. _doxid-struct_member_io_pcapaddress_m_address:
+.. _cid-io.pcapaddress.m_address:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`io.Address_ip4<doxid-type_io_address_ip4>` m_address
+
+Holds ``IP4`` address of the Pcap device as `io.Address_ip4`.
+
+.. _doxid-struct_member_io_pcapaddress_m_mask:
+.. _cid-io.pcapaddress.m_mask:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`io.Address_ip4<doxid-type_io_address_ip4>` m_mask
+
+Holds ``IP4`` mask of the Pcap device as `io.Address_ip4`.
+
+.. _doxid-struct_member_io_pcapaddress_m_broadcast:
+.. _cid-io.pcapaddress.m_broadcast:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`io.Address_ip4<doxid-type_io_address_ip4>` m_broadcast
+
+Holds ``IP4`` subnet broadcast address of the Pcap device as
+`io.Address_ip4`.
+

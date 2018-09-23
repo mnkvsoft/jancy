@@ -1,0 +1,45 @@
+.. include:: def.rst
+.. index:: pair: struct; sys.SystemInfo
+.. _doxid-type_sys_systeminfo:
+.. _cid-sys.systeminfo:
+
+struct sys.SystemInfo
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_sys_systeminfo_m_cpukind:
+.. _cid-sys.systeminfo.m_cpukind:
+.. _doxid-struct_member_sys_systeminfo_m_oskind:
+.. _cid-sys.systeminfo.m_oskind:
+.. _doxid-struct_member_sys_systeminfo_m_osflags:
+.. _cid-sys.systeminfo.m_osflags:
+.. _doxid-struct_member_sys_systeminfo_m_cppkind:
+.. _cid-sys.systeminfo.m_cppkind:
+.. _doxid-struct_member_sys_systeminfo_m_cppflags:
+.. _cid-sys.systeminfo.m_cppflags:
+.. _doxid-struct_member_sys_systeminfo_m_processorcount:
+.. _cid-sys.systeminfo.m_processorcount:
+.. _doxid-struct_member_sys_systeminfo_m_pagesize:
+.. _cid-sys.systeminfo.m_pagesize:
+.. _doxid-struct_member_sys_systeminfo_m_mappingalignfactor:
+.. _cid-sys.systeminfo.m_mappingalignfactor:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`sys.CpuKind<doxid-type_sys_cpukind>` m_cpuKind
+	:ref:`sys.OsKind<doxid-type_sys_oskind>` m_osKind
+	:ref:`sys.OsFlags<doxid-type_sys_osflags>` m_osFlags
+	:ref:`sys.CppKind<doxid-type_sys_cppkind>` m_cppKind
+	:ref:`sys.CppFlags<doxid-type_sys_cppflags>` m_cppFlags
+	:ref:`uint_t<doxid-typedef_uint_t>` m_processorCount
+	:ref:`size_t<doxid-typedef_size_t>` m_pageSize
+	:ref:`size_t<doxid-typedef_size_t>` m_mappingAlignFactor
+

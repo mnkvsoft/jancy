@@ -1,0 +1,138 @@
+.. include:: def.rst
+.. index:: pair: enum; io.SocketEvents
+.. _doxid-type_io_socketevents:
+.. _cid-io.socketevents:
+
+bitflag enum io.SocketEvents
+============================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_Socket.jnc"
+
+
+Overview
+~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.Socket` object. The set of *active* events is accessible
+via `io.Socket.m_activeEvents`. :ref:`More...<details-doxid-type_io_socketevents>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`IoError<doxid-enum_member_io_socketevents_ioerror>` 
+	:ref:`IncomingData<doxid-enum_member_io_socketevents_incomingdata>` 
+	:ref:`ReadBufferFull<doxid-enum_member_io_socketevents_readbufferfull>` 
+	:ref:`WriteBufferReady<doxid-enum_member_io_socketevents_writebufferready>` 
+	:ref:`IncomingConnection<doxid-enum_member_io_socketevents_incomingconnection>` 
+	:ref:`Connected<doxid-enum_member_io_socketevents_connected>` 
+	:ref:`Disconnected<doxid-enum_member_io_socketevents_disconnected>` 
+	:ref:`Reset<doxid-enum_member_io_socketevents_reset>` 
+
+.. _details-doxid-type_io_socketevents:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.Socket` object. The set of *active* events is accessible
+via `io.Socket.m_activeEvents`.
+
+
+
+.. rubric:: See also:
+
+`io.Socket`
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_socketevents_ioerror:
+.. _cid-io.socketevents.ioerror:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IoError
+
+An IO error occured on the socket; detailed information about the error
+is available at `io.Socket.m_ioError`.
+
+.. _doxid-enum_member_io_socketevents_incomingdata:
+.. _cid-io.socketevents.incomingdata:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IncomingData
+
+Incoming data is available on the socket; this data could be fetched
+with `io.Socket.read` or `io.Socket.readDatagram` methods.
+
+.. _doxid-enum_member_io_socketevents_readbufferfull:
+.. _cid-io.socketevents.readbufferfull:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	ReadBufferFull
+
+Socket receive buffer is full.
+
+.. _doxid-enum_member_io_socketevents_writebufferready:
+.. _cid-io.socketevents.writebufferready:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	WriteBufferReady
+
+Socket transmit buffer is ready to accept more data; it's OK to issue
+more `io.Socket.write` or `io.Socket.writeDatagram` requests.
+
+.. _doxid-enum_member_io_socketevents_incomingconnection:
+.. _cid-io.socketevents.incomingconnection:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IncomingConnection
+
+New incoming client connection is pending on the listening server
+socket. The new client can be accepted using `io.Socket.accept` method
+(to reject the connection you still have to accept it first, and then
+close it)
+
+.. _doxid-enum_member_io_socketevents_connected:
+.. _cid-io.socketevents.connected:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Connected
+
+Connection established.
+
+.. _doxid-enum_member_io_socketevents_disconnected:
+.. _cid-io.socketevents.disconnected:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Disconnected
+
+Connection has been terminated by the remote node. If the remote node
+used ``TCP`` reset, then `io.SocketEvents.Reset` will be set at the same
+time. Note that if connection was terminated by the local node (using
+`io.Socket.close`), ``Disconnect`` event is **not** fired.
+
+.. _doxid-enum_member_io_socketevents_reset:
+.. _cid-io.socketevents.reset:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Reset
+
+Connection has been abruptly reset by the remote node. Whenever this
+event is set, `io.SocketEvents.Disconnected` is also set. Note that if
+connection was terminated by the local node (using `io.Socket.close`),
+``Disconnect`` event is **not** fired.
+

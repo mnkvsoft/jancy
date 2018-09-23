@@ -1,0 +1,77 @@
+.. include:: def.rst
+.. index:: pair: enum; io.AddressFamily
+.. _doxid-type_io_addressfamily:
+.. _cid-io.addressfamily:
+
+enum io.AddressFamily
+=====================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_SocketAddress.jnc"
+
+
+Overview
+~~~~~~~~
+
+This enumeration contains possible values for socket address types
+(families). :ref:`More...<details-doxid-type_io_addressfamily>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`Undefined<doxid-enum_member_io_addressfamily_undefined>` = 0
+	:ref:`Ip4<doxid-enum_member_io_addressfamily_ip4>` = 2
+	:ref:`Ip6<doxid-enum_member_io_addressfamily_ip6>` 
+
+.. _details-doxid-type_io_addressfamily:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration contains possible values for socket address types
+(families).
+
+``io.AddressFamily`` values map to ``AF_XXX`` platform constants. At the
+moment, only ``IP4`` and ``IP6`` address families are supported.
+
+
+
+.. rubric:: See also:
+
+`io.SocketAddress`
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_addressfamily_undefined:
+.. _cid-io.addressfamily.undefined:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Undefined
+
+Used to designate an uninitialized value.
+
+.. _doxid-enum_member_io_addressfamily_ip4:
+.. _cid-io.addressfamily.ip4:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Ip4
+
+Specifies ``IP4``-address; maps to ``AF_INET`` platform constant.
+
+.. _doxid-enum_member_io_addressfamily_ip6:
+.. _cid-io.addressfamily.ip6:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Ip6
+
+Specifies ``IP6``-address; maps to ``AF_INET6`` platform constant.
+

@@ -1,0 +1,82 @@
+.. index:: pair: struct; jnc_ListLink
+.. _doxid-structjnc___list_link:
+.. _cid-jnc_listlink:
+
+struct jnc_ListLink
+===================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Def.h>
+
+
+Overview
+~~~~~~~~
+
+This struct holds information about a single entry of a doubly linked list. :ref:`More...<details-doxid-structjnc___list_link>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_ListLink<doxid-structjnc___list_link>`* :ref:`m_next<doxid-structjnc___list_link_1a05cf154a0dfa3ba9bfc2f387d96a200f>`
+	:ref:`jnc_ListLink<doxid-structjnc___list_link>`* :ref:`m_prev<doxid-structjnc___list_link_1a436c6b8b17f4e4a5de024d6e732996cf>`
+
+.. _details-doxid-structjnc___list_link:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This struct holds information about a single entry of a doubly linked list.
+
+Whenever something needs to be put on a Jancy list, it must be represented as a struct with ``jnc_ListLink`` memeber field in it. If a list contains entries of non-aggregate type (such as ``int``, or ``void*``), then we have to *box* entry in a struct as such:
+
+.. code-block:: c
+
+    struct IntEntry
+    {
+        jnc_ListLink m_link; // <-- list link
+        int m_value;
+    };
+
+However, often times what you want to put on a list -- is already an aggregate. In this case just embed a ``jnc_ListLink`` member field into the struct as such:
+
+.. code-block:: c
+
+    struct MyItem
+    {
+        jnc_ListLink m_link; // <-- list link
+
+        const char* m_name;
+        const char* m_description;
+        int m_state;
+
+        // ... more fields
+    };
+
+Fields
+------
+
+.. _doxid-structjnc___list_link_1a05cf154a0dfa3ba9bfc2f387d96a200f:
+.. _cid-jnc_listlink::m_next:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`jnc_ListLink<doxid-structjnc___list_link>`* m_next
+
+Holds a pointer to the *next* list entry on the list or ``NULL`` if this is the *last* entry.
+
+.. _doxid-structjnc___list_link_1a436c6b8b17f4e4a5de024d6e732996cf:
+.. _cid-jnc_listlink::m_prev:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`jnc_ListLink<doxid-structjnc___list_link>`* m_prev
+
+Holds a pointer to the *previous* list entry on the list or ``NULL`` if this is the *first* entry.
+

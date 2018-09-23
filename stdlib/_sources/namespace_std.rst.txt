@@ -1,0 +1,159 @@
+.. include:: def.rst
+.. index:: pair: namespace; std
+.. _doxid-namespace_std:
+.. _cid-std:
+
+namespace std
+=============
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. _doxid-typedef_std_hashfunc:
+.. _cid-std.hashfunc:
+.. _doxid-typedef_std_isequalfunc:
+.. _cid-std.isequalfunc:
+.. _doxid-typedef_std_cmpfunc:
+.. _cid-std.cmpfunc:
+.. _doxid-variable_std_g_errnoguid:
+.. _cid-std.g_errnoguid:
+.. _doxid-variable_std_g_winerrorguid:
+.. _cid-std.g_winerrorguid:
+.. _doxid-variable_std_g_ntstatusguid:
+.. _cid-std.g_ntstatusguid:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// typedefs
+
+	typedef :ref:`size_t<doxid-typedef_size_t>` HashFunc (variant key)
+
+	typedef bool IsEqualFunc (
+	    variant key1,
+	    variant key2
+	    )
+
+	typedef int CmpFunc (
+	    variant key1,
+	    variant key2
+	    )
+
+	// enums
+
+	enum :ref:`BinTreeFindRelOp<doxid-type_std_bintreefindrelop>`
+
+	// structs
+
+	struct :ref:`Error<doxid-type_std_error>` 
+	struct :ref:`Guid<doxid-type_std_guid>` 
+	struct :ref:`ListEntry<doxid-type_std_listentry>` 
+	struct :ref:`MapEntry<doxid-type_std_mapentry>` 
+
+	// classes
+
+	class :ref:`Array<doxid-type_std_array>` 
+	class :ref:`Buffer<doxid-type_std_buffer>` 
+	class :ref:`HashTable<doxid-type_std_hashtable>` 
+	class :ref:`List<doxid-type_std_list>` 
+	class :ref:`RbTree<doxid-type_std_rbtree>` 
+	class :ref:`StringBuilder<doxid-type_std_stringbuilder>` 
+	class :ref:`StringHashTable<doxid-type_std_stringhashtable>` 
+	class :ref:`StringHashTableIgnoreCase<doxid-type_std_stringhashtableignorecase>` 
+
+	// global variables
+
+	static :ref:`std.Guid<doxid-type_std_guid>` g_errnoGuid
+	static :ref:`std.Guid<doxid-type_std_guid>` g_winErrorGuid
+	static :ref:`std.Guid<doxid-type_std_guid>` g_ntStatusGuid
+
+	// global functions
+
+	:ref:`std.Error<doxid-type_std_error>` const* :ref:`getLastError<doxid-function_std_getlasterror>` ()
+	char const* :ref:`getLastErrorDescription<doxid-function_std_getlasterrordescription>` ()
+	void :ref:`setErrno<doxid-function_std_seterrno>` (int errno)
+	void :ref:`setError<doxid-function_std_seterror>` (char const* string)
+
+	char const* cdecl :ref:`format<doxid-function_std_format>` (
+	    char const* fmtSpecifier,
+	    ...
+	    )
+
+	void :ref:`resetDynamicLayout<doxid-function_std_resetdynamiclayout>` (void const* p)
+
+.. _details-doxid-namespace_std:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Global Functions
+----------------
+
+.. _doxid-function_std_resetdynamiclayout:
+.. _cid-std.resetdynamiclayout:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	void resetDynamicLayout (void const* p)
+
+Clears the cache of dynamically calculated offsets inside a
+``dynamic struct``.
+
+Jancy runtime optimizes access to dynamic structures by caching the
+calucated offsets of dynamic fields. The cache is stored inside a buffer
+itself (as part of jnc.Box, not as part of a dynamic pointer). Therefore,
+it's necessary to drop this cache if you are about to re-use the same buffer
+by re-writing it with another block of memory and analyzing it agani with
+dynamic structures.
+
+Note that dropping the cache is not required if you just want to analyze the
+same buffer with other ``dynamic struct`` pointers -- the cache is smart
+enough to distinguish between multiple dynamic structure types.
+
+.. rubric:: Sample code:
+
+.. ref-code-block::
+
+    dynamic struct HeaderA
+    {
+        // ...
+    };
+
+    dynamic struct HeaderB
+    {
+        // ...
+    };
+
+    char buffer [1024];
+
+    file.read (buffer, sizeof (buffer));
+
+    HeaderA const* a = (HeaderA const*) buffer;
+
+    // access the buffer via dynamic struct A...
+
+    file.read (buffer, sizeof (buffer));
+
+    // we need to drop the previous cache -- otherwise,
+    // Jancy runtime will re-use pre-calculated offsets.
+    // that, obviously, will yield wrong resultts (the data is different)
+
+    std.resetDynamicLayout (buffer);
+
+    HeaderA const* a = (HeaderA const*) buffer;
+
+    // access the buffer via dynamic struct A...
+
+    // no need to drop cache before accessing the same
+    // buffer with a different dynamic struct pointer
+
+    HeaderB const* b = (HeaderB const*) buffer;
+

@@ -1,0 +1,46 @@
+.. include:: def.rst
+.. index:: pair: struct; io.win.DeviceMonitorCreateNotifyParams
+.. _doxid-type_io_win_devicemonitorcreatenotifyparams:
+.. _cid-io.win.devicemonitorcreatenotifyparams:
+
+struct io.win.DeviceMonitorCreateNotifyParams
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_options:
+.. _cid-io.win.devicemonitorcreatenotifyparams.m_options:
+.. _doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_desiredaccess:
+.. _cid-io.win.devicemonitorcreatenotifyparams.m_desiredaccess:
+.. _doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_shareaccess:
+.. _cid-io.win.devicemonitorcreatenotifyparams.m_shareaccess:
+.. _doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_fileattributes:
+.. _cid-io.win.devicemonitorcreatenotifyparams.m_fileattributes:
+.. _doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_filenamelength:
+.. _cid-io.win.devicemonitorcreatenotifyparams.m_filenamelength:
+.. _doxid-struct_member_io_win_devicemonitorcreatenotifyparams__m_padding:
+.. _cid-io.win.devicemonitorcreatenotifyparams._m_padding:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	struct DeviceMonitorCreateNotifyParams
+
+	    // direct descendants
+
+	    struct :ref:`io.win.DeviceMonitorCreateNamedPipeNotifyParams<doxid-type_io_win_devicemonitorcreatenamedpipenotifyparams>` 
+	    struct :ref:`io.win.DeviceMonitorCreateMailslotNotifyParams<doxid-type_io_win_devicemonitorcreatemailslotnotifyparams>` 
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_options
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_desiredAccess
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_shareAccess
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_fileAttributes
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_fileNameLength
+	:ref:`uint32_t<doxid-typedef_uint32_t>` _m_padding
+

@@ -1,0 +1,44 @@
+.. index:: pair: group; Bitfield Type
+.. _doxid-group__bitfield-type:
+.. _cid-bitfield-type:
+
+Bitfield Type
+=============
+
+.. toctree::
+	:hidden:
+
+	struct_jnc_BitFieldType.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_BitFieldType.h>
+
+
+Bitfield type is used to describe a range of bits inside a struct or union.
+
+.. _doxid-group__bitfield-type_1ga83ac9697017f0c8d9c26274a9a20760c:
+.. _cid-jnc_bitfieldtype_getbasetype:
+.. _doxid-group__bitfield-type_1ga4fd8c37f03042851c90ecbb387d78389:
+.. _cid-jnc_bitfieldtype_getbitoffset:
+.. _doxid-group__bitfield-type_1ga308b754fe483e1d7a7c7c1ae585228be:
+.. _cid-jnc_bitfieldtype_getbitcount:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`jnc_BitFieldType<doxid-structjnc___bit_field_type>` 
+
+	// global functions
+
+	:ref:`jnc_Type<doxid-structjnc___type>`*
+	jnc_BitFieldType_getBaseType (:ref:`jnc_BitFieldType<doxid-structjnc___bit_field_type>`* type)
+
+	size_t
+	jnc_BitFieldType_getBitOffset (:ref:`jnc_BitFieldType<doxid-structjnc___bit_field_type>`* type)
+
+	size_t
+	jnc_BitFieldType_getBitCount (:ref:`jnc_BitFieldType<doxid-structjnc___bit_field_type>`* type)
+

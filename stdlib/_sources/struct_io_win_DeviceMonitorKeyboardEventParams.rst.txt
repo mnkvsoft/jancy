@@ -1,0 +1,24 @@
+.. include:: def.rst
+.. index:: pair: struct; io.win.DeviceMonitorKeyboardEventParams
+.. _doxid-type_io_win_devicemonitorkeyboardeventparams:
+.. _cid-io.win.devicemonitorkeyboardeventparams:
+
+struct io.win.DeviceMonitorKeyboardEventParams
+==============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_win_devicemonitorkeyboardeventparams_m_inputcount:
+.. _cid-io.win.devicemonitorkeyboardeventparams.m_inputcount:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_inputCount
+

@@ -1,0 +1,38 @@
+.. index:: pair: struct; jnc_ExtensionLib
+.. _doxid-structjnc___extension_lib:
+.. _cid-jnc_extensionlib:
+
+struct jnc_ExtensionLib
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___extension_lib_1a8a1cc7d41a8c3ae371eabcd9944a3b8b:
+.. _cid-jnc_extensionlib::m_guid:
+.. _doxid-structjnc___extension_lib_1abd93ed35d79e108913cbb014e19aeb11:
+.. _cid-jnc_extensionlib::m_name:
+.. _doxid-structjnc___extension_lib_1a0ac2c03e4a7c07d90cafa5768512861b:
+.. _cid-jnc_extensionlib::m_description:
+.. _doxid-structjnc___extension_lib_1a8f4755bf39f219413907aae30791cc5b:
+.. _cid-jnc_extensionlib::m_addsourcesfunc:
+.. _doxid-structjnc___extension_lib_1aa9d5aa2df3f90b72045cd8ba899f9876:
+.. _cid-jnc_extensionlib::m_addopaqueclasstypeinfosfunc:
+.. _doxid-structjnc___extension_lib_1a1fa5ff0ebf8bdfc7df0452e24140e197:
+.. _cid-jnc_extensionlib::m_mapaddressesfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const :ref:`jnc_Guid<doxid-structjnc___guid>`* m_guid
+	const char* m_name
+	const char* m_description
+	jnc_ExtensionLib_AddSourcesFunc* m_addSourcesFunc
+	jnc_ExtensionLib_AddOpaqueClassTypeInfosFunc* m_addOpaqueClassTypeInfosFunc
+	jnc_ExtensionLib_MapAddressesFunc* m_mapAddressesFunc
+

@@ -1,0 +1,38 @@
+.. index:: pair: enum; jnc_ModuleItemFlag
+.. _doxid-group__module-item_1gaf19927f3431c5d3bd0b1c994920aa1b1:
+.. _cid-jnc_moduleitemflag:
+
+enum jnc_ModuleItemFlag
+=======================
+
+
+
+
+
+.. _doxid-group__module-item_1ggaf19927f3431c5d3bd0b1c994920aa1b1a4430999cc3c6378266194a0f02e73a43:
+.. _cid-jnc_moduleitemflag::jnc_moduleitemflag_user:
+.. _doxid-group__module-item_1ggaf19927f3431c5d3bd0b1c994920aa1b1a1e9d0c639b1edf7f0a14a0b111f4ea7a:
+.. _cid-jnc_moduleitemflag::jnc_moduleitemflag_needlayout:
+.. _doxid-group__module-item_1ggaf19927f3431c5d3bd0b1c994920aa1b1a663ffb13f20315ebb16f03e32563b1d4:
+.. _cid-jnc_moduleitemflag::jnc_moduleitemflag_needcompile:
+.. _doxid-group__module-item_1ggaf19927f3431c5d3bd0b1c994920aa1b1a8a092eb7f52783dde797edb0263fe9df:
+.. _cid-jnc_moduleitemflag::jnc_moduleitemflag_incalclayout:
+.. _doxid-group__module-item_1ggaf19927f3431c5d3bd0b1c994920aa1b1afc0056190abfc8a0c42f6c881a56f1ec:
+.. _cid-jnc_moduleitemflag::jnc_moduleitemflag_layoutready:
+.. _doxid-group__module-item_1ggaf19927f3431c5d3bd0b1c994920aa1b1a2d5230e8a46e8e12666fbf857159062c:
+.. _cid-jnc_moduleitemflag::jnc_moduleitemflag_constructed:
+.. _doxid-group__module-item_1ggaf19927f3431c5d3bd0b1c994920aa1b1a62a8806c21bb85e35708e9cf18bde956:
+.. _cid-jnc_moduleitemflag::jnc_moduleitemflag_sealed:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_ModuleItemFlag_User = 0x01
+	jnc_ModuleItemFlag_NeedLayout = 0x02
+	jnc_ModuleItemFlag_NeedCompile = 0x04
+	jnc_ModuleItemFlag_InCalcLayout = 0x10
+	jnc_ModuleItemFlag_LayoutReady = 0x20
+	jnc_ModuleItemFlag_Constructed = 0x40
+	jnc_ModuleItemFlag_Sealed = 0x80
+

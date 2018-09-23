@@ -1,0 +1,38 @@
+.. index:: pair: struct; jnc_CallSite
+.. _doxid-structjnc___call_site:
+.. _cid-jnc_callsite:
+
+struct jnc_CallSite
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___call_site_1a8408f740a673ede4b76719db2bdd3f29:
+.. _cid-jnc_callsite::m_initializelevel:
+.. _doxid-structjnc___call_site_1a4a4bd17f110d972c3d81954ac1602566:
+.. _cid-jnc_callsite::m_waitregionlevel:
+.. _doxid-structjnc___call_site_1a09765f38685ae3de41a5b0861ea4bf1b:
+.. _cid-jnc_callsite::m_nocollectregionlevel:
+.. _doxid-structjnc___call_site_1ae5831182232158e4ca2a504ba05bd409:
+.. _cid-jnc_callsite::m_gcshadowstackdynamicframe:
+.. _doxid-structjnc___call_site_1a50cac077442e8e9970c37cc1bcb21ffb:
+.. _cid-jnc_callsite::m_gcshadowstackdynamicframemap:
+.. _doxid-structjnc___call_site_1a98c2d32db15f45c2790223d7893f78df:
+.. _cid-jnc_callsite::m_result:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_initializeLevel
+	size_t m_waitRegionLevel
+	size_t m_noCollectRegionLevel
+	:ref:`jnc_GcShadowStackFrame<doxid-structjnc___gc_shadow_stack_frame>` m_gcShadowStackDynamicFrame
+	:ref:`jnc_GcShadowStackFrameMapBuffer<doxid-structjnc___gc_shadow_stack_frame_map_buffer>` m_gcShadowStackDynamicFrameMap
+	intptr_t m_result
+

@@ -1,0 +1,33 @@
+.. include:: def.rst
+.. index:: pair: enum; std.BinTreeFindRelOp
+.. _doxid-type_std_bintreefindrelop:
+.. _cid-std.bintreefindrelop:
+
+enum std.BinTreeFindRelOp
+=========================
+
+
+
+
+
+.. _doxid-enum_member_std_bintreefindrelop_eq:
+.. _cid-std.bintreefindrelop.eq:
+.. _doxid-enum_member_std_bintreefindrelop_lt:
+.. _cid-std.bintreefindrelop.lt:
+.. _doxid-enum_member_std_bintreefindrelop_le:
+.. _cid-std.bintreefindrelop.le:
+.. _doxid-enum_member_std_bintreefindrelop_gt:
+.. _cid-std.bintreefindrelop.gt:
+.. _doxid-enum_member_std_bintreefindrelop_ge:
+.. _cid-std.bintreefindrelop.ge:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Eq 
+	Lt 
+	Le 
+	Gt 
+	Ge 
+

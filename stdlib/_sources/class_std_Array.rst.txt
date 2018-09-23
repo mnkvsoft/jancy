@@ -1,0 +1,88 @@
+.. include:: def.rst
+.. index:: pair: class; std.Array
+.. _doxid-type_std_array:
+.. _cid-std.array:
+
+class std.Array
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_std_array_iface_m_p:
+.. _cid-std.array.m_p:
+.. _doxid-struct_member_std_array_iface_m_count:
+.. _cid-std.array.m_count:
+.. _doxid-struct_member_std_array_iface_m_maxcount:
+.. _cid-std.array.m_maxcount:
+.. _doxid-function_std_array_clear:
+.. _cid-std.array.clear:
+.. _doxid-function_std_array_detach:
+.. _cid-std.array.detach:
+.. _doxid-function_std_array_setcount:
+.. _cid-std.array.setcount:
+.. _doxid-function_std_array_reserve:
+.. _cid-std.array.reserve:
+.. _doxid-function_std_array_copy:
+.. _cid-std.array.copy:
+.. _doxid-function_std_array_copy_2:
+.. _cid-std.array.copy-2:
+.. _doxid-function_std_array_append:
+.. _cid-std.array.append:
+.. _doxid-function_std_array_append_2:
+.. _cid-std.array.append-2:
+.. _doxid-function_std_array_insert:
+.. _cid-std.array.insert:
+.. _doxid-function_std_array_insert_2:
+.. _cid-std.array.insert-2:
+.. _doxid-function_std_array_remove:
+.. _cid-std.array.remove:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	variant cmut* readonly m_p
+	:ref:`size_t<doxid-typedef_size_t>` readonly m_count
+	:ref:`size_t<doxid-typedef_size_t>` readonly m_maxCount
+
+	// methods
+
+	void clear ()
+	void detach ()
+	bool errorcode setCount (:ref:`size_t<doxid-typedef_size_t>` count)
+	bool errorcode reserve (:ref:`size_t<doxid-typedef_size_t>` count)
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode copy (
+	    variant const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` count
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode copy (variant e)
+	:ref:`size_t<doxid-typedef_size_t>` errorcode append (variant e)
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode append (
+	    variant const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` count
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode insert (
+	    :ref:`size_t<doxid-typedef_size_t>` index,
+	    variant const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` count
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode insert (
+	    :ref:`size_t<doxid-typedef_size_t>` index,
+	    variant e
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` remove (
+	    :ref:`size_t<doxid-typedef_size_t>` index,
+	    :ref:`size_t<doxid-typedef_size_t>` count = 1
+	    )
+

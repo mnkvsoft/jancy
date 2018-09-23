@@ -1,0 +1,255 @@
+.. include:: def.rst
+.. index:: pair: class; io.File
+.. _doxid-type_io_file:
+.. _cid-io.file:
+
+class io.File
+=============
+
+.. toctree::
+	:hidden:
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_File.jnc"
+
+
+Overview
+~~~~~~~~
+
+This class provides a standard synchronous interface for reading from
+and writing to files or devices. :ref:`More...<details-doxid-type_io_file>`
+
+.. _doxid-function_io_file_setsize:
+.. _cid-io.file.setsize:
+.. _doxid-function_io_file_flush:
+.. _cid-io.file.flush:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	bool readonly :ref:`m_isOpen<doxid-struct_member_io_file_iface_m_isopen>`
+
+	// properties
+
+	:ref:`uint64_t<doxid-typedef_uint64_t>` const property :ref:`m_size<doxid-property_io_file_m_size>` 
+	:ref:`uint64_t<doxid-typedef_uint64_t>` property :ref:`m_position<doxid-property_io_file_m_position>` 
+
+	// methods
+
+	bool errorcode :ref:`open<doxid-function_io_file_open>` (
+	    char const* name,
+	    :ref:`io.FileOpenFlags<doxid-type_io_fileopenflags>` flags = 0
+	    )
+
+	void :ref:`close<doxid-function_io_file_close>` ()
+	bool errorcode setSize (:ref:`uint64_t<doxid-typedef_uint64_t>` size)
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode :ref:`read<doxid-function_io_file_read>` (
+	    void* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode :ref:`write<doxid-function_io_file_write>` (
+	    void const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+	bool errorcode flush ()
+
+	// aliases
+
+	alias :ref:`dispose<doxid-alias_io_file_dispose>` = close
+
+.. _details-doxid-type_io_file:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This class provides a standard synchronous interface for reading from
+and writing to files or devices.
+
+All the methods of this class are mapped directly to underlying Operating
+System API (not to the C-runtime library). A typical sequence of steps when
+working with a file usually looks like this:
+
+* Open a file with ``open`` method;
+* Read from the file using ``read`` method;
+* Write to the file using ``write`` method;
+* Close the file with ``close`` method.
+
+It's recommended to use disposable pattern when working with local file
+variables. Whether or not to use exception semantics or a traditional error
+code depends on what deems to be more convenient in each particular case.
+
+.. rubric:: Sample code:
+
+.. ref-code-block::
+
+    foo (void const* data)
+    {
+        disposable io.File file;
+        file.open ("data.txt");
+        file.write (data, dynamic sizeof (data));
+        // ...
+
+    catch:
+        // handle the error
+    } // file will be closed no matter how we leave the function
+
+
+
+.. rubric:: See also:
+
+`io.FileStream`, `io.MappedFile`
+
+Fields
+------
+
+.. _doxid-struct_member_io_file_iface_m_isopen:
+.. _cid-io.file.m_isopen:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	bool readonly m_isOpen
+
+Holds the open status for the file, i.e. ``true`` if opened; ``false``
+otherwise.
+
+Properties
+----------
+
+.. _doxid-property_io_file_m_size:
+.. _cid-io.file.m_size:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`uint64_t<doxid-typedef_uint64_t>` const property m_size 
+
+This property is used for getting and setting file size.
+
+Reading from this property returns current size of the file; writing to
+it sets new size [#f3]_.
+
+.. _doxid-property_io_file_m_position:
+.. _cid-io.file.m_position:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`uint64_t<doxid-typedef_uint64_t>` property m_position 
+
+This property is used for getting and setting [#f3]_ current file
+position, i.e. the offset at which file contents will be accessed by
+``read`` and ``write`` methods.
+
+Accessing this property for sequential devices (which do not support
+access at random-offset) likely results in exception being thrown
+(unless the underlying OS silently ignores position read/write and does
+not return any IO error).
+
+Methods
+-------
+
+.. _doxid-function_io_file_open:
+.. _cid-io.file.open:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	bool errorcode open (
+	    char const* name,
+	    :ref:`io.FileOpenFlags<doxid-type_io_fileopenflags>` flags = 0
+	    )
+
+Opens or creates a file or device.
+
+The function accepts two arguments. The first one, ``name`` specifies
+the name of the file/device. The second one, ``flags``, can be used to
+specify open options. Check `io.FileOpenFlags` for the complete list of
+options.
+
+Returns ``true`` on success. If file or device could not be opened, IO
+error supplied by operating system is set and then the function returns
+``false`` [#f1]_.
+
+.. _doxid-function_io_file_close:
+.. _cid-io.file.close:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	void close ()
+
+Closes a previously opened file, does nothing if the file is not opened.
+This function always succeeds.
+
+Sometimes it may be convenient to use *disposable* pattern to ensure
+timely invokation of ``close`` [#f2]_.
+
+.. _doxid-function_io_file_read:
+.. _cid-io.file.read:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode read (
+	    void* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+Attempts to read up to ``size`` bytes from file into the buffer pointed
+to by ``p``.
+
+Returns the actual amount of bytes read or ``-1`` if error occurs.
+
+If read operation is unsuccessful, IO error supplied by the operating
+system is set and then the function returns ``-1`` [#f1]_.
+
+If this function is called when there is no incoming data on the opened
+device, it blocks until either the data arrives, or the file is closed.
+
+.. _doxid-function_io_file_write:
+.. _cid-io.file.write:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode write (
+	    void const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+Attempts to write ``size`` bytes from the buffer pointed to by ``p``
+into the file.
+
+Returns the actual amount of bytes written on success. If write
+operation is unsuccessful, IO error supplied by the operating system is
+set and then the function returns ``-1`` [#f1]_.
+
+Aliases
+-------
+
+.. _doxid-alias_io_file_dispose:
+.. _cid-io.file.dispose:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	alias dispose = close
+
+Effectively makes ``io.File`` a *disposable* class [#f2]_.
+
+---------------------
+
+.. rubric:: Footnotes
+
+.. [#f3]
+
+	|footnote-set-property-fail|
+
+.. [#f1]
+
+	|footnote-errorcode|
+
+.. [#f2]
+
+	|footnote-disposable|
+

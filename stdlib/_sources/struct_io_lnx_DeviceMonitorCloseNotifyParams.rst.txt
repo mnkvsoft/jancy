@@ -1,0 +1,24 @@
+.. include:: def.rst
+.. index:: pair: struct; io.lnx.DeviceMonitorCloseNotifyParams
+.. _doxid-type_io_lnx_devicemonitorclosenotifyparams:
+.. _cid-io.lnx.devicemonitorclosenotifyparams:
+
+struct io.lnx.DeviceMonitorCloseNotifyParams
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_lnx_devicemonitorclosenotifyparams_m_fileid:
+.. _cid-io.lnx.devicemonitorclosenotifyparams.m_fileid:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_fileId
+

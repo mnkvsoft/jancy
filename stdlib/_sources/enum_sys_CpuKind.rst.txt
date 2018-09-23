@@ -1,0 +1,30 @@
+.. include:: def.rst
+.. index:: pair: enum; sys.CpuKind
+.. _doxid-type_sys_cpukind:
+.. _cid-sys.cpukind:
+
+enum sys.CpuKind
+================
+
+
+
+
+
+.. _doxid-enum_member_sys_cpukind_ia32:
+.. _cid-sys.cpukind.ia32:
+.. _doxid-enum_member_sys_cpukind_amd64:
+.. _cid-sys.cpukind.amd64:
+.. _doxid-enum_member_sys_cpukind_arm32:
+.. _cid-sys.cpukind.arm32:
+.. _doxid-enum_member_sys_cpukind_arm64:
+.. _cid-sys.cpukind.arm64:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Ia32 
+	Amd64 
+	Arm32 
+	Arm64 
+

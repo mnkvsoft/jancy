@@ -1,0 +1,20 @@
+.. index:: pair: struct; jnc_Variable
+.. _doxid-structjnc___variable:
+.. _cid-jnc_variable:
+
+struct jnc_Variable
+===================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Variable.h>
+
+
+Opaque structure used as a handle to Jancy variable.
+
+    Use functions from the :ref:`Variable <cid-variable>` to access and manage the contents of this structure.
+

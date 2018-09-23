@@ -1,0 +1,29 @@
+.. index:: pair: struct; jnc_BaseTypeSlotFuncTable
+.. _doxid-structjnc___base_type_slot_func_table:
+.. _cid-jnc_basetypeslotfunctable:
+
+struct jnc_BaseTypeSlotFuncTable
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___base_type_slot_func_table_1ac8b58bbb75f8e4dd99c51d61c5f79aa3:
+.. _cid-jnc_basetypeslotfunctable::m_size:
+.. _doxid-structjnc___base_type_slot_func_table_1ac61ada4a559029fde33a400a0dd2d73f:
+.. _cid-jnc_basetypeslotfunctable::m_getoffsetfunc:
+.. _doxid-structjnc___base_type_slot_func_table_1ad95b6fb2d7807a15402bbc954f5c3341:
+.. _cid-jnc_basetypeslotfunctable::m_getvtableindexfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_BaseTypeSlot_GetOffsetFunc* m_getOffsetFunc
+	jnc_BaseTypeSlot_GetVTableIndexFunc* m_getVTableIndexFunc
+

@@ -1,0 +1,87 @@
+.. include:: def.rst
+.. index:: pair: struct; std.ListEntry
+.. _doxid-type_std_listentry:
+.. _cid-std.listentry:
+
+struct std.ListEntry
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "std_List.jnc"
+
+
+Overview
+~~~~~~~~
+
+This struct holds information about a single entry of a doubly linked list. :ref:`More...<details-doxid-type_std_listentry>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`std.ListEntry<doxid-type_std_listentry>` cmut* readonly :ref:`m_next<doxid-struct_member_std_listentry_m_next>`
+	:ref:`std.ListEntry<doxid-type_std_listentry>` cmut* readonly :ref:`m_prev<doxid-struct_member_std_listentry_m_prev>`
+	:ref:`intptr_t<doxid-typedef_intptr_t>` readonly :ref:`m_validator<doxid-struct_member_std_listentry_m_validator>`
+	variant :ref:`m_data<doxid-struct_member_std_listentry_m_data>`
+
+.. _details-doxid-type_std_listentry:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This struct holds information about a single entry of a doubly linked list.
+
+
+
+.. rubric:: See also:
+
+`std.List`
+
+Fields
+------
+
+.. _doxid-struct_member_std_listentry_m_next:
+.. _cid-std.listentry.m_next:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`std.ListEntry<doxid-type_std_listentry>` cmut* readonly m_next
+
+Holds a pointer to the next list entry on the list or ``null`` if this
+is the last entry.
+
+.. _doxid-struct_member_std_listentry_m_prev:
+.. _cid-std.listentry.m_prev:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`std.ListEntry<doxid-type_std_listentry>` cmut* readonly m_prev
+
+Holds a pointer to the previous list entry on the list or ``null`` if
+this is the first entry.
+
+.. _doxid-struct_member_std_listentry_m_validator:
+.. _cid-std.listentry.m_validator:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`intptr_t<doxid-typedef_intptr_t>` readonly m_validator
+
+Opaque field used for internal validation of the list entry. Must be
+ignored in user code.
+
+.. _doxid-struct_member_std_listentry_m_data:
+.. _cid-std.listentry.m_data:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	variant m_data
+
+Holds the actual ``variant`` data value of the list entry.
+

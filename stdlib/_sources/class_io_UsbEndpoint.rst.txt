@@ -1,0 +1,101 @@
+.. include:: def.rst
+.. index:: pair: class; io.UsbEndpoint
+.. _doxid-type_io_usbendpoint:
+.. _cid-io.usbendpoint:
+
+class io.UsbEndpoint
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_usbendpoint_iface_m_parentinterface:
+.. _cid-io.usbendpoint.m_parentinterface:
+.. _doxid-struct_member_io_usbendpoint_iface_m_endpointdesc:
+.. _cid-io.usbendpoint.m_endpointdesc:
+.. _doxid-struct_member_io_usbendpoint_iface_m_activeevents:
+.. _cid-io.usbendpoint.m_activeevents:
+.. _doxid-struct_member_io_usbendpoint_iface_m_ioerror:
+.. _cid-io.usbendpoint.m_ioerror:
+.. _doxid-struct_member_io_usbendpoint_iface_m_isopen:
+.. _cid-io.usbendpoint.m_isopen:
+.. _doxid-property_io_usbendpoint_m_transfertimeout:
+.. _cid-io.usbendpoint.m_transfertimeout:
+.. _doxid-property_io_usbendpoint_m_readparallelism:
+.. _cid-io.usbendpoint.m_readparallelism:
+.. _doxid-property_io_usbendpoint_m_readblocksize:
+.. _cid-io.usbendpoint.m_readblocksize:
+.. _doxid-property_io_usbendpoint_m_readbuffersize:
+.. _cid-io.usbendpoint.m_readbuffersize:
+.. _doxid-property_io_usbendpoint_m_writebuffersize:
+.. _cid-io.usbendpoint.m_writebuffersize:
+.. _doxid-property_io_usbendpoint_m_options:
+.. _cid-io.usbendpoint.m_options:
+.. _doxid-function_io_usbendpoint_close:
+.. _cid-io.usbendpoint.close:
+.. _doxid-function_io_usbendpoint_read:
+.. _cid-io.usbendpoint.read:
+.. _doxid-function_io_usbendpoint_write:
+.. _cid-io.usbendpoint.write:
+.. _doxid-function_io_usbendpoint_wait:
+.. _cid-io.usbendpoint.wait:
+.. _doxid-function_io_usbendpoint_cancelwait:
+.. _cid-io.usbendpoint.cancelwait:
+.. _doxid-function_io_usbendpoint_blockingwait:
+.. _cid-io.usbendpoint.blockingwait:
+.. _doxid-alias_io_usbendpoint_dispose:
+.. _cid-io.usbendpoint.dispose:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`io.UsbInterface<doxid-type_io_usbinterface>`* const m_parentInterface
+	:ref:`io.UsbEndpointDesc<doxid-type_io_usbendpointdesc>` const* const m_endpointDesc
+	:ref:`io.UsbEndpointEvents<doxid-type_io_usbendpointevents>` readonly volatile m_activeEvents
+	:ref:`std.Error<doxid-type_std_error>` const* readonly volatile m_ioError
+	bool readonly m_isOpen
+
+	// properties
+
+	:ref:`uint_t<doxid-typedef_uint_t>` autoget property m_transferTimeout 
+	:ref:`uint_t<doxid-typedef_uint_t>` autoget property m_readParallelism 
+	:ref:`size_t<doxid-typedef_size_t>` autoget property m_readBlockSize 
+	:ref:`size_t<doxid-typedef_size_t>` autoget property m_readBufferSize 
+	:ref:`size_t<doxid-typedef_size_t>` autoget property m_writeBufferSize 
+	:ref:`io.UsbEndpointOptions<doxid-type_io_usbendpointoptions>` autoget property m_options 
+
+	// methods
+
+	void close ()
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode read (
+	    void* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode write (
+	    void const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size
+	    )
+
+	long errorcode wait (
+	    :ref:`io.UsbEndpointEvents<doxid-type_io_usbendpointevents>` eventMask,
+	    void function* handler (io.UsbEndpointEvents triggeredEvents)
+	    )
+
+	bool errorcode cancelWait (long handle)
+
+	:ref:`io.UsbEndpointEvents<doxid-type_io_usbendpointevents>` errorcode blockingWait (
+	    :ref:`io.UsbEndpointEvents<doxid-type_io_usbendpointevents>` eventMask,
+	    :ref:`uint_t<doxid-typedef_uint_t>` timeout = - 1
+	    )
+
+	// aliases
+
+	alias dispose = close
+

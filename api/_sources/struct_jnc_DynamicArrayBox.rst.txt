@@ -1,0 +1,39 @@
+.. index:: pair: struct; jnc_DynamicArrayBox
+.. _doxid-structjnc___dynamic_array_box:
+.. _cid-jnc_dynamicarraybox:
+
+struct jnc_DynamicArrayBox
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___dynamic_array_box_1ab8954a26f0ea4c407bbe2f2594b87333:
+.. _cid-jnc_dynamicarraybox::m_box:
+.. _doxid-structjnc___dynamic_array_box_1a6fc01867bf00a273be7375960d5693e5:
+.. _cid-jnc_dynamicarraybox::m_count:
+.. _doxid-structjnc___dynamic_array_box_1a3217874d35f9ad832b0d5b21badc36dd:
+.. _cid-jnc_dynamicarraybox::m_padding:
+.. _doxid-structjnc___dynamic_array_box_1a5d8692cfaae8bbd6c06c44c44ca8d33c:
+.. _cid-jnc_dynamicarraybox::@7:
+.. _doxid-structjnc___dynamic_array_box_1a88caee5a7aa551dd7e1e15da3fdbcdb7:
+.. _cid-jnc_dynamicarraybox::m_validator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_Box<doxid-structjnc___box>` m_box
+
+	union
+	{
+	    size_t m_count
+	    uint64_t m_padding
+	}
+
+	:ref:`jnc_DataPtrValidator<doxid-structjnc___data_ptr_validator>` m_validator
+

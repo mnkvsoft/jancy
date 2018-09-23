@@ -1,0 +1,48 @@
+.. include:: def.rst
+.. index:: pair: struct; io.UsbInterfaceDesc
+.. _doxid-type_io_usbinterfacedesc:
+.. _cid-io.usbinterfacedesc:
+
+struct io.UsbInterfaceDesc
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_usbinterfacedesc_m_nextaltsettinginterface:
+.. _cid-io.usbinterfacedesc.m_nextaltsettinginterface:
+.. _doxid-struct_member_io_usbinterfacedesc_m_endpointtable:
+.. _cid-io.usbinterfacedesc.m_endpointtable:
+.. _doxid-struct_member_io_usbinterfacedesc_m_endpointcount:
+.. _cid-io.usbinterfacedesc.m_endpointcount:
+.. _doxid-struct_member_io_usbinterfacedesc_m_interfaceid:
+.. _cid-io.usbinterfacedesc.m_interfaceid:
+.. _doxid-struct_member_io_usbinterfacedesc_m_altsettingid:
+.. _cid-io.usbinterfacedesc.m_altsettingid:
+.. _doxid-struct_member_io_usbinterfacedesc_m_descriptionstringid:
+.. _cid-io.usbinterfacedesc.m_descriptionstringid:
+.. _doxid-struct_member_io_usbinterfacedesc_m_class:
+.. _cid-io.usbinterfacedesc.m_class:
+.. _doxid-struct_member_io_usbinterfacedesc_m_subclass:
+.. _cid-io.usbinterfacedesc.m_subclass:
+.. _doxid-struct_member_io_usbinterfacedesc_m_protocol:
+.. _cid-io.usbinterfacedesc.m_protocol:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`io.UsbInterfaceDesc<doxid-type_io_usbinterfacedesc>` const* m_nextAltSettingInterface
+	:ref:`io.UsbEndpointDesc<doxid-type_io_usbendpointdesc>` const* m_endpointTable
+	:ref:`size_t<doxid-typedef_size_t>` m_endpointCount
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_interfaceId
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_altSettingId
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_descriptionStringId
+	:ref:`io.UsbClass<doxid-type_io_usbclass>` m_class
+	:ref:`io.UsbSpeed<doxid-type_io_usbspeed>` m_subClass
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_protocol
+

@@ -1,0 +1,23 @@
+.. index:: pair: enum; jnc_EnumTypeFlag
+.. _doxid-group__enum-type_1gaf8769e3605db62644e86830f352f44b0:
+.. _cid-jnc_enumtypeflag:
+
+enum jnc_EnumTypeFlag
+=====================
+
+
+
+
+
+.. _doxid-group__enum-type_1ggaf8769e3605db62644e86830f352f44b0a5cd52584212ea9d047fc9fa7027fbd16:
+.. _cid-jnc_enumtypeflag::jnc_enumtypeflag_exposed:
+.. _doxid-group__enum-type_1ggaf8769e3605db62644e86830f352f44b0a2fc342264cedd2123a51b2df49073208:
+.. _cid-jnc_enumtypeflag::jnc_enumtypeflag_bitflag:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_EnumTypeFlag_Exposed = 0x010000
+	jnc_EnumTypeFlag_BitFlag = 0x020000
+

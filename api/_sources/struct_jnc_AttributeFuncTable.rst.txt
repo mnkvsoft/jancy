@@ -1,0 +1,23 @@
+.. index:: pair: struct; jnc_AttributeFuncTable
+.. _doxid-structjnc___attribute_func_table:
+.. _cid-jnc_attributefunctable:
+
+struct jnc_AttributeFuncTable
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___attribute_func_table_1ad23d3ea5fea9b0a59e6264dd9476006c:
+.. _cid-jnc_attributefunctable::m_size:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+

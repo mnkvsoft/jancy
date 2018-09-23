@@ -1,0 +1,39 @@
+.. index:: pair: group; Variable
+.. _doxid-group__variable:
+.. _cid-variable:
+
+Variable
+========
+
+.. toctree::
+	:hidden:
+
+	struct_jnc_Variable.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Variable.h>
+
+
+
+
+.. _doxid-group__variable_1gabff79d8e480a3b92be8f96ec622ae9b1:
+.. _cid-jnc_variable_hasinitializer:
+.. _doxid-group__variable_1ga230f7b49b77a1b49da82dfd6c7c8a953:
+.. _cid-jnc_variable_getinitializerstring_v:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`jnc_Variable<doxid-structjnc___variable>` 
+
+	// global functions
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variable_hasInitializer (:ref:`jnc_Variable<doxid-structjnc___variable>`* variable)
+
+	const char*
+	jnc_Variable_getInitializerString_v (:ref:`jnc_Variable<doxid-structjnc___variable>`* variable)
+

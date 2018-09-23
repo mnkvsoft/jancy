@@ -1,0 +1,95 @@
+.. index:: pair: struct; jnc_GcHeapFuncTable
+.. _doxid-structjnc___gc_heap_func_table:
+.. _cid-jnc_gcheapfunctable:
+
+struct jnc_GcHeapFuncTable
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___gc_heap_func_table_1a713198bd7904d2072829382b8bd15ba7:
+.. _cid-jnc_gcheapfunctable::m_size:
+.. _doxid-structjnc___gc_heap_func_table_1a7e58ff55311735ee73f8d1f9fd701b77:
+.. _cid-jnc_gcheapfunctable::m_getruntimefunc:
+.. _doxid-structjnc___gc_heap_func_table_1ab4a03d7c9df0bd2275100c4eba23a4a9:
+.. _cid-jnc_gcheapfunctable::m_getstatsfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a82b8fe6e1b94e8885212c12ca8e66768:
+.. _cid-jnc_gcheapfunctable::m_getsizetriggersfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a1c21d302014057debc2695e1d4e538da:
+.. _cid-jnc_gcheapfunctable::m_setsizetriggersfunc:
+.. _doxid-structjnc___gc_heap_func_table_1ab111d2ce3c2e70205afab618ce81cd99:
+.. _cid-jnc_gcheapfunctable::m_collectfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a9db44dde585ba2a67ddf1746eb204abd:
+.. _cid-jnc_gcheapfunctable::m_enternocollectregionfunc:
+.. _doxid-structjnc___gc_heap_func_table_1aabc1b028af39eb53afcd46e3401902f4:
+.. _cid-jnc_gcheapfunctable::m_leavenocollectregionfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a5f6fe5ba5f2c45fe8a9885eaa4999528:
+.. _cid-jnc_gcheapfunctable::m_enterwaitregionfunc:
+.. _doxid-structjnc___gc_heap_func_table_1abaa39a00e24a9047b4fa1921e6a14633:
+.. _cid-jnc_gcheapfunctable::m_leavewaitregionfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a8e1a4d7b6d594e2a8b3bee4c605fd743:
+.. _cid-jnc_gcheapfunctable::m_allocateclassfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a2daee157ddd253dcf2db6a0e9164c068:
+.. _cid-jnc_gcheapfunctable::m_tryallocateclassfunc:
+.. _doxid-structjnc___gc_heap_func_table_1aa2241805c0b137a034a828512249c83a:
+.. _cid-jnc_gcheapfunctable::m_allocatedatafunc:
+.. _doxid-structjnc___gc_heap_func_table_1a5d7c24dd2a4c4f712b6afb9f3c6f7b67:
+.. _cid-jnc_gcheapfunctable::m_tryallocatedatafunc:
+.. _doxid-structjnc___gc_heap_func_table_1ab54e34f3a5e7282028094a2b7e3bc146:
+.. _cid-jnc_gcheapfunctable::m_allocatearrayfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a77d28b48f075ccf9bb6a6f580bf3dfb5:
+.. _cid-jnc_gcheapfunctable::m_tryallocatearrayfunc:
+.. _doxid-structjnc___gc_heap_func_table_1acd7f9fd08b65555fb0df0327b95d0556:
+.. _cid-jnc_gcheapfunctable::m_allocatebufferfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a950c09be0cb5fec9979f985d8c5994dc:
+.. _cid-jnc_gcheapfunctable::m_tryallocatebufferfunc:
+.. _doxid-structjnc___gc_heap_func_table_1ac29aba5c69e7ed2631ae3e9718304e76:
+.. _cid-jnc_gcheapfunctable::m_createdataptrvalidatorfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a4267eaec0d5203d8e1000cf612bed8a5:
+.. _cid-jnc_gcheapfunctable::m_getdynamiclayoutfunc:
+.. _doxid-structjnc___gc_heap_func_table_1ac2178db8c0ebddfd684643398e568301:
+.. _cid-jnc_gcheapfunctable::m_resetdynamiclayoutfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a4cc6f8822508ca9411aa5038efc1aa0e:
+.. _cid-jnc_gcheapfunctable::m_weakmarkfunc:
+.. _doxid-structjnc___gc_heap_func_table_1aecb31d66aa51679766cf4db37df0bed2:
+.. _cid-jnc_gcheapfunctable::m_markdatafunc:
+.. _doxid-structjnc___gc_heap_func_table_1a061bcaa15401d1535be35ddab283a435:
+.. _cid-jnc_gcheapfunctable::m_markclassfunc:
+.. _doxid-structjnc___gc_heap_func_table_1a6aa15e8fdfce3cdd4f9d2c68bcb1569c:
+.. _cid-jnc_gcheapfunctable::m_addboxtocallsitefunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_GcHeap_GetRuntimeFunc* m_getRuntimeFunc
+	jnc_GcHeap_GetStatsFunc* m_getStatsFunc
+	jnc_GcHeap_GetSizeTriggersFunc* m_getSizeTriggersFunc
+	jnc_GcHeap_SetSizeTriggersFunc* m_setSizeTriggersFunc
+	jnc_GcHeap_CollectFunc* m_collectFunc
+	jnc_GcHeap_EnterNoCollectRegionFunc* m_enterNoCollectRegionFunc
+	jnc_GcHeap_LeaveNoCollectRegionFunc* m_leaveNoCollectRegionFunc
+	jnc_GcHeap_EnterWaitRegionFunc* m_enterWaitRegionFunc
+	jnc_GcHeap_LeaveWaitRegionFunc* m_leaveWaitRegionFunc
+	jnc_GcHeap_AllocateClassFunc* m_allocateClassFunc
+	jnc_GcHeap_AllocateClassFunc* m_tryAllocateClassFunc
+	jnc_GcHeap_AllocateDataFunc* m_allocateDataFunc
+	jnc_GcHeap_AllocateDataFunc* m_tryAllocateDataFunc
+	jnc_GcHeap_AllocateArrayFunc* m_allocateArrayFunc
+	jnc_GcHeap_AllocateArrayFunc* m_tryAllocateArrayFunc
+	jnc_GcHeap_AllocateBufferFunc* m_allocateBufferFunc
+	jnc_GcHeap_AllocateBufferFunc* m_tryAllocateBufferFunc
+	jnc_GcHeap_CreateDataPtrValidatorFunc* m_createDataPtrValidatorFunc
+	jnc_GcHeap_GetDynamicLayoutFunc* m_getDynamicLayoutFunc
+	jnc_GcHeap_ResetDynamicLayoutFunc* m_resetDynamicLayoutFunc
+	jnc_GcHeap_WeakMarkFunc* m_weakMarkFunc
+	jnc_GcHeap_MarkDataFunc* m_markDataFunc
+	jnc_GcHeap_MarkClassFunc* m_markClassFunc
+	jnc_GcHeap_AddBoxToCallSiteFunc* m_addBoxToCallSiteFunc
+

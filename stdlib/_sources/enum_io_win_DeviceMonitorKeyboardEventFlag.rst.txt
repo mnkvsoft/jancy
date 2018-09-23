@@ -1,0 +1,30 @@
+.. include:: def.rst
+.. index:: pair: enum; io.win.DeviceMonitorKeyboardEventFlag
+.. _doxid-type_io_win_devicemonitorkeyboardeventflag:
+.. _cid-io.win.devicemonitorkeyboardeventflag:
+
+enum io.win.DeviceMonitorKeyboardEventFlag
+==========================================
+
+
+
+
+
+.. _doxid-enum_member_io_win_devicemonitorkeyboardeventflag_devicemonitorkeyboardeventflag_pressed:
+.. _cid-io.win.devicemonitorkeyboardeventflag.devicemonitorkeyboardeventflag_pressed:
+.. _doxid-enum_member_io_win_devicemonitorkeyboardeventflag_devicemonitorkeyboardeventflag_released:
+.. _cid-io.win.devicemonitorkeyboardeventflag.devicemonitorkeyboardeventflag_released:
+.. _doxid-enum_member_io_win_devicemonitorkeyboardeventflag_devicemonitorkeyboardeventflag_extendedscancode:
+.. _cid-io.win.devicemonitorkeyboardeventflag.devicemonitorkeyboardeventflag_extendedscancode:
+.. _doxid-enum_member_io_win_devicemonitorkeyboardeventflag_devicemonitorkeyboardeventflag_extendedscancode2:
+.. _cid-io.win.devicemonitorkeyboardeventflag.devicemonitorkeyboardeventflag_extendedscancode2:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	DeviceMonitorKeyboardEventFlag_Pressed = 0x01
+	DeviceMonitorKeyboardEventFlag_Released = 0x02
+	DeviceMonitorKeyboardEventFlag_ExtendedScanCode = 0x04
+	DeviceMonitorKeyboardEventFlag_ExtendedScanCode2 = 0x08
+

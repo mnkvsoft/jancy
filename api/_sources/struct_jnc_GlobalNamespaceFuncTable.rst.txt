@@ -1,0 +1,23 @@
+.. index:: pair: struct; jnc_GlobalNamespaceFuncTable
+.. _doxid-structjnc___global_namespace_func_table:
+.. _cid-jnc_globalnamespacefunctable:
+
+struct jnc_GlobalNamespaceFuncTable
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___global_namespace_func_table_1a947452fd31631127aa3222a6ffc66ff3:
+.. _cid-jnc_globalnamespacefunctable::m_size:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+

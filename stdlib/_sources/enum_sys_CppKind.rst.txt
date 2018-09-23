@@ -1,0 +1,30 @@
+.. include:: def.rst
+.. index:: pair: enum; sys.CppKind
+.. _doxid-type_sys_cppkind:
+.. _cid-sys.cppkind:
+
+enum sys.CppKind
+================
+
+
+
+
+
+.. _doxid-enum_member_sys_cppkind_msc:
+.. _cid-sys.cppkind.msc:
+.. _doxid-enum_member_sys_cppkind_gcc:
+.. _cid-sys.cppkind.gcc:
+.. _doxid-enum_member_sys_cppkind_icc:
+.. _cid-sys.cppkind.icc:
+.. _doxid-enum_member_sys_cppkind_clang:
+.. _cid-sys.cppkind.clang:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Msc 
+	Gcc 
+	Icc 
+	Clang 
+

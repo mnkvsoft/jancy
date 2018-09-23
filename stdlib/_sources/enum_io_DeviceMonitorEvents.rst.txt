@@ -1,0 +1,63 @@
+.. include:: def.rst
+.. index:: pair: enum; io.DeviceMonitorEvents
+.. _doxid-type_io_devicemonitorevents:
+.. _cid-io.devicemonitorevents:
+
+bitflag enum io.DeviceMonitorEvents
+===================================
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`IoError<doxid-enum_member_io_devicemonitorevents_ioerror>` 
+	:ref:`IncomingData<doxid-enum_member_io_devicemonitorevents_incomingdata>` 
+	:ref:`ReadBufferFull<doxid-enum_member_io_devicemonitorevents_readbufferfull>` 
+
+.. _details-doxid-type_io_devicemonitorevents:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_devicemonitorevents_ioerror:
+.. _cid-io.devicemonitorevents.ioerror:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IoError
+
+An IO error occured on the device monitor; detailed information about
+the error is available at `io.DeviceMonitor.m_ioError`.
+
+.. _doxid-enum_member_io_devicemonitorevents_incomingdata:
+.. _cid-io.devicemonitorevents.incomingdata:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IncomingData
+
+Incoming data is available on the device monitor; this data could be
+fetched with `io.DeviceMonitor.read`.
+
+.. _doxid-enum_member_io_devicemonitorevents_readbufferfull:
+.. _cid-io.devicemonitorevents.readbufferfull:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	ReadBufferFull
+
+Device monitor receive buffer is full.
+

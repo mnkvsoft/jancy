@@ -1,0 +1,26 @@
+.. index:: pair: struct; jnc_DataBox
+.. _doxid-structjnc___data_box:
+.. _cid-jnc_databox:
+
+struct jnc_DataBox
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___data_box_1a3e392c3ae45cc945b1f7b5b4ea4eecf7:
+.. _cid-jnc_databox::m_box:
+.. _doxid-structjnc___data_box_1a5860ca1b6c4ccf0369d62fb87bd8cc8b:
+.. _cid-jnc_databox::m_validator:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_Box<doxid-structjnc___box>` m_box
+	:ref:`jnc_DataPtrValidator<doxid-structjnc___data_ptr_validator>` m_validator
+

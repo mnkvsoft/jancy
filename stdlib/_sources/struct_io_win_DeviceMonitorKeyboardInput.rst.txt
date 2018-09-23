@@ -1,0 +1,36 @@
+.. include:: def.rst
+.. index:: pair: struct; io.win.DeviceMonitorKeyboardInput
+.. _doxid-type_io_win_devicemonitorkeyboardinput:
+.. _cid-io.win.devicemonitorkeyboardinput:
+
+struct io.win.DeviceMonitorKeyboardInput
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_win_devicemonitorkeyboardinput_m_unitid:
+.. _cid-io.win.devicemonitorkeyboardinput.m_unitid:
+.. _doxid-struct_member_io_win_devicemonitorkeyboardinput_m_scancode:
+.. _cid-io.win.devicemonitorkeyboardinput.m_scancode:
+.. _doxid-struct_member_io_win_devicemonitorkeyboardinput_m_flags:
+.. _cid-io.win.devicemonitorkeyboardinput.m_flags:
+.. _doxid-struct_member_io_win_devicemonitorkeyboardinput_m_reserved:
+.. _cid-io.win.devicemonitorkeyboardinput.m_reserved:
+.. _doxid-struct_member_io_win_devicemonitorkeyboardinput_m_extrainformation:
+.. _cid-io.win.devicemonitorkeyboardinput.m_extrainformation:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_unitId
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_scanCode
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_flags
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_reserved
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_extraInformation
+

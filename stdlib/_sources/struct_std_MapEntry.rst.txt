@@ -1,0 +1,33 @@
+.. include:: def.rst
+.. index:: pair: struct; std.MapEntry
+.. _doxid-type_std_mapentry:
+.. _cid-std.mapentry:
+
+struct std.MapEntry
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_std_mapentry_m_next:
+.. _cid-std.mapentry.m_next:
+.. _doxid-struct_member_std_mapentry_m_prev:
+.. _cid-std.mapentry.m_prev:
+.. _doxid-struct_member_std_mapentry_m_key:
+.. _cid-std.mapentry.m_key:
+.. _doxid-struct_member_std_mapentry_m_value:
+.. _cid-std.mapentry.m_value:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`std.MapEntry<doxid-type_std_mapentry>` cmut* readonly m_next
+	:ref:`std.MapEntry<doxid-type_std_mapentry>` cmut* readonly m_prev
+	variant const m_key
+	variant m_value
+

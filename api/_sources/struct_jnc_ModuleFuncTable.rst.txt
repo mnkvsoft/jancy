@@ -1,0 +1,86 @@
+.. index:: pair: struct; jnc_ModuleFuncTable
+.. _doxid-structjnc___module_func_table:
+.. _cid-jnc_modulefunctable:
+
+struct jnc_ModuleFuncTable
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___module_func_table_1ab83a3f6f3038a853bf771343038b12f2:
+.. _cid-jnc_modulefunctable::m_size:
+.. _doxid-structjnc___module_func_table_1a876e0af2cc9e9e274c56d86a080dd146:
+.. _cid-jnc_modulefunctable::m_createfunc:
+.. _doxid-structjnc___module_func_table_1ab808e7c8a50ff9c7d63d08a7d1ff0035:
+.. _cid-jnc_modulefunctable::m_destroyfunc:
+.. _doxid-structjnc___module_func_table_1a2e28818371f8c33d8d10e3de3fc553ae:
+.. _cid-jnc_modulefunctable::m_clearfunc:
+.. _doxid-structjnc___module_func_table_1a1bf003dcc0df20658021b1d7e5c73194:
+.. _cid-jnc_modulefunctable::m_initializefunc:
+.. _doxid-structjnc___module_func_table_1ada275b744060b1201283f3baaec4b4a4:
+.. _cid-jnc_modulefunctable::m_getglobalnamespacefunc:
+.. _doxid-structjnc___module_func_table_1a6e9d011d12d212bd3aed47ccdfe2996b:
+.. _cid-jnc_modulefunctable::m_getprimitivetypefunc:
+.. _doxid-structjnc___module_func_table_1ac9c3e3b901b2512534083118015c3a5d:
+.. _cid-jnc_modulefunctable::m_finditemfunc:
+.. _doxid-structjnc___module_func_table_1a0233a7ddf69147b964612303cf6707b9:
+.. _cid-jnc_modulefunctable::m_mapvariablefunc:
+.. _doxid-structjnc___module_func_table_1ac93f003df3c37a0f98200e085fd16c37:
+.. _cid-jnc_modulefunctable::m_mapfunctionfunc:
+.. _doxid-structjnc___module_func_table_1a2d7ae76c01d8c094a89b616d4a2a09a5:
+.. _cid-jnc_modulefunctable::m_addsourcefunc:
+.. _doxid-structjnc___module_func_table_1a4664c2b88670bdd33ef19cb66bf592d4:
+.. _cid-jnc_modulefunctable::m_addimportdirfunc:
+.. _doxid-structjnc___module_func_table_1aa7bf1e5cbb99cb22d3147bea94ae9636:
+.. _cid-jnc_modulefunctable::m_addimportfunc:
+.. _doxid-structjnc___module_func_table_1a017eed3a2698307da3435894f1413cdb:
+.. _cid-jnc_modulefunctable::m_addopaqueclasstypeinfofunc:
+.. _doxid-structjnc___module_func_table_1ac222d70729ac8cc7fcc7d4fb2f721cdf:
+.. _cid-jnc_modulefunctable::m_addstaticlibfunc:
+.. _doxid-structjnc___module_func_table_1a64f987f76176342a66198267795c7092:
+.. _cid-jnc_modulefunctable::m_parsefunc:
+.. _doxid-structjnc___module_func_table_1a2f0517460e3eb88e24cf0771b4ddc6f6:
+.. _cid-jnc_modulefunctable::m_parsefilefunc:
+.. _doxid-structjnc___module_func_table_1a466277e89350515e72830eeeed197577:
+.. _cid-jnc_modulefunctable::m_parseimportsfunc:
+.. _doxid-structjnc___module_func_table_1ab92e843d37abadf2a28c3661d63049bd:
+.. _cid-jnc_modulefunctable::m_calclayoutfunc:
+.. _doxid-structjnc___module_func_table_1a2ec86cb2140810a758fb4a0c4e700dc3:
+.. _cid-jnc_modulefunctable::m_compilefunc:
+.. _doxid-structjnc___module_func_table_1a162775e4bb92b927c0e5902b5bb14806:
+.. _cid-jnc_modulefunctable::m_jitfunc:
+.. _doxid-structjnc___module_func_table_1ae3f0d79d2f477a2fd2397b1204e3c3ca:
+.. _cid-jnc_modulefunctable::m_getllvmirstringfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_Module_CreateFunc* m_createFunc
+	jnc_Module_DestroyFunc* m_destroyFunc
+	jnc_Module_ClearFunc* m_clearFunc
+	jnc_Module_InitializeFunc* m_initializeFunc
+	jnc_Module_GetGlobalNamespaceFunc* m_getGlobalNamespaceFunc
+	jnc_Module_GetPrimitiveTypeFunc* m_getPrimitiveTypeFunc
+	jnc_Module_FindItemFunc* m_findItemFunc
+	jnc_Module_MapVariableFunc* m_mapVariableFunc
+	jnc_Module_MapFunctionFunc* m_mapFunctionFunc
+	jnc_Module_AddSourceFunc* m_addSourceFunc
+	jnc_Module_AddImportDirFunc* m_addImportDirFunc
+	jnc_Module_AddImportFunc* m_addImportFunc
+	jnc_Module_AddOpaqueClassTypeInfoFunc* m_addOpaqueClassTypeInfoFunc
+	jnc_Module_AddStaticLibFunc* m_addStaticLibFunc
+	jnc_Module_ParseFunc* m_parseFunc
+	jnc_Module_ParseFileFunc* m_parseFileFunc
+	jnc_Module_ParseImportsFunc* m_parseImportsFunc
+	jnc_Module_CalcLayoutFunc* m_calcLayoutFunc
+	jnc_Module_CompileFunc* m_compileFunc
+	jnc_Module_JitFunc* m_jitFunc
+	jnc_Module_getLlvmIrStringFunc* m_getLlvmIrStringFunc
+

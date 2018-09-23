@@ -1,0 +1,36 @@
+.. include:: def.rst
+.. index:: pair: struct; io.lnx.DeviceMonitorOpenNotifyParams
+.. _doxid-type_io_lnx_devicemonitoropennotifyparams:
+.. _cid-io.lnx.devicemonitoropennotifyparams:
+
+struct io.lnx.DeviceMonitorOpenNotifyParams
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_lnx_devicemonitoropennotifyparams_m_fileid:
+.. _cid-io.lnx.devicemonitoropennotifyparams.m_fileid:
+.. _doxid-struct_member_io_lnx_devicemonitoropennotifyparams_m_flags:
+.. _cid-io.lnx.devicemonitoropennotifyparams.m_flags:
+.. _doxid-struct_member_io_lnx_devicemonitoropennotifyparams_m_mode:
+.. _cid-io.lnx.devicemonitoropennotifyparams.m_mode:
+.. _doxid-struct_member_io_lnx_devicemonitoropennotifyparams_m_filenamelength:
+.. _cid-io.lnx.devicemonitoropennotifyparams.m_filenamelength:
+.. _doxid-struct_member_io_lnx_devicemonitoropennotifyparams__m_padding:
+.. _cid-io.lnx.devicemonitoropennotifyparams._m_padding:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_fileId
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_flags
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_mode
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_fileNameLength
+	:ref:`uint32_t<doxid-typedef_uint32_t>` _m_padding
+

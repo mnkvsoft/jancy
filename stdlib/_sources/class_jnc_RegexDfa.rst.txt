@@ -1,0 +1,50 @@
+.. include:: def.rst
+.. index:: pair: class; jnc.RegexDfa
+.. _doxid-type_jnc_regexdfa:
+.. _cid-jnc.regexdfa:
+
+class jnc.RegexDfa
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-function_jnc_regexdfa_clear:
+.. _cid-jnc.regexdfa.clear:
+.. _doxid-function_jnc_regexdfa_compile:
+.. _cid-jnc.regexdfa.compile:
+.. _doxid-function_jnc_regexdfa_incrementalcompile:
+.. _cid-jnc.regexdfa.incrementalcompile:
+.. _doxid-function_jnc_regexdfa_finalize:
+.. _cid-jnc.regexdfa.finalize:
+.. _doxid-function_jnc_regexdfa_match:
+.. _cid-jnc.regexdfa.match:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// methods
+
+	void clear ()
+
+	bool errorcode compile (
+	    char const* regexString,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	bool errorcode incrementalCompile (
+	    char const* regexString,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    )
+
+	bool errorcode finalize ()
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode match (
+	    :ref:`jnc.RegexState<doxid-type_jnc_regexstate>`* state,
+	    char const* p,
+	    :ref:`size_t<doxid-typedef_size_t>` length = - 1
+	    ) const
+

@@ -1,0 +1,189 @@
+.. index:: pair: group; Runtime
+.. _doxid-group__runtime:
+.. _cid-runtime:
+
+Runtime
+=======
+
+.. toctree::
+	:hidden:
+
+	enum_jnc_RuntimeDef.rst
+	struct_jnc_Runtime.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Runtime.h>
+
+
+
+
+.. _doxid-group__runtime_1gaa573d568bfc739061ac75179b3a84014:
+.. _cid-jnc_runtime_create:
+.. _doxid-group__runtime_1gae2964da65d670e8dd05d0de8c9579648:
+.. _cid-jnc_runtime_destroy:
+.. _doxid-group__runtime_1ga04976018377953bfde06c28a80210527:
+.. _cid-jnc_runtime_getmodule:
+.. _doxid-group__runtime_1ga21b3b4b1a0e521d19520b2a5ca973893:
+.. _cid-jnc_runtime_getgcheap:
+.. _doxid-group__runtime_1gacba6e5643838f8557a442be4a4fd6a0f:
+.. _cid-jnc_runtime_isaborted:
+.. _doxid-group__runtime_1ga9c3bc0f35b3dd728195eee0648bdd837:
+.. _cid-jnc_runtime_getstacksizelimit:
+.. _doxid-group__runtime_1gad03449b1ce3418a0fd3ca44bc0e36604:
+.. _cid-jnc_runtime_setstacksizelimit:
+.. _doxid-group__runtime_1gaf8bb0794fdf5f14e8cb8d76b363a1a48:
+.. _cid-jnc_runtime_startup:
+.. _doxid-group__runtime_1ga95be1ad86ed7c757fd16fa3675c20573:
+.. _cid-jnc_runtime_shutdown:
+.. _doxid-group__runtime_1gab621e44b468907b806616219d9624bc4:
+.. _cid-jnc_runtime_abort:
+.. _doxid-group__runtime_1ga8b1a4cf5befca576e4d460cb30a61577:
+.. _cid-jnc_runtime_initializecallsite:
+.. _doxid-group__runtime_1ga7468ec07901990de07f774772358da07:
+.. _cid-jnc_runtime_uninitializecallsite:
+.. _doxid-group__runtime_1ga7669b971f43c899793fa7bdf7bee7d90:
+.. _cid-jnc_runtime_setsjljframe:
+.. _doxid-group__runtime_1gaa4f72b12ab2dfddff7376cbf35ec3473:
+.. _cid-jnc_runtime_getuserdata:
+.. _doxid-group__runtime_1ga2227d55b95f623fb1684c34d2d6da94b:
+.. _cid-jnc_runtime_setuserdata:
+.. _doxid-group__runtime_1ga2246534f9a75ec80ee2f5ea202601b49:
+.. _cid-jnc_runtime_checkstackoverflow:
+.. _doxid-group__runtime_1ga83055c9348705edfca257643f2aa5a89:
+.. _cid-jnc_getcurrentthreadruntime:
+.. _doxid-group__runtime_1ga112dc37e2b5732b6634c1b763f8affcf:
+.. _cid-jnc_getcurrentthreadgcheap:
+.. _doxid-group__runtime_1gaa6e828da6424d3c49f7c0e264182e51e:
+.. _cid-jnc_getcurrentthreadtls:
+.. _doxid-group__runtime_1ga634422c3ba46b3ecf685432861aca372:
+.. _cid-jnc_dynamicthrow:
+.. _doxid-group__runtime_1ga612ab47340947dd96811708c605613af:
+.. _cid-jnc_primeclass:
+.. _doxid-group__runtime_1ga2a88a6ae781a4e760e4c1b61ed99050d:
+.. _cid-jnc_strengthenclassptr:
+.. _doxid-group__runtime_1gaff16761976ccb92071634edefec513b7:
+.. _cid-jnc_strlen:
+.. _doxid-group__runtime_1ga33129b2f310226ef9aa07e669dcc59b2:
+.. _cid-jnc_strdup:
+.. _doxid-group__runtime_1gadac5db17fb3ee37ee6f9b781bbd73c32:
+.. _cid-jnc_memdup:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enums
+
+	enum :ref:`jnc_RuntimeDef<doxid-group__runtime_1gad4414ce5565f6bdda391e78db833f26a>`
+
+	// structs
+
+	struct :ref:`jnc_Runtime<doxid-structjnc___runtime>` 
+
+	// global functions
+
+	:ref:`jnc_Runtime<doxid-structjnc___runtime>`*
+	jnc_Runtime_create ()
+
+	void
+	jnc_Runtime_destroy (:ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime)
+
+	:ref:`jnc_Module<doxid-structjnc___module>`*
+	jnc_Runtime_getModule (:ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime)
+
+	:ref:`jnc_GcHeap<doxid-structjnc___gc_heap>`*
+	jnc_Runtime_getGcHeap (:ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Runtime_isAborted (:ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime)
+
+	size_t
+	jnc_Runtime_getStackSizeLimit (:ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Runtime_setStackSizeLimit (
+	    :ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime,
+	    size_t sizeLimit
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Runtime_startup (
+	    :ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime,
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module
+	    )
+
+	void
+	jnc_Runtime_shutdown (:ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime)
+
+	void
+	jnc_Runtime_abort (:ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime)
+
+	void
+	jnc_Runtime_initializeCallSite (
+	    :ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime,
+	    :ref:`jnc_CallSite<doxid-structjnc___call_site>`* callSite
+	    )
+
+	void
+	jnc_Runtime_uninitializeCallSite (
+	    :ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime,
+	    :ref:`jnc_CallSite<doxid-structjnc___call_site>`* callSite
+	    )
+
+	:ref:`jnc_SjljFrame<doxid-structjnc___sjlj_frame>`*
+	jnc_Runtime_setSjljFrame (
+	    :ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime,
+	    :ref:`jnc_SjljFrame<doxid-structjnc___sjlj_frame>`* frame
+	    )
+
+	void*
+	jnc_Runtime_getUserData (:ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime)
+
+	void*
+	jnc_Runtime_setUserData (
+	    :ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime,
+	    void* data
+	    )
+
+	void
+	jnc_Runtime_checkStackOverflow (:ref:`jnc_Runtime<doxid-structjnc___runtime>`* runtime)
+
+	:ref:`jnc_Runtime<doxid-structjnc___runtime>`*
+	jnc_getCurrentThreadRuntime ()
+
+	static
+	:ref:`jnc_GcHeap<doxid-structjnc___gc_heap>`*
+	jnc_getCurrentThreadGcHeap ()
+
+	:ref:`jnc_Tls<doxid-structjnc___tls>`*
+	jnc_getCurrentThreadTls ()
+
+	void
+	jnc_dynamicThrow ()
+
+	void
+	jnc_primeClass (
+	    :ref:`jnc_Box<doxid-structjnc___box>`* box,
+	    :ref:`jnc_Box<doxid-structjnc___box>`* root,
+	    :ref:`jnc_ClassType<doxid-structjnc___class_type>`* type,
+	    const void* vtable
+	    )
+
+	:ref:`jnc_IfaceHdr<doxid-structjnc___iface_hdr>`*
+	jnc_strengthenClassPtr (:ref:`jnc_IfaceHdr<doxid-structjnc___iface_hdr>`* iface)
+
+	size_t
+	jnc_strLen (:ref:`jnc_DataPtr<doxid-structjnc___data_ptr>` ptr)
+
+	:ref:`jnc_DataPtr<doxid-structjnc___data_ptr>`
+	jnc_strDup (
+	    const char* p,
+	    size_t length
+	    )
+
+	:ref:`jnc_DataPtr<doxid-structjnc___data_ptr>`
+	jnc_memDup (
+	    const void* p,
+	    size_t size
+	    )
+

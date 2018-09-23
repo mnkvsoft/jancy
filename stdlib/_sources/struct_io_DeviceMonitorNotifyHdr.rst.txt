@@ -1,0 +1,45 @@
+.. include:: def.rst
+.. index:: pair: struct; io.DeviceMonitorNotifyHdr
+.. _doxid-type_io_devicemonitornotifyhdr:
+.. _cid-io.devicemonitornotifyhdr:
+
+struct io.DeviceMonitorNotifyHdr
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_devicemonitornotifyhdr_m_signature:
+.. _cid-io.devicemonitornotifyhdr.m_signature:
+.. _doxid-struct_member_io_devicemonitornotifyhdr_m_code:
+.. _cid-io.devicemonitornotifyhdr.m_code:
+.. _doxid-struct_member_io_devicemonitornotifyhdr_m_flags:
+.. _cid-io.devicemonitornotifyhdr.m_flags:
+.. _doxid-struct_member_io_devicemonitornotifyhdr_m_ntstatus:
+.. _cid-io.devicemonitornotifyhdr.m_ntstatus:
+.. _doxid-struct_member_io_devicemonitornotifyhdr_m_paramsize:
+.. _cid-io.devicemonitornotifyhdr.m_paramsize:
+.. _doxid-struct_member_io_devicemonitornotifyhdr_m_processid:
+.. _cid-io.devicemonitornotifyhdr.m_processid:
+.. _doxid-struct_member_io_devicemonitornotifyhdr_m_threadid:
+.. _cid-io.devicemonitornotifyhdr.m_threadid:
+.. _doxid-struct_member_io_devicemonitornotifyhdr_m_timestamp:
+.. _cid-io.devicemonitornotifyhdr.m_timestamp:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_signature
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_code
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_flags
+	:ref:`int32_t<doxid-typedef_int32_t>` m_ntStatus
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_paramSize
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_processId
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_threadId
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_timestamp
+

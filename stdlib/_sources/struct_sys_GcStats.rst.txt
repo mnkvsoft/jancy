@@ -1,0 +1,48 @@
+.. include:: def.rst
+.. index:: pair: struct; sys.GcStats
+.. _doxid-type_sys_gcstats:
+.. _cid-sys.gcstats:
+
+struct sys.GcStats
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_sys_gcstats_m_currentallocsize:
+.. _cid-sys.gcstats.m_currentallocsize:
+.. _doxid-struct_member_sys_gcstats_m_totalallocsize:
+.. _cid-sys.gcstats.m_totalallocsize:
+.. _doxid-struct_member_sys_gcstats_m_peakallocsize:
+.. _cid-sys.gcstats.m_peakallocsize:
+.. _doxid-struct_member_sys_gcstats_m_currentperiodsize:
+.. _cid-sys.gcstats.m_currentperiodsize:
+.. _doxid-struct_member_sys_gcstats_m_totalcollectcount:
+.. _cid-sys.gcstats.m_totalcollectcount:
+.. _doxid-struct_member_sys_gcstats_m_lastcollectfreesize:
+.. _cid-sys.gcstats.m_lastcollectfreesize:
+.. _doxid-struct_member_sys_gcstats_m_lastcollecttime:
+.. _cid-sys.gcstats.m_lastcollecttime:
+.. _doxid-struct_member_sys_gcstats_m_lastcollecttimetaken:
+.. _cid-sys.gcstats.m_lastcollecttimetaken:
+.. _doxid-struct_member_sys_gcstats_m_totalcollecttimetaken:
+.. _cid-sys.gcstats.m_totalcollecttimetaken:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`size_t<doxid-typedef_size_t>` m_currentAllocSize
+	:ref:`size_t<doxid-typedef_size_t>` m_totalAllocSize
+	:ref:`size_t<doxid-typedef_size_t>` m_peakAllocSize
+	:ref:`size_t<doxid-typedef_size_t>` m_currentPeriodSize
+	:ref:`size_t<doxid-typedef_size_t>` m_totalCollectCount
+	:ref:`size_t<doxid-typedef_size_t>` m_lastCollectFreeSize
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_lastCollectTime
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_lastCollectTimeTaken
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_totalCollectTimeTaken
+

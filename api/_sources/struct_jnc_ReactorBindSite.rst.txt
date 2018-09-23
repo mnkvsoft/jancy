@@ -1,0 +1,26 @@
+.. index:: pair: struct; jnc_ReactorBindSite
+.. _doxid-structjnc___reactor_bind_site:
+.. _cid-jnc_reactorbindsite:
+
+struct jnc_ReactorBindSite
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___reactor_bind_site_1af650f0f61c534d4eb5cf73981c82db31:
+.. _cid-jnc_reactorbindsite::m_onchanged:
+.. _doxid-structjnc___reactor_bind_site_1aee98a40650d0c9d6b54546fda483153a:
+.. _cid-jnc_reactorbindsite::m_cookie:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_IfaceHdr<doxid-structjnc___iface_hdr>`* m_onChanged
+	intptr_t m_cookie
+

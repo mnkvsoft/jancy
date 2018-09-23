@@ -1,0 +1,80 @@
+.. index:: pair: enum; jnc_FunctionKind
+.. _doxid-group__function_1ga30c269aa3b279da8a08681273a18b065:
+.. _cid-jnc_functionkind:
+
+enum jnc_FunctionKind
+=====================
+
+
+
+
+
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065ad1cf49c6a491822599930c772ce56987:
+.. _cid-jnc_functionkind::jnc_functionkind_undefined:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065a20ac1aa3d246a7a4ac40b308c59b71dd:
+.. _cid-jnc_functionkind::jnc_functionkind_named:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065a825cbc721c7849ba7d6ae3ec5217189b:
+.. _cid-jnc_functionkind::jnc_functionkind_getter:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065af0deb44bd0e9074f9f4819de839683cf:
+.. _cid-jnc_functionkind::jnc_functionkind_setter:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065ac35d7b5b454758b15c5ad31f464eaecc:
+.. _cid-jnc_functionkind::jnc_functionkind_binder:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065ab7c681322134b4cf309da36298dde0f2:
+.. _cid-jnc_functionkind::jnc_functionkind_preconstructor:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065a7634d6d1b40025405a8f0f311020e2fd:
+.. _cid-jnc_functionkind::jnc_functionkind_constructor:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065ad8dd159155b47450fffd2163cf0765e5:
+.. _cid-jnc_functionkind::jnc_functionkind_destructor:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065af940e70b963aac226a895e7f79a7f394:
+.. _cid-jnc_functionkind::jnc_functionkind_staticconstructor:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065a4c9c42692ae72ffc2f6297a9c181310f:
+.. _cid-jnc_functionkind::jnc_functionkind_staticdestructor:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065ab63aa19a4aa76fa06ceb4d36cc2bf8b2:
+.. _cid-jnc_functionkind::jnc_functionkind_calloperator:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065aad1788b3c2497db8417df79da46a7032:
+.. _cid-jnc_functionkind::jnc_functionkind_castoperator:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065a8993961a144ed80f09545324599939de:
+.. _cid-jnc_functionkind::jnc_functionkind_unaryoperator:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065ad1795d8484be83c18aac9311237476b7:
+.. _cid-jnc_functionkind::jnc_functionkind_binaryoperator:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065ad54669ff7a4db48dc0d0545552993625:
+.. _cid-jnc_functionkind::jnc_functionkind_operatorvararg:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065a9685c3ba8bad5e9cc2f27d1e6ecfab74:
+.. _cid-jnc_functionkind::jnc_functionkind_operatorcdeclvararg:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065aff3997233216c69a4ba40640478a542f:
+.. _cid-jnc_functionkind::jnc_functionkind_internal:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065aed59b9100471f6456440f6dae8fbf396:
+.. _cid-jnc_functionkind::jnc_functionkind_thunk:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065a96f4721550d1750b9151b6d7bba51e8b:
+.. _cid-jnc_functionkind::jnc_functionkind_reaction:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065ae86ba4ead38f3acc4b4adfdbeeedbd1c:
+.. _cid-jnc_functionkind::jnc_functionkind_schedulelauncher:
+.. _doxid-group__function_1gga30c269aa3b279da8a08681273a18b065a84b9c708bdf2eb6888c0624919b0190f:
+.. _cid-jnc_functionkind::jnc_functionkind__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_FunctionKind_Undefined = 0
+	jnc_FunctionKind_Named 
+	jnc_FunctionKind_Getter 
+	jnc_FunctionKind_Setter 
+	jnc_FunctionKind_Binder 
+	jnc_FunctionKind_PreConstructor 
+	jnc_FunctionKind_Constructor 
+	jnc_FunctionKind_Destructor 
+	jnc_FunctionKind_StaticConstructor 
+	jnc_FunctionKind_StaticDestructor 
+	jnc_FunctionKind_CallOperator 
+	jnc_FunctionKind_CastOperator 
+	jnc_FunctionKind_UnaryOperator 
+	jnc_FunctionKind_BinaryOperator 
+	jnc_FunctionKind_OperatorVararg 
+	jnc_FunctionKind_OperatorCdeclVararg 
+	jnc_FunctionKind_Internal 
+	jnc_FunctionKind_Thunk 
+	jnc_FunctionKind_Reaction 
+	jnc_FunctionKind_ScheduleLauncher 
+	jnc_FunctionKind__Count 
+

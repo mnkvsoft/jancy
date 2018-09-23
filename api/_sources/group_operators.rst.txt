@@ -1,0 +1,41 @@
+.. index:: pair: group; Operators
+.. _doxid-group__operators:
+.. _cid-operators:
+
+Operators
+=========
+
+.. toctree::
+	:hidden:
+
+	enum_jnc_BinOpKind.rst
+	enum_jnc_UnOpKind.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_OpKind.h>
+
+
+
+
+.. _doxid-group__operators_1ga95c679ccd87538bb718d3795670aab69:
+.. _cid-jnc_getunopkindstring:
+.. _doxid-group__operators_1gae91a75c6a3e322f43cde11267ae3be61:
+.. _cid-jnc_getbinopkindstring:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enums
+
+	enum :ref:`jnc_BinOpKind<doxid-group__operators_1ga67d0ce0c5d9543240203773042ee075d>`
+	enum :ref:`jnc_UnOpKind<doxid-group__operators_1gae611bfb523eb332069f2b7030accb665>`
+
+	// global functions
+
+	const char*
+	jnc_getUnOpKindString (jnc_UnOpKind opKind)
+
+	const char*
+	jnc_getBinOpKindString (jnc_BinOpKind opKind)
+

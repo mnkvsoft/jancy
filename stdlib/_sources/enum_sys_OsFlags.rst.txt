@@ -1,0 +1,27 @@
+.. include:: def.rst
+.. index:: pair: enum; sys.OsFlags
+.. _doxid-type_sys_osflags:
+.. _cid-sys.osflags:
+
+bitflag enum sys.OsFlags
+========================
+
+
+
+
+
+.. _doxid-enum_member_sys_osflags_posix:
+.. _cid-sys.osflags.posix:
+.. _doxid-enum_member_sys_osflags_bsd:
+.. _cid-sys.osflags.bsd:
+.. _doxid-enum_member_sys_osflags_darwin:
+.. _cid-sys.osflags.darwin:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Posix 
+	Bsd 
+	Darwin 
+

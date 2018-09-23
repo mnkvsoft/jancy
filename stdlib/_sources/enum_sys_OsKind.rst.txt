@@ -1,0 +1,33 @@
+.. include:: def.rst
+.. index:: pair: enum; sys.OsKind
+.. _doxid-type_sys_oskind:
+.. _cid-sys.oskind:
+
+enum sys.OsKind
+===============
+
+
+
+
+
+.. _doxid-enum_member_sys_oskind_windows:
+.. _cid-sys.oskind.windows:
+.. _doxid-enum_member_sys_oskind_linux:
+.. _cid-sys.oskind.linux:
+.. _doxid-enum_member_sys_oskind_solaris:
+.. _cid-sys.oskind.solaris:
+.. _doxid-enum_member_sys_oskind_bsd:
+.. _cid-sys.oskind.bsd:
+.. _doxid-enum_member_sys_oskind_mac:
+.. _cid-sys.oskind.mac:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Windows 
+	Linux 
+	Solaris 
+	Bsd 
+	Mac 
+

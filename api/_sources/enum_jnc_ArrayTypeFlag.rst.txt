@@ -1,0 +1,20 @@
+.. index:: pair: enum; jnc_ArrayTypeFlag
+.. _doxid-group__array-type_1ga3320515b517784a659f4dc5dae52a109:
+.. _cid-jnc_arraytypeflag:
+
+enum jnc_ArrayTypeFlag
+======================
+
+
+
+
+
+.. _doxid-group__array-type_1gga3320515b517784a659f4dc5dae52a109a5446fc136e8f8003e6d5868a146b6a5b:
+.. _cid-jnc_arraytypeflag::jnc_arraytypeflag_autosize:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_ArrayTypeFlag_AutoSize = 0x010000
+

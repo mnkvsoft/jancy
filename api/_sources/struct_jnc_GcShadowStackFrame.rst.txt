@@ -1,0 +1,29 @@
+.. index:: pair: struct; jnc_GcShadowStackFrame
+.. _doxid-structjnc___gc_shadow_stack_frame:
+.. _cid-jnc_gcshadowstackframe:
+
+struct jnc_GcShadowStackFrame
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___gc_shadow_stack_frame_1a192137a1d56f8f8003ef62e5c7a91657:
+.. _cid-jnc_gcshadowstackframe::m_prev:
+.. _doxid-structjnc___gc_shadow_stack_frame_1af1ce0c19395f0057106b21054f7a45af:
+.. _cid-jnc_gcshadowstackframe::m_map:
+.. _doxid-structjnc___gc_shadow_stack_frame_1a1f77fc84a319309af76e1c9c6123f099:
+.. _cid-jnc_gcshadowstackframe::m_gcrootarray:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_GcShadowStackFrame<doxid-structjnc___gc_shadow_stack_frame>`* m_prev
+	jnc_GcShadowStackFrameMap* m_map
+	void** m_gcRootArray
+

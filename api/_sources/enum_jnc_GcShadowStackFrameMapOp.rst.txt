@@ -1,0 +1,26 @@
+.. index:: pair: enum; jnc_GcShadowStackFrameMapOp
+.. _doxid-group__gc-heap_1ga0ece1ff7201734551cf59258f10ad02b:
+.. _cid-jnc_gcshadowstackframemapop:
+
+enum jnc_GcShadowStackFrameMapOp
+================================
+
+
+
+
+
+.. _doxid-group__gc-heap_1gga0ece1ff7201734551cf59258f10ad02bace5a3c4bc88eff146d892b463d04eb49:
+.. _cid-jnc_gcshadowstackframemapop::jnc_gcshadowstackframemapop_open:
+.. _doxid-group__gc-heap_1gga0ece1ff7201734551cf59258f10ad02ba060d31bf83dc205f29ec5d611f56915a:
+.. _cid-jnc_gcshadowstackframemapop::jnc_gcshadowstackframemapop_close:
+.. _doxid-group__gc-heap_1gga0ece1ff7201734551cf59258f10ad02baf0ed1a573e0d600bfbabd3aa3c6432cb:
+.. _cid-jnc_gcshadowstackframemapop::jnc_gcshadowstackframemapop_restore:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_GcShadowStackFrameMapOp_Open 
+	jnc_GcShadowStackFrameMapOp_Close 
+	jnc_GcShadowStackFrameMapOp_Restore 
+

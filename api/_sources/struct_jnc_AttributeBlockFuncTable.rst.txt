@@ -1,0 +1,32 @@
+.. index:: pair: struct; jnc_AttributeBlockFuncTable
+.. _doxid-structjnc___attribute_block_func_table:
+.. _cid-jnc_attributeblockfunctable:
+
+struct jnc_AttributeBlockFuncTable
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___attribute_block_func_table_1a02f200ffa6c5cb6cca4f12551aaf0e08:
+.. _cid-jnc_attributeblockfunctable::m_size:
+.. _doxid-structjnc___attribute_block_func_table_1aa589edc2c4c26c4b50bcc1a37e8869a7:
+.. _cid-jnc_attributeblockfunctable::m_getattributecountfunc:
+.. _doxid-structjnc___attribute_block_func_table_1af6904bbff8c6383e9ebc5c55fead0b3a:
+.. _cid-jnc_attributeblockfunctable::m_getattributefunc:
+.. _doxid-structjnc___attribute_block_func_table_1a3a2f6f9a5eec2b44c1f04177e7912727:
+.. _cid-jnc_attributeblockfunctable::m_findattributefunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_AttributeBlock_GetAttributeCountFunc* m_getAttributeCountFunc
+	jnc_AttributeBlock_GetAttributeFunc* m_getAttributeFunc
+	jnc_AttributeBlock_FindAttributeFunc* m_findAttributeFunc
+

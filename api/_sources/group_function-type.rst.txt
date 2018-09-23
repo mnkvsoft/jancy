@@ -1,0 +1,98 @@
+.. index:: pair: group; Function Type
+.. _doxid-group__function-type:
+.. _cid-function-type:
+
+Function Type
+=============
+
+.. toctree::
+	:hidden:
+
+	enum_jnc_FunctionPtrTypeKind.rst
+	enum_jnc_FunctionTypeFlag.rst
+	struct_jnc_FunctionType.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_FunctionType.h>
+
+
+Function type defines a signature of a function what it the calling convention, which type is the return value of, how many and which type of arguments a function accepts and so on.
+
+.. _doxid-group__function-type_1ga1c376a26f68f16c644f195a40eaccee5:
+.. _cid-jnc_getfunctiontypeflagstring:
+.. _doxid-group__function-type_1gab43d7e9994eb740bdd4d26f3606b7498:
+.. _cid-jnc_getfunctionptrtypekindstring:
+.. _doxid-group__function-type_1gaec03c4fd98b6c4e29646302415e8d9b7:
+.. _cid-jnc_functionarg_hasdefaultvalue:
+.. _doxid-group__function-type_1ga68b7b3afdabb8636f8c70c0389303f37:
+.. _cid-jnc_functionarg_getdefaultvaluestring_v:
+.. _doxid-group__function-type_1ga4d020a96db6418920d9035abff16c00d:
+.. _cid-jnc_functiontype_getreturntype:
+.. _doxid-group__function-type_1ga7403a416a940965054306e137e4ddc05:
+.. _cid-jnc_functiontype_getargcount:
+.. _doxid-group__function-type_1ga29834f663764eea14a87a981629ebf78:
+.. _cid-jnc_functiontype_getarg:
+.. _doxid-group__function-type_1ga7a37374fd5d10726711b375edbf7af3c:
+.. _cid-jnc_functiontype_getfunctionptrtype:
+.. _doxid-group__function-type_1gaa06fe09488ce7c05ef681fe4f0624f2d:
+.. _cid-jnc_functiontype_getshorttype:
+.. _doxid-group__function-type_1gad679513678580bd72ab754914210afec:
+.. _cid-jnc_functionptrtype_getptrtypekind:
+.. _doxid-group__function-type_1gac00574c467b4708dfac7ba59b296d711:
+.. _cid-jnc_functionptrtype_gettargettype:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enums
+
+	enum :ref:`jnc_FunctionPtrTypeKind<doxid-group__function-type_1gaea149ac2a4106e9dc5e75172ba689b83>`
+	enum :ref:`jnc_FunctionTypeFlag<doxid-group__function-type_1gac9ba50d4974a369a6e77a3b13e334814>`
+
+	// structs
+
+	struct :ref:`jnc_FunctionType<doxid-structjnc___function_type>` 
+
+	// global functions
+
+	const char*
+	jnc_getFunctionTypeFlagString (jnc_FunctionTypeFlag flag)
+
+	const char*
+	jnc_getFunctionPtrTypeKindString (jnc_FunctionPtrTypeKind ptrTypeKind)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_FunctionArg_hasDefaultValue (jnc_FunctionArg* arg)
+
+	const char*
+	jnc_FunctionArg_getDefaultValueString_v (jnc_FunctionArg* arg)
+
+	:ref:`jnc_Type<doxid-structjnc___type>`*
+	jnc_FunctionType_getReturnType (:ref:`jnc_FunctionType<doxid-structjnc___function_type>`* type)
+
+	size_t
+	jnc_FunctionType_getArgCount (:ref:`jnc_FunctionType<doxid-structjnc___function_type>`* type)
+
+	jnc_FunctionArg*
+	jnc_FunctionType_getArg (
+	    :ref:`jnc_FunctionType<doxid-structjnc___function_type>`* type,
+	    size_t index
+	    )
+
+	jnc_FunctionPtrType*
+	jnc_FunctionType_getFunctionPtrType (
+	    :ref:`jnc_FunctionType<doxid-structjnc___function_type>`* type,
+	    jnc_FunctionPtrTypeKind ptrTypeKind,
+	    uint_t flags
+	    )
+
+	:ref:`jnc_FunctionType<doxid-structjnc___function_type>`*
+	jnc_FunctionType_getShortType (:ref:`jnc_FunctionType<doxid-structjnc___function_type>`* type)
+
+	jnc_FunctionPtrTypeKind
+	jnc_FunctionPtrType_getPtrTypeKind (jnc_FunctionPtrType* type)
+
+	:ref:`jnc_FunctionType<doxid-structjnc___function_type>`*
+	jnc_FunctionPtrType_getTargetType (jnc_FunctionPtrType* type)
+

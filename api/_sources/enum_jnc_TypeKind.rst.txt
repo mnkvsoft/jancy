@@ -1,0 +1,194 @@
+.. index:: pair: enum; jnc_TypeKind
+.. _doxid-group__type_1ga6b7e694f112a1053b0c69a4e0141319c:
+.. _cid-jnc_typekind:
+
+enum jnc_TypeKind
+=================
+
+
+
+
+
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca1b12c07e3d57151f3440841a0cea0885:
+.. _cid-jnc_typekind::jnc_typekind_void:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319caa68fd6bfd8e2478fd2cbe46ff99c8aad:
+.. _cid-jnc_typekind::jnc_typekind_variant:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca6bfdac3b0484af1eabf1c201a8b1f3e8:
+.. _cid-jnc_typekind::jnc_typekind_bool:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca1f91311e5d22dccac00f6fedaef9ad61:
+.. _cid-jnc_typekind::jnc_typekind_int8:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca7ca7e0fcbdbbe5c3d3fb9044195e8c27:
+.. _cid-jnc_typekind::jnc_typekind_int8_u:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca38dad49414cf08ef32378990b1b68a8b:
+.. _cid-jnc_typekind::jnc_typekind_int16:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca6e34bbbeacc2e0f0730080f762973d24:
+.. _cid-jnc_typekind::jnc_typekind_int16_u:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319caa8a65c0b428f9ee5dfccd518c2b4ba0f:
+.. _cid-jnc_typekind::jnc_typekind_int32:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca3ab06ac57d30e6e03ba210e0b55fa51a:
+.. _cid-jnc_typekind::jnc_typekind_int32_u:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca242ca56291fd045be2f61e170029d005:
+.. _cid-jnc_typekind::jnc_typekind_int64:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca2e0baeff8147c39ed38df8ee46024c7b:
+.. _cid-jnc_typekind::jnc_typekind_int64_u:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca57140e7c9d4e5f2b0635ddfef9cb2565:
+.. _cid-jnc_typekind::jnc_typekind_int16_be:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca1a26cb09aa44ecf8a8b6e53490369e7d:
+.. _cid-jnc_typekind::jnc_typekind_int16_beu:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca663a12f18f69bc30916ff8cf25f5b325:
+.. _cid-jnc_typekind::jnc_typekind_int32_be:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca6a90104b251c432b59785a52c9920e73:
+.. _cid-jnc_typekind::jnc_typekind_int32_beu:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319cae5160da8bad09f8ab7dae0d1cc83749d:
+.. _cid-jnc_typekind::jnc_typekind_int64_be:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca8f6e75ac774bdf17da238dcf73f9711c:
+.. _cid-jnc_typekind::jnc_typekind_int64_beu:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319cabc07a1b539407f6a3af7a064d82a1de5:
+.. _cid-jnc_typekind::jnc_typekind_float:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca62f18622a2a37c1c5b5c4b9a4eef1937:
+.. _cid-jnc_typekind::jnc_typekind_double:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319caee22657408cdad11603c4dd04e29f0f9:
+.. _cid-jnc_typekind::jnc_typekind_array:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca1698983613bde39e4b7a8e6a10f4f7e6:
+.. _cid-jnc_typekind::jnc_typekind_bitfield:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319caf1ae00c81dc45034c9c028c9fa50c500:
+.. _cid-jnc_typekind::jnc_typekind_enum:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca666d712521c280972ff571a528df1a70:
+.. _cid-jnc_typekind::jnc_typekind_struct:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca7d1baa084e797e60d01179d87b50dbfb:
+.. _cid-jnc_typekind::jnc_typekind_union:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca31040bce7e1b3f97e2c8fc1e9a569bbe:
+.. _cid-jnc_typekind::jnc_typekind_class:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca00b382fe1d4d5cfe6e7adc1d8314abc2:
+.. _cid-jnc_typekind::jnc_typekind_function:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca98e6951b5e0b260300fae5b2aeeb6426:
+.. _cid-jnc_typekind::jnc_typekind_property:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319cac89e6671f0b4e8ab078942d5feb734bc:
+.. _cid-jnc_typekind::jnc_typekind_dataptr:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca81bf24f61824fa60232344f4f97d1e8f:
+.. _cid-jnc_typekind::jnc_typekind_dataref:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca7f093beb8c920fdc9267eeb415f64c04:
+.. _cid-jnc_typekind::jnc_typekind_classptr:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca5f5cbccb7e9872178eae46bfacdf2b9a:
+.. _cid-jnc_typekind::jnc_typekind_classref:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca9513b6bc6a6d9e860376950dca69d62e:
+.. _cid-jnc_typekind::jnc_typekind_functionptr:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca4c5a8d2501e48e66fa3883714063a01e:
+.. _cid-jnc_typekind::jnc_typekind_functionref:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca0a53d339584dc6f4d0e401bc844838c7:
+.. _cid-jnc_typekind::jnc_typekind_propertyptr:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca9d325489054ad0e755896433cbe9e3e3:
+.. _cid-jnc_typekind::jnc_typekind_propertyref:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca69f8079b6163f1f9e5c4ee77819f9209:
+.. _cid-jnc_typekind::jnc_typekind_namedimport:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca4674e3bca7f892c7938452ccc71adf37:
+.. _cid-jnc_typekind::jnc_typekind_importptr:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca04911a4518e959649e4d5d61fd8aced4:
+.. _cid-jnc_typekind::jnc_typekind_importintmod:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca367207982c7bca3ab65a661051ec9db5:
+.. _cid-jnc_typekind::jnc_typekind_typedefshadow:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca61c1ed23974d0d51bc0c28b67600ad76:
+.. _cid-jnc_typekind::jnc_typekind__count:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca78f45ae8192f0f016adad290c9e33780:
+.. _cid-jnc_typekind::jnc_typekind__endiandelta:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca51f2b8490de8c1d9e987241eeac821ef:
+.. _cid-jnc_typekind::jnc_typekind__primitivetypecount:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca7832ecd8b5fd6fdea879c7f856f28f03:
+.. _cid-jnc_typekind::jnc_typekind_intptr:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319caa940183a4a0e53ac8c15a40bdfef860a:
+.. _cid-jnc_typekind::jnc_typekind_intptr_u:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca8a871732a3f79ab0d29767bd68b1f0d7:
+.. _cid-jnc_typekind::jnc_typekind_intptr_be:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319caf20f44a77e2c1a582449164e241ee066:
+.. _cid-jnc_typekind::jnc_typekind_intptr_beu:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca1d15e519af9a7d493ee949ee8a5f701c:
+.. _cid-jnc_typekind::jnc_typekind_sizet:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca4b858383af303451e7750d77af236bf7:
+.. _cid-jnc_typekind::jnc_typekind_int:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319cad09b4ef637605fe178f7c673c1538e26:
+.. _cid-jnc_typekind::jnc_typekind_int_u:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca7b51288bd1edeab9c909902cdc918f76:
+.. _cid-jnc_typekind::jnc_typekind_char:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca34e2df507d872c476899727ed6e4f617:
+.. _cid-jnc_typekind::jnc_typekind_char_u:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319caba37bd0a076a8d808878d4efc9e3f2b2:
+.. _cid-jnc_typekind::jnc_typekind_byte:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319cabc4576375de986bc48d54091f4558e12:
+.. _cid-jnc_typekind::jnc_typekind_short:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319cabfd8cd78c17099feedde01fd335aad38:
+.. _cid-jnc_typekind::jnc_typekind_short_u:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca6f4f4f68f3e89f9b87ed0304b25aad53:
+.. _cid-jnc_typekind::jnc_typekind_word:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319cac25b7b2474322f44a4b764c31e3eea4b:
+.. _cid-jnc_typekind::jnc_typekind_long:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319ca8248ed7f755363e7613f413a9b51f2da:
+.. _cid-jnc_typekind::jnc_typekind_long_u:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319cad790968148f857fe3f78f07528d2f828:
+.. _cid-jnc_typekind::jnc_typekind_dword:
+.. _doxid-group__type_1gga6b7e694f112a1053b0c69a4e0141319cae75f6f0519e3c38e85e91a48bdc55cbd:
+.. _cid-jnc_typekind::jnc_typekind_qword:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_TypeKind_Void 
+	jnc_TypeKind_Variant 
+	jnc_TypeKind_Bool 
+	jnc_TypeKind_Int8 
+	jnc_TypeKind_Int8_u 
+	jnc_TypeKind_Int16 
+	jnc_TypeKind_Int16_u 
+	jnc_TypeKind_Int32 
+	jnc_TypeKind_Int32_u 
+	jnc_TypeKind_Int64 
+	jnc_TypeKind_Int64_u 
+	jnc_TypeKind_Int16_be 
+	jnc_TypeKind_Int16_beu 
+	jnc_TypeKind_Int32_be 
+	jnc_TypeKind_Int32_beu 
+	jnc_TypeKind_Int64_be 
+	jnc_TypeKind_Int64_beu 
+	jnc_TypeKind_Float 
+	jnc_TypeKind_Double 
+	jnc_TypeKind_Array 
+	jnc_TypeKind_BitField 
+	jnc_TypeKind_Enum 
+	jnc_TypeKind_Struct 
+	jnc_TypeKind_Union 
+	jnc_TypeKind_Class 
+	jnc_TypeKind_Function 
+	jnc_TypeKind_Property 
+	jnc_TypeKind_DataPtr 
+	jnc_TypeKind_DataRef 
+	jnc_TypeKind_ClassPtr 
+	jnc_TypeKind_ClassRef 
+	jnc_TypeKind_FunctionPtr 
+	jnc_TypeKind_FunctionRef 
+	jnc_TypeKind_PropertyPtr 
+	jnc_TypeKind_PropertyRef 
+	jnc_TypeKind_NamedImport 
+	jnc_TypeKind_ImportPtr 
+	jnc_TypeKind_ImportIntMod 
+	jnc_TypeKind_TypedefShadow 
+	jnc_TypeKind__Count 
+	jnc_TypeKind__EndianDelta = jnc_TypeKind_Int16_be - jnc_TypeKind_Int16
+	jnc_TypeKind__PrimitiveTypeCount = jnc_TypeKind_Double + 1
+	jnc_TypeKind_IntPtr = jnc_TypeKind_Int32
+	jnc_TypeKind_IntPtr_u = jnc_TypeKind_Int32_u
+	jnc_TypeKind_IntPtr_be = jnc_TypeKind_Int32_be
+	jnc_TypeKind_IntPtr_beu = jnc_TypeKind_Int32_beu
+	jnc_TypeKind_SizeT = jnc_TypeKind_IntPtr_u
+	jnc_TypeKind_Int = jnc_TypeKind_Int32
+	jnc_TypeKind_Int_u = jnc_TypeKind_Int32_u
+	jnc_TypeKind_Char = jnc_TypeKind_Int8
+	jnc_TypeKind_Char_u = jnc_TypeKind_Int8_u
+	jnc_TypeKind_Byte = jnc_TypeKind_Int8_u
+	jnc_TypeKind_Short = jnc_TypeKind_Int16
+	jnc_TypeKind_Short_u = jnc_TypeKind_Int16_u
+	jnc_TypeKind_Word = jnc_TypeKind_Int16_u
+	jnc_TypeKind_Long = jnc_TypeKind_Int64
+	jnc_TypeKind_Long_u = jnc_TypeKind_Int64_u
+	jnc_TypeKind_DWord = jnc_TypeKind_Int32_u
+	jnc_TypeKind_QWord = jnc_TypeKind_Int64_u
+

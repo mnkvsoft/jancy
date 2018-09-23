@@ -1,0 +1,35 @@
+.. index:: pair: enum; jnc_TypeFlag
+.. _doxid-group__type_1ga0b9154297f9dcb9c0de015199ad34d9e:
+.. _cid-jnc_typeflag:
+
+enum jnc_TypeFlag
+=================
+
+
+
+
+
+.. _doxid-group__type_1gga0b9154297f9dcb9c0de015199ad34d9ea7d28868a004eefe2a75f54340a7bf2a5:
+.. _cid-jnc_typeflag::jnc_typeflag_named:
+.. _doxid-group__type_1gga0b9154297f9dcb9c0de015199ad34d9ea8657bad3c10cede8d873f50a3bc33b08:
+.. _cid-jnc_typeflag::jnc_typeflag_pod:
+.. _doxid-group__type_1gga0b9154297f9dcb9c0de015199ad34d9ea6093d190cbea9d7cf42c198b8306864b:
+.. _cid-jnc_typeflag::jnc_typeflag_gcroot:
+.. _doxid-group__type_1gga0b9154297f9dcb9c0de015199ad34d9eaf256e5435b2e8e6b653d26172f48f934:
+.. _cid-jnc_typeflag::jnc_typeflag_structret:
+.. _doxid-group__type_1gga0b9154297f9dcb9c0de015199ad34d9ea9017e5525ee74c7985a98062fc3901c8:
+.. _cid-jnc_typeflag::jnc_typeflag_nostack:
+.. _doxid-group__type_1gga0b9154297f9dcb9c0de015199ad34d9eaa232b556f95a8e5d475e999793af95c6:
+.. _cid-jnc_typeflag::jnc_typeflag_dynamic:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_TypeFlag_Named = 0x0100
+	jnc_TypeFlag_Pod = 0x0200
+	jnc_TypeFlag_GcRoot = 0x0400
+	jnc_TypeFlag_StructRet = 0x0800
+	jnc_TypeFlag_NoStack = 0x1000
+	jnc_TypeFlag_Dynamic = 0x2000
+

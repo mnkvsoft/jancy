@@ -1,0 +1,33 @@
+.. include:: def.rst
+.. index:: pair: struct; io.lnx.DeviceMonitorIoctlNotifyParams
+.. _doxid-type_io_lnx_devicemonitorioctlnotifyparams:
+.. _cid-io.lnx.devicemonitorioctlnotifyparams:
+
+struct io.lnx.DeviceMonitorIoctlNotifyParams
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_lnx_devicemonitorioctlnotifyparams_m_fileid:
+.. _cid-io.lnx.devicemonitorioctlnotifyparams.m_fileid:
+.. _doxid-struct_member_io_lnx_devicemonitorioctlnotifyparams_m_code:
+.. _cid-io.lnx.devicemonitorioctlnotifyparams.m_code:
+.. _doxid-struct_member_io_lnx_devicemonitorioctlnotifyparams_m_argsize:
+.. _cid-io.lnx.devicemonitorioctlnotifyparams.m_argsize:
+.. _doxid-struct_member_io_lnx_devicemonitorioctlnotifyparams_m_arg:
+.. _cid-io.lnx.devicemonitorioctlnotifyparams.m_arg:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_fileId
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_code
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_argSize
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_arg
+

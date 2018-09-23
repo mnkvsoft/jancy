@@ -1,0 +1,38 @@
+.. index:: pair: struct; jnc_ErrorFuncTable
+.. _doxid-structjnc___error_func_table:
+.. _cid-jnc_errorfunctable:
+
+struct jnc_ErrorFuncTable
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___error_func_table_1a958fdb6f9850f831d37a410e61960773:
+.. _cid-jnc_errorfunctable::m_size:
+.. _doxid-structjnc___error_func_table_1a8ecc23327a997765b5d81e486e1f1335:
+.. _cid-jnc_errorfunctable::m_getlasterrorfunc:
+.. _doxid-structjnc___error_func_table_1afa456a5afd82d091cb3a0d66982226b5:
+.. _cid-jnc_errorfunctable::m_seterrorfunc:
+.. _doxid-structjnc___error_func_table_1a0d31683edaa5eecccb4ef324d2fb4196:
+.. _cid-jnc_errorfunctable::m_seterrnofunc:
+.. _doxid-structjnc___error_func_table_1a7dcf4ff201d7be245847eb1a0c247e54:
+.. _cid-jnc_errorfunctable::m_setstringerrorfunc:
+.. _doxid-structjnc___error_func_table_1a239a82572e7e4f87f16b75e06b90779c:
+.. _cid-jnc_errorfunctable::m_geterrordescriptionfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_GetLastErrorFunc* m_getLastErrorFunc
+	jnc_SetErrorFunc* m_setErrorFunc
+	jnc_SetErrnoFunc* m_setErrnoFunc
+	jnc_SetStringErrorFunc* m_setStringErrorFunc
+	jnc_GetErrorDescriptionFunc* m_getErrorDescriptionFunc
+

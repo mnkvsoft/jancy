@@ -1,0 +1,129 @@
+.. index:: pair: group; Variant
+.. _doxid-group__variant:
+.. _cid-variant:
+
+Variant
+=======
+
+.. toctree::
+	:hidden:
+
+	struct_jnc_Variant.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Variant.h>
+
+
+
+
+.. _doxid-group__variant_1ga954600d5f5b0c70a96daab9aacaeaa9d:
+.. _cid-jnc_g_nullvariant:
+.. _doxid-group__variant_1ga6e46297ea285d1b3e68ebd02e72f9007:
+.. _cid-jnc_variant_cast:
+.. _doxid-group__variant_1ga8d26784b08999a4e9f7b7a37b2d57e4f:
+.. _cid-jnc_variant_unaryoperator:
+.. _doxid-group__variant_1ga0f765c3f842115e0b7bc1054d993c6eb:
+.. _cid-jnc_variant_binaryoperator:
+.. _doxid-group__variant_1ga749630239cdae7f69b4afe208eac6135:
+.. _cid-jnc_variant_relationaloperator:
+.. _doxid-group__variant_1gaf743a78b1941f30c69c250dd151eae5a:
+.. _cid-jnc_variant_getmember:
+.. _doxid-group__variant_1ga136e8131dd55e43a693ec718b23165c4:
+.. _cid-jnc_variant_setmember:
+.. _doxid-group__variant_1gaf4b567116cac582a6d92fa43e2f72a79:
+.. _cid-jnc_variant_getelement:
+.. _doxid-group__variant_1ga753ac84338d96d2c67c789e68298331a:
+.. _cid-jnc_variant_setelement:
+.. _doxid-group__variant_1ga0b9cdeda587e83299ef176be6fc51a54:
+.. _cid-jnc_variant_isnull:
+.. _doxid-group__variant_1gafa48e932370e6d1477ad0b1fec7a65c2:
+.. _cid-jnc_variant_isequal:
+.. _doxid-group__variant_1ga13dba0d208b05eb0cf19407aef859ad8:
+.. _cid-jnc_variant_hash:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`jnc_Variant<doxid-structjnc___variant>` 
+
+	// global variables
+
+	:ref:`JNC_SELECT_ANY<doxid-group__base-def_1gadf3ff658e277ca8ea2878349758bfdf5>` :ref:`jnc_Variant<doxid-structjnc___variant>` jnc_g_nullVariant
+
+	// global functions
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_cast (
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant,
+	    :ref:`jnc_Type<doxid-structjnc___type>`* type,
+	    void* buffer
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_unaryOperator (
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant,
+	    jnc_UnOpKind opKind,
+	    :ref:`jnc_Variant<doxid-structjnc___variant>`* result
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_binaryOperator (
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant,
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant2,
+	    jnc_BinOpKind opKind,
+	    :ref:`jnc_Variant<doxid-structjnc___variant>`* result
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_relationalOperator (
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant,
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant2,
+	    jnc_BinOpKind opKind,
+	    :ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`* result
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_getMember (
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant,
+	    const char* name,
+	    :ref:`jnc_Variant<doxid-structjnc___variant>`* result
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_setMember (
+	    :ref:`jnc_Variant<doxid-structjnc___variant>`* variant,
+	    const char* name,
+	    :ref:`jnc_Variant<doxid-structjnc___variant>` value
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_getElement (
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant,
+	    size_t index,
+	    :ref:`jnc_Variant<doxid-structjnc___variant>`* result
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_setElement (
+	    :ref:`jnc_Variant<doxid-structjnc___variant>`* variant,
+	    size_t index,
+	    :ref:`jnc_Variant<doxid-structjnc___variant>` value
+	    )
+
+	static
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_isNull (const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant)
+
+	static
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Variant_isEqual (
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant,
+	    const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant2
+	    )
+
+	size_t
+	jnc_Variant_hash (const :ref:`jnc_Variant<doxid-structjnc___variant>`* variant)
+

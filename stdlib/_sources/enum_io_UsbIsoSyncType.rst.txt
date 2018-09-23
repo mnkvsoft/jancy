@@ -1,0 +1,30 @@
+.. include:: def.rst
+.. index:: pair: enum; io.UsbIsoSyncType
+.. _doxid-type_io_usbisosynctype:
+.. _cid-io.usbisosynctype:
+
+enum io.UsbIsoSyncType
+======================
+
+
+
+
+
+.. _doxid-enum_member_io_usbisosynctype_none:
+.. _cid-io.usbisosynctype.none:
+.. _doxid-enum_member_io_usbisosynctype_async:
+.. _cid-io.usbisosynctype.async:
+.. _doxid-enum_member_io_usbisosynctype_adaptive:
+.. _cid-io.usbisosynctype.adaptive:
+.. _doxid-enum_member_io_usbisosynctype_sync:
+.. _cid-io.usbisosynctype.sync:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	None = 0
+	Async = 1
+	Adaptive = 2
+	Sync = 3
+

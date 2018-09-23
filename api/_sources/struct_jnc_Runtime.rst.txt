@@ -1,0 +1,20 @@
+.. index:: pair: struct; jnc_Runtime
+.. _doxid-structjnc___runtime:
+.. _cid-jnc_runtime:
+
+struct jnc_Runtime
+==================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Runtime.h>
+
+
+Opaque structure used as a handle to Jancy runtime.
+
+    Use functions from the :ref:`Runtime <cid-runtime>` group to access and manage the contents of this structure.
+

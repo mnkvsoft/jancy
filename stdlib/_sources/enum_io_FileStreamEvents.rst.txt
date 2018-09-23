@@ -1,0 +1,100 @@
+.. include:: def.rst
+.. index:: pair: enum; io.FileStreamEvents
+.. _doxid-type_io_filestreamevents:
+.. _cid-io.filestreamevents:
+
+bitflag enum io.FileStreamEvents
+================================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_FileStream.jnc"
+
+
+Overview
+~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.FileStream` object. The set of *active* events is accessible
+via `io.FileStream.m_activeEvents`. :ref:`More...<details-doxid-type_io_filestreamevents>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`IoError<doxid-enum_member_io_filestreamevents_ioerror>` 
+	:ref:`IncomingData<doxid-enum_member_io_filestreamevents_incomingdata>` 
+	:ref:`ReadBufferFull<doxid-enum_member_io_filestreamevents_readbufferfull>` 
+	:ref:`WriteBufferReady<doxid-enum_member_io_filestreamevents_writebufferready>` 
+	:ref:`Eof<doxid-enum_member_io_filestreamevents_eof>` 
+
+.. _details-doxid-type_io_filestreamevents:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.FileStream` object. The set of *active* events is accessible
+via `io.FileStream.m_activeEvents`.
+
+
+
+.. rubric:: See also:
+
+`io.FileStream`
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_filestreamevents_ioerror:
+.. _cid-io.filestreamevents.ioerror:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IoError
+
+An IO error occured on the file stream; detailed information about the
+error is available at `io.FileStream.m_ioError`.
+
+.. _doxid-enum_member_io_filestreamevents_incomingdata:
+.. _cid-io.filestreamevents.incomingdata:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IncomingData
+
+More data is available on the file stream; this data could be fetched
+with `io.FileStream.read` method.
+
+.. _doxid-enum_member_io_filestreamevents_readbufferfull:
+.. _cid-io.filestreamevents.readbufferfull:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	ReadBufferFull
+
+File stream receive buffer is full; upcoming data may be dropped
+(depending on the underlying device represented by the file).
+
+.. _doxid-enum_member_io_filestreamevents_writebufferready:
+.. _cid-io.filestreamevents.writebufferready:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	WriteBufferReady
+
+File stream transmit buffer is ready to accept more data; it's OK to
+issue more `io.FileStream.write` requests.
+
+.. _doxid-enum_member_io_filestreamevents_eof:
+.. _cid-io.filestreamevents.eof:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Eof
+
+End-of-file was reached on the file stream.
+

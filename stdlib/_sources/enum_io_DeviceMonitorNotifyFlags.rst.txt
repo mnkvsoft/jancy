@@ -1,0 +1,21 @@
+.. include:: def.rst
+.. index:: pair: enum; io.DeviceMonitorNotifyFlags
+.. _doxid-type_io_devicemonitornotifyflags:
+.. _cid-io.devicemonitornotifyflags:
+
+bitflag enum io.DeviceMonitorNotifyFlags
+========================================
+
+
+
+
+
+.. _doxid-enum_member_io_devicemonitornotifyflags_datadropped:
+.. _cid-io.devicemonitornotifyflags.datadropped:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	DataDropped = 0x02
+

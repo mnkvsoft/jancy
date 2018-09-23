@@ -1,0 +1,81 @@
+.. include:: def.rst
+.. index:: pair: enum; io.FileStreamKind
+.. _doxid-type_io_filestreamkind:
+.. _cid-io.filestreamkind:
+
+enum io.FileStreamKind
+======================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_FileStream.jnc"
+
+
+Overview
+~~~~~~~~
+
+This enumeration contains all possible values for the underlying type
+of of `io.FileStream` object. :ref:`More...<details-doxid-type_io_filestreamkind>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`Unknown<doxid-enum_member_io_filestreamkind_unknown>` 
+	:ref:`Disk<doxid-enum_member_io_filestreamkind_disk>` 
+	:ref:`Serial<doxid-enum_member_io_filestreamkind_serial>` 
+	:ref:`Pipe<doxid-enum_member_io_filestreamkind_pipe>` 
+
+.. _details-doxid-type_io_filestreamkind:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration contains all possible values for the underlying type
+of of `io.FileStream` object.
+
+Currently, this functionality is only available on Windows (via the WinAPI
+function ``GetFileType``).
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_filestreamkind_unknown:
+.. _cid-io.filestreamkind.unknown:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Unknown
+
+Denotes undefined (or generic) file stream.
+
+.. _doxid-enum_member_io_filestreamkind_disk:
+.. _cid-io.filestreamkind.disk:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Disk
+
+The file stream represents a disk file.
+
+.. _doxid-enum_member_io_filestreamkind_serial:
+.. _cid-io.filestreamkind.serial:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Serial
+
+The file stream represents a serial port.
+
+.. _doxid-enum_member_io_filestreamkind_pipe:
+.. _cid-io.filestreamkind.pipe:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Pipe
+
+The file stream represents a named pipe.
+

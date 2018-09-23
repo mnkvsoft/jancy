@@ -1,0 +1,39 @@
+.. index:: pair: group; Property Type
+.. _doxid-group__property-type:
+.. _cid-property-type:
+
+Property Type
+=============
+
+.. toctree::
+	:hidden:
+
+	struct_jnc_PropertyType.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_PropertyType.h>
+
+
+Overview
+~~~~~~~~
+
+Property type defines a signature of a property and is represented by a tuple of one or more function types. :ref:`More...<details-doxid-group__property-type>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`jnc_PropertyType<doxid-structjnc___property_type>` 
+
+.. _details-doxid-group__property-type:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Property type defines a signature of a property and is represented by a tuple of one or more function types.
+
+Each property in Jancy has one getter and zero or more setters. Property type has information about function type for each and every accessor (getter or setter) a property of this type provides.
+

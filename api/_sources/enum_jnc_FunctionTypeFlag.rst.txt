@@ -1,0 +1,32 @@
+.. index:: pair: enum; jnc_FunctionTypeFlag
+.. _doxid-group__function-type_1gac9ba50d4974a369a6e77a3b13e334814:
+.. _cid-jnc_functiontypeflag:
+
+enum jnc_FunctionTypeFlag
+=========================
+
+
+
+
+
+.. _doxid-group__function-type_1ggac9ba50d4974a369a6e77a3b13e334814a1c4fb322e4fe74fcad6af39beae5e9b5:
+.. _cid-jnc_functiontypeflag::jnc_functiontypeflag_vararg:
+.. _doxid-group__function-type_1ggac9ba50d4974a369a6e77a3b13e334814ab25f5af6f1d9bb748e8ab5d8088ecf65:
+.. _cid-jnc_functiontypeflag::jnc_functiontypeflag_errorcode:
+.. _doxid-group__function-type_1ggac9ba50d4974a369a6e77a3b13e334814a07c5126f9fcea85b9d56db3ba44f1cc5:
+.. _cid-jnc_functiontypeflag::jnc_functiontypeflag_byvalargs:
+.. _doxid-group__function-type_1ggac9ba50d4974a369a6e77a3b13e334814a6c4c660d1430fd01257ca0f14d4139e6:
+.. _cid-jnc_functiontypeflag::jnc_functiontypeflag_coercedargs:
+.. _doxid-group__function-type_1ggac9ba50d4974a369a6e77a3b13e334814ac4a01665bc8432368f502e25f45718df:
+.. _cid-jnc_functiontypeflag::jnc_functiontypeflag_unsafe:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_FunctionTypeFlag_VarArg = 0x010000
+	jnc_FunctionTypeFlag_ErrorCode = 0x020000
+	jnc_FunctionTypeFlag_ByValArgs = 0x040000
+	jnc_FunctionTypeFlag_CoercedArgs = 0x080000
+	jnc_FunctionTypeFlag_Unsafe = 0x100000
+

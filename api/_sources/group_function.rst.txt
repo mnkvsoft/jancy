@@ -1,0 +1,85 @@
+.. index:: pair: group; Function
+.. _doxid-group__function:
+.. _cid-function:
+
+Function
+========
+
+.. toctree::
+	:hidden:
+
+	enum_jnc_FunctionKind.rst
+	enum_jnc_FunctionKindFlag.rst
+	struct_jnc_Function.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Function.h>
+
+
+
+
+.. _doxid-group__function_1ga3e1de91842e1914ea1dd033fe5bc0f83:
+.. _cid-jnc_getfunctionkindstring:
+.. _doxid-group__function_1ga7676b7fcb63c76f010f60592900fe7e1:
+.. _cid-jnc_getfunctionkindflags:
+.. _doxid-group__function_1ga4d0b3d44076f9a44c3c0ad9cbf85b5ce:
+.. _cid-jnc_function_getfunctionkind:
+.. _doxid-group__function_1ga4f97c835f0e61a2fdd7ecc70d48fbec0:
+.. _cid-jnc_function_gettype:
+.. _doxid-group__function_1gacabdc89e25fef8db8904bf45b548c22a:
+.. _cid-jnc_function_ismember:
+.. _doxid-group__function_1ga294c1500d9ea6c1d05aa8cd11e622ce5:
+.. _cid-jnc_function_isoverloaded:
+.. _doxid-group__function_1ga567ce4670f90a7a3f38d3be1e0e6a26d:
+.. _cid-jnc_function_getoverloadcount:
+.. _doxid-group__function_1gabc569201107560079756394e257c3c7e:
+.. _cid-jnc_function_getoverload:
+.. _doxid-group__function_1ga8981f613fd94a7780a2cee766d7f9741:
+.. _cid-jnc_function_getmachinecode:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enums
+
+	enum :ref:`jnc_FunctionKind<doxid-group__function_1ga30c269aa3b279da8a08681273a18b065>`
+	enum :ref:`jnc_FunctionKindFlag<doxid-group__function_1ga5eda7904134fe6916fe7a43ee1c4798c>`
+
+	// structs
+
+	struct :ref:`jnc_Function<doxid-structjnc___function>` 
+
+	// global functions
+
+	const char*
+	jnc_getFunctionKindString (jnc_FunctionKind functionKind)
+
+	uint_t
+	jnc_getFunctionKindFlags (jnc_FunctionKind functionKind)
+
+	jnc_FunctionKind
+	jnc_Function_getFunctionKind (:ref:`jnc_Function<doxid-structjnc___function>`* function)
+
+	static
+	:ref:`jnc_FunctionType<doxid-structjnc___function_type>`*
+	jnc_Function_getType (:ref:`jnc_Function<doxid-structjnc___function>`* function)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Function_isMember (:ref:`jnc_Function<doxid-structjnc___function>`* function)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Function_isOverloaded (:ref:`jnc_Function<doxid-structjnc___function>`* function)
+
+	size_t
+	jnc_Function_getOverloadCount (:ref:`jnc_Function<doxid-structjnc___function>`* function)
+
+	:ref:`jnc_Function<doxid-structjnc___function>`*
+	jnc_Function_getOverload (
+	    :ref:`jnc_Function<doxid-structjnc___function>`* function,
+	    size_t index
+	    )
+
+	void*
+	jnc_Function_getMachineCode (:ref:`jnc_Function<doxid-structjnc___function>`* function)
+

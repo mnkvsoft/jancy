@@ -1,0 +1,47 @@
+.. include:: def.rst
+.. index:: pair: struct; io.win.DeviceMonitorCreateMailslotNotifyParams
+.. _doxid-type_io_win_devicemonitorcreatemailslotnotifyparams:
+.. _cid-io.win.devicemonitorcreatemailslotnotifyparams:
+
+struct io.win.DeviceMonitorCreateMailslotNotifyParams
+=====================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_win_devicemonitorcreatemailslotnotifyparams_m_mailslotquota:
+.. _cid-io.win.devicemonitorcreatemailslotnotifyparams.m_mailslotquota:
+.. _doxid-struct_member_io_win_devicemonitorcreatemailslotnotifyparams_m_maxmessagesize:
+.. _cid-io.win.devicemonitorcreatemailslotnotifyparams.m_maxmessagesize:
+.. _doxid-struct_member_io_win_devicemonitorcreatemailslotnotifyparams_m_readtimeout:
+.. _cid-io.win.devicemonitorcreatemailslotnotifyparams.m_readtimeout:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	struct DeviceMonitorCreateMailslotNotifyParams: :ref:`io.win.DeviceMonitorCreateNotifyParams<doxid-type_io_win_devicemonitorcreatenotifyparams>`
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_mailslotQuota
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_maxMessageSize
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_readTimeout
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: jancy
+	:class: overview-inherited-code-block
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_options<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_options>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_desiredAccess<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_desiredaccess>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_shareAccess<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_shareaccess>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_fileAttributes<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_fileattributes>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_fileNameLength<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_filenamelength>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`_m_padding<doxid-struct_member_io_win_devicemonitorcreatenotifyparams__m_padding>`
+

@@ -1,0 +1,21 @@
+.. include:: def.rst
+.. index:: pair: enum; sys.CppFlags
+.. _doxid-type_sys_cppflags:
+.. _cid-sys.cppflags:
+
+bitflag enum sys.CppFlags
+=========================
+
+
+
+
+
+.. _doxid-enum_member_sys_cppflags_gcc:
+.. _cid-sys.cppflags.gcc:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Gcc 
+

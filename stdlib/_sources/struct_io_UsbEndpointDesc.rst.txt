@@ -1,0 +1,45 @@
+.. include:: def.rst
+.. index:: pair: struct; io.UsbEndpointDesc
+.. _doxid-type_io_usbendpointdesc:
+.. _cid-io.usbendpointdesc:
+
+struct io.UsbEndpointDesc
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_usbendpointdesc_m_endpointid:
+.. _cid-io.usbendpointdesc.m_endpointid:
+.. _doxid-struct_member_io_usbendpointdesc_m_transfertype:
+.. _cid-io.usbendpointdesc.m_transfertype:
+.. _doxid-struct_member_io_usbendpointdesc_m_isosynctype:
+.. _cid-io.usbendpointdesc.m_isosynctype:
+.. _doxid-struct_member_io_usbendpointdesc_m_isousage:
+.. _cid-io.usbendpointdesc.m_isousage:
+.. _doxid-struct_member_io_usbendpointdesc_m_maxpacketsize:
+.. _cid-io.usbendpointdesc.m_maxpacketsize:
+.. _doxid-struct_member_io_usbendpointdesc_m_interval:
+.. _cid-io.usbendpointdesc.m_interval:
+.. _doxid-struct_member_io_usbendpointdesc_m_refresh:
+.. _cid-io.usbendpointdesc.m_refresh:
+.. _doxid-struct_member_io_usbendpointdesc_m_synchaddress:
+.. _cid-io.usbendpointdesc.m_synchaddress:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_endpointId
+	:ref:`io.UsbTransferType<doxid-type_io_usbtransfertype>` m_transferType
+	:ref:`io.UsbIsoSyncType<doxid-type_io_usbisosynctype>` m_isoSyncType
+	:ref:`io.UsbIsoUsage<doxid-type_io_usbisousage>` m_isoUsage
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_maxPacketSize
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_interval
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_refresh
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_synchAddress
+

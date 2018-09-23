@@ -1,0 +1,88 @@
+.. include:: def.rst
+.. index:: pair: enum; io.Protocol
+.. _doxid-type_io_protocol:
+.. _cid-io.protocol:
+
+enum io.Protocol
+================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_SocketAddress.jnc"
+
+
+Overview
+~~~~~~~~
+
+This enumeration contains all possible values for network protocols
+that can be used with sockets. :ref:`More...<details-doxid-type_io_protocol>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`Icmp<doxid-enum_member_io_protocol_icmp>` = 1
+	:ref:`Tcp<doxid-enum_member_io_protocol_tcp>` = 6
+	:ref:`Udp<doxid-enum_member_io_protocol_udp>` = 17
+	:ref:`Raw<doxid-enum_member_io_protocol_raw>` = 255
+
+.. _details-doxid-type_io_protocol:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration contains all possible values for network protocols
+that can be used with sockets.
+
+When opening a socket using `io.Socket.open` method you have to specify the
+protocol to use (all overloads of `io.Socket.open` methods require a
+``protocol`` argument).
+
+
+
+.. rubric:: See also:
+
+`io.Socket`
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_protocol_icmp:
+.. _cid-io.protocol.icmp:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Icmp
+
+``ICMP`` protocol; maps to ``IPPROTO_ICMP`` platform constant.
+
+.. _doxid-enum_member_io_protocol_tcp:
+.. _cid-io.protocol.tcp:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Tcp
+
+``TCP`` protocol; maps to ``IPPROTO_TCP`` platform constant.
+
+.. _doxid-enum_member_io_protocol_udp:
+.. _cid-io.protocol.udp:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Udp
+
+``UDP`` protocol; maps to ``IPPROTO_UDP`` platform constant.
+
+.. _doxid-enum_member_io_protocol_raw:
+.. _cid-io.protocol.raw:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Raw
+
+Raw ``IP`` protocol; maps to ``IPPROTO_RAW`` platform constant.
+

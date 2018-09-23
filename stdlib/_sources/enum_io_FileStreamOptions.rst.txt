@@ -1,0 +1,27 @@
+.. include:: def.rst
+.. index:: pair: enum; io.FileStreamOptions
+.. _doxid-type_io_filestreamoptions:
+.. _cid-io.filestreamoptions:
+
+bitflag enum io.FileStreamOptions
+=================================
+
+
+
+
+
+.. _doxid-enum_member_io_filestreamoptions_keepreadblocksize:
+.. _cid-io.filestreamoptions.keepreadblocksize:
+.. _doxid-enum_member_io_filestreamoptions_keepwriteblocksize:
+.. _cid-io.filestreamoptions.keepwriteblocksize:
+.. _doxid-enum_member_io_filestreamoptions_messagenamedpipe:
+.. _cid-io.filestreamoptions.messagenamedpipe:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	KeepReadBlockSize 
+	KeepWriteBlockSize 
+	MessageNamedPipe 
+

@@ -1,0 +1,20 @@
+.. index:: pair: struct; jnc_Property
+.. _doxid-structjnc___property:
+.. _cid-jnc_property:
+
+struct jnc_Property
+===================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Property.h>
+
+
+Opaque structure used as a handle to Jancy property.
+
+    Use functions from the :ref:`Property <cid-property>` to access and manage the contents of this structure.
+

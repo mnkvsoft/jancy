@@ -1,0 +1,26 @@
+.. index:: pair: enum; jnc_McSnapshotFieldKind
+.. _doxid-group__class-type_1ga0f3d5b3a46d8826e56d63fc72f644d69:
+.. _cid-jnc_mcsnapshotfieldkind:
+
+enum jnc_McSnapshotFieldKind
+============================
+
+
+
+
+
+.. _doxid-group__class-type_1gga0f3d5b3a46d8826e56d63fc72f644d69a5688298774220be17dbc7a919697a5bb:
+.. _cid-jnc_mcsnapshotfieldkind::jnc_mcsnapshotfieldkind_ptrarray:
+.. _doxid-group__class-type_1gga0f3d5b3a46d8826e56d63fc72f644d69a7c9e9eaa5097d206ba30608c20bb7330:
+.. _cid-jnc_mcsnapshotfieldkind::jnc_mcsnapshotfieldkind_count:
+.. _doxid-group__class-type_1gga0f3d5b3a46d8826e56d63fc72f644d69a6192d7521ccfc37b9b40b9307f9d9a9d:
+.. _cid-jnc_mcsnapshotfieldkind::jnc_mcsnapshotfieldkind__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_McSnapshotFieldKind_PtrArray 
+	jnc_McSnapshotFieldKind_Count 
+	jnc_McSnapshotFieldKind__Count 
+

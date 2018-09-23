@@ -1,0 +1,26 @@
+.. index:: pair: struct; jnc_FunctionPtr
+.. _doxid-structjnc___function_ptr:
+.. _cid-jnc_functionptr:
+
+struct jnc_FunctionPtr
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___function_ptr_1aa00371585d6ace428abf2b1298c58a52:
+.. _cid-jnc_functionptr::m_p:
+.. _doxid-structjnc___function_ptr_1af4e302f41a13fe76216d38b6cdce7598:
+.. _cid-jnc_functionptr::m_closure:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	void* m_p
+	:ref:`jnc_IfaceHdr<doxid-structjnc___iface_hdr>`* m_closure
+

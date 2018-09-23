@@ -1,0 +1,26 @@
+.. index:: pair: struct; jnc_PropertyPtr
+.. _doxid-structjnc___property_ptr:
+.. _cid-jnc_propertyptr:
+
+struct jnc_PropertyPtr
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___property_ptr_1a8f90346b92b42b078b7e68d4e4246b7b:
+.. _cid-jnc_propertyptr::m_vtable:
+.. _doxid-structjnc___property_ptr_1a6f3705aeb2bb45ed78196584f9fa2f72:
+.. _cid-jnc_propertyptr::m_closure:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const void*const* m_vtable
+	:ref:`jnc_IfaceHdr<doxid-structjnc___iface_hdr>`* m_closure
+

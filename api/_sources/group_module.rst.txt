@@ -1,0 +1,228 @@
+.. index:: pair: group; Module
+.. _doxid-group__module:
+.. _cid-module:
+
+Module
+======
+
+.. toctree::
+	:hidden:
+
+	enum_jnc_ModuleCompileFlag.rst
+	enum_jnc_ModuleCompileState.rst
+	struct_jnc_Module.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Module.h>
+
+
+
+
+.. _doxid-group__module_1gad7b25d08296dbe0b01cab2d9d8beca53:
+.. _cid-jnc_module_create:
+.. _doxid-group__module_1gad7e85e6ac664efcf7a0055ae972b27da:
+.. _cid-jnc_module_destroy:
+.. _doxid-group__module_1ga3320978fa1b20c82c733dd3eba9e72e9:
+.. _cid-jnc_module_clear:
+.. _doxid-group__module_1ga2b378808a3b9d374fe4bc6dd9d167dca:
+.. _cid-jnc_module_initialize:
+.. _doxid-group__module_1ga4f78b350787228d6c865287aac0f1f2d:
+.. _cid-jnc_module_getcompileflags:
+.. _doxid-group__module_1ga425e14f9c985c3a5193fc586d5dced84:
+.. _cid-jnc_module_getcompilestate:
+.. _doxid-group__module_1ga8ff46ae42afddb10538d7bc6320c56bd:
+.. _cid-jnc_module_getglobalnamespace:
+.. _doxid-group__module_1gad2038108d934c35c442aad10c4326068:
+.. _cid-jnc_module_getprimitivetype:
+.. _doxid-group__module_1ga38b35473344e5eab910ea8c69cb48e94:
+.. _cid-jnc_module_getstdtype:
+.. _doxid-group__module_1gaa3612530e82a098946c512097a3cc72c:
+.. _cid-jnc_module_finditem:
+.. _doxid-group__module_1gad7e7634abeb8de6182b93f09712c9c5e:
+.. _cid-jnc_module_mapvariable:
+.. _doxid-group__module_1ga43f9433049f37f63fcfe4a08786adc90:
+.. _cid-jnc_module_mapfunction:
+.. _doxid-group__module_1ga7f136010720a869ac521833ccaba4308:
+.. _cid-jnc_module_addsource:
+.. _doxid-group__module_1ga0f60327e3cdae45758d4af69cb270ab7:
+.. _cid-jnc_module_addimportdir:
+.. _doxid-group__module_1ga9504365496b8710ef571a4ceb4b4137b:
+.. _cid-jnc_module_addimport:
+.. _doxid-group__module_1ga6a3867feef8c5bb549a1b6a67dab6e37:
+.. _cid-jnc_module_addignoredimport:
+.. _doxid-group__module_1gae78b9cd6b33d327b796b2aa5be36f1a9:
+.. _cid-jnc_module_addopaqueclasstypeinfo:
+.. _doxid-group__module_1ga0fc0676615964a56e81386ab6feb1222:
+.. _cid-jnc_module_addstaticlib:
+.. _doxid-group__module_1ga443be818500e582409a9428ac1c0dd59:
+.. _cid-jnc_module_parse:
+.. _doxid-group__module_1gad9cc8208fc31103086b5c92716c7cfb9:
+.. _cid-jnc_module_parsefile:
+.. _doxid-group__module_1ga4f8136b15fa7e6cbca8247f9a2307132:
+.. _cid-jnc_module_parseimports:
+.. _doxid-group__module_1gaf9c1378f7ff94e0f365501a002870302:
+.. _cid-jnc_module_link:
+.. _doxid-group__module_1ga7f241f33c4b8e5853ab2bef032d7e71c:
+.. _cid-jnc_module_calclayout:
+.. _doxid-group__module_1ga99bd18da03c7f38191013aebacf84da8:
+.. _cid-jnc_module_compile:
+.. _doxid-group__module_1ga276bfa6357a716c82f39386f715a1a1b:
+.. _cid-jnc_module_jit:
+.. _doxid-group__module_1gab9cf6bf59d8a5174d5b679ee66ebb66b:
+.. _cid-jnc_module_generatedocumentation:
+.. _doxid-group__module_1ga8fb6cf86ccd65d379f94852c6b17b74a:
+.. _cid-jnc_module_getllvmirstring_v:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enums
+
+	enum :ref:`jnc_ModuleCompileFlag<doxid-group__module_1gaa8e1ffdc92b2f7b1ba69622f7d5bc7ae>`
+	enum :ref:`jnc_ModuleCompileState<doxid-group__module_1gaa95d75e4c684b9e0dbfc78d2c6c3cc05>`
+
+	// structs
+
+	struct :ref:`jnc_Module<doxid-structjnc___module>` 
+
+	// global functions
+
+	:ref:`jnc_Module<doxid-structjnc___module>`*
+	jnc_Module_create ()
+
+	void
+	jnc_Module_destroy (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	void
+	jnc_Module_clear (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	void
+	jnc_Module_initialize (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    const char* tag,
+	    uint_t compileFlags
+	    )
+
+	uint_t
+	jnc_Module_getCompileFlags (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	jnc_ModuleCompileState
+	jnc_Module_getCompileState (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	jnc_GlobalNamespace*
+	jnc_Module_getGlobalNamespace (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	:ref:`jnc_Type<doxid-structjnc___type>`*
+	jnc_Module_getPrimitiveType (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    jnc_TypeKind typeKind
+	    )
+
+	:ref:`jnc_Type<doxid-structjnc___type>`*
+	jnc_Module_getStdType (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    jnc_StdType stdType
+	    )
+
+	:ref:`jnc_ModuleItem<doxid-structjnc___module_item>`*
+	jnc_Module_findItem (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    const char* name,
+	    const :ref:`jnc_Guid<doxid-structjnc___guid>`* libGuid,
+	    size_t itemCacheSlot
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_mapVariable (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    :ref:`jnc_Variable<doxid-structjnc___variable>`* variable,
+	    void* p
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_mapFunction (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    :ref:`jnc_Function<doxid-structjnc___function>`* function,
+	    void* p
+	    )
+
+	void
+	jnc_Module_addSource (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    :ref:`jnc_ExtensionLib<doxid-structjnc___extension_lib>`* lib,
+	    const char* fileName,
+	    const char* source,
+	    size_t length
+	    )
+
+	void
+	jnc_Module_addImportDir (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    const char* dir
+	    )
+
+	void
+	jnc_Module_addImport (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    const char* fileName
+	    )
+
+	void
+	jnc_Module_addIgnoredImport (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    const char* fileName
+	    )
+
+	void
+	jnc_Module_addOpaqueClassTypeInfo (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    const char* qualifiedName,
+	    const :ref:`jnc_OpaqueClassTypeInfo<doxid-structjnc___opaque_class_type_info>`* info
+	    )
+
+	void
+	jnc_Module_addStaticLib (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    :ref:`jnc_ExtensionLib<doxid-structjnc___extension_lib>`* lib
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_parse (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    :ref:`jnc_ExtensionLib<doxid-structjnc___extension_lib>`* lib,
+	    const char* fileName,
+	    const char* source,
+	    size_t length
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_parseFile (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    const char* fileName
+	    )
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_parseImports (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_link (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_calcLayout (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_compile (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_jit (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_Module_generateDocumentation (
+	    :ref:`jnc_Module<doxid-structjnc___module>`* module,
+	    const char* outputDir
+	    )
+
+	const char*
+	jnc_Module_getLlvmIrString_v (:ref:`jnc_Module<doxid-structjnc___module>`* module)
+

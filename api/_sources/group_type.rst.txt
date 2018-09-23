@@ -1,0 +1,160 @@
+.. index:: pair: group; Type
+.. _doxid-group__type:
+.. _cid-type:
+
+Type
+====
+
+.. toctree::
+	:hidden:
+
+	enum_jnc_DataPtrTypeKind.rst
+	enum_jnc_PtrTypeFlag.rst
+	enum_jnc_StdType.rst
+	enum_jnc_TypeFlag.rst
+	enum_jnc_TypeKind.rst
+	enum_jnc_TypeKindFlag.rst
+	struct_jnc_Type.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Type.h>
+
+
+This type is the root of type hierarchy in Jancy. All the other types are *inherited* from it.
+
+.. _doxid-group__type_1gadc22c4579a3e63c8accae1fa1c3a676f:
+.. _cid-jnc_isautosizearraytype:
+.. _doxid-group__type_1ga92d8b50e1f266263118e19f6dbf4424e:
+.. _cid-jnc_ischararraytype:
+.. _doxid-group__type_1ga6b05be13324720b32f8b928e7f7b4473:
+.. _cid-jnc_ischararrayreftype:
+.. _doxid-group__type_1ga964014e3d6e32b88cd973b1b3ef8ccb1:
+.. _cid-jnc_gettypekindflags:
+.. _doxid-group__type_1gaa21bc08b4a573458ca1f21d392d9881b:
+.. _cid-jnc_getdataptrtypekindstring:
+.. _doxid-group__type_1ga6a95897ee55d7ed8cf2f3c13e6f48b16:
+.. _cid-jnc_type_gettypekind:
+.. _doxid-group__type_1gadd91c97eccfb69cbb745d6d0175df443:
+.. _cid-jnc_type_gettypekindflags:
+.. _doxid-group__type_1gaf656993d01febcd8a96f27ed6f30911c:
+.. _cid-jnc_type_getsize:
+.. _doxid-group__type_1ga144b5b261be52b0e78423b9ae6d96a4f:
+.. _cid-jnc_type_gettypestring:
+.. _doxid-group__type_1ga0a906bafc7cd6310e7aee9e2853640b4:
+.. _cid-jnc_type_gettypestringprefix:
+.. _doxid-group__type_1ga2704f53e9b7a0dd8b933e9cd2384dce9:
+.. _cid-jnc_type_gettypestringsuffix:
+.. _doxid-group__type_1ga09b37b545735ba895fa0d267cfb8e2fe:
+.. _cid-jnc_type_cmp:
+.. _doxid-group__type_1gad337d938ca4de5298d0182b7b5bfd16e:
+.. _cid-jnc_type_getdataptrtype:
+.. _doxid-group__type_1ga0f0e3b50cf0a55c9c8bfeab824ec58b1:
+.. _cid-jnc_type_markgcroots:
+.. _doxid-group__type_1gacf8812afb876e1f13a71a7fb4969e62b:
+.. _cid-jnc_dataptrtype_getptrtypekind:
+.. _doxid-group__type_1ga22d09b6bb812d97624dec1e29d1a1b50:
+.. _cid-jnc_dataptrtype_gettargettype:
+.. _doxid-group__type_1ga4f50010cb8febe40c6ceeb86315719a6:
+.. _cid-jnc_ischarptrtype:
+.. _doxid-group__type_1gad60a34f51e9c20ca5e2665f48453c950:
+.. _cid-jnc_isarrayreftype:
+.. _doxid-group__type_1ga4e70535d2cc87406fda65aba64332998:
+.. _cid-jnc_isdataptrtype:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enums
+
+	enum :ref:`jnc_DataPtrTypeKind<doxid-group__type_1gaee65443935548f532c20a1c633c4b140>`
+	enum :ref:`jnc_PtrTypeFlag<doxid-group__type_1ga7e0413b396878f235f34a74d9e93cf40>`
+	enum :ref:`jnc_StdType<doxid-group__type_1gada12e3c9caedb0e18d384bfdc7e7def3>`
+	enum :ref:`jnc_TypeFlag<doxid-group__type_1ga0b9154297f9dcb9c0de015199ad34d9e>`
+	enum :ref:`jnc_TypeKind<doxid-group__type_1ga6b7e694f112a1053b0c69a4e0141319c>`
+	enum :ref:`jnc_TypeKindFlag<doxid-group__type_1gad1fa881de57172b7d2d406a97261a6d6>`
+
+	// structs
+
+	struct :ref:`jnc_Type<doxid-structjnc___type>` 
+
+	// global functions
+
+	static
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_isAutoSizeArrayType (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	static
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_isCharArrayType (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	static
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_isCharArrayRefType (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	uint_t
+	jnc_getTypeKindFlags (jnc_TypeKind typeKind)
+
+	const char*
+	jnc_getDataPtrTypeKindString (jnc_DataPtrTypeKind ptrTypeKind)
+
+	jnc_TypeKind
+	jnc_Type_getTypeKind (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	static
+	uint_t
+	jnc_Type_getTypeKindFlags (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	size_t
+	jnc_Type_getSize (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	const char*
+	jnc_Type_getTypeString (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	const char*
+	jnc_Type_getTypeStringPrefix (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	const char*
+	jnc_Type_getTypeStringSuffix (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	int
+	jnc_Type_cmp (
+	    :ref:`jnc_Type<doxid-structjnc___type>`* type,
+	    :ref:`jnc_Type<doxid-structjnc___type>`* type2
+	    )
+
+	jnc_DataPtrType*
+	jnc_Type_getDataPtrType (
+	    :ref:`jnc_Type<doxid-structjnc___type>`* type,
+	    jnc_DataPtrTypeKind ptrTypeKind,
+	    uint_t flags
+	    )
+
+	void
+	jnc_Type_markGcRoots (
+	    :ref:`jnc_Type<doxid-structjnc___type>`* type,
+	    const void* p,
+	    :ref:`jnc_GcHeap<doxid-structjnc___gc_heap>`* gcHeap
+	    )
+
+	jnc_DataPtrTypeKind
+	jnc_DataPtrType_getPtrTypeKind (jnc_DataPtrType* type)
+
+	:ref:`jnc_Type<doxid-structjnc___type>`*
+	jnc_DataPtrType_getTargetType (jnc_DataPtrType* type)
+
+	static
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_isCharPtrType (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	static
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_isArrayRefType (:ref:`jnc_Type<doxid-structjnc___type>`* type)
+
+	static
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>`
+	jnc_isDataPtrType (
+	    :ref:`jnc_Type<doxid-structjnc___type>`* type,
+	    jnc_DataPtrTypeKind kind
+	    )
+

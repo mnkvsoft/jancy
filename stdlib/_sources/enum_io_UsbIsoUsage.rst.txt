@@ -1,0 +1,27 @@
+.. include:: def.rst
+.. index:: pair: enum; io.UsbIsoUsage
+.. _doxid-type_io_usbisousage:
+.. _cid-io.usbisousage:
+
+enum io.UsbIsoUsage
+===================
+
+
+
+
+
+.. _doxid-enum_member_io_usbisousage_data:
+.. _cid-io.usbisousage.data:
+.. _doxid-enum_member_io_usbisousage_feedback:
+.. _cid-io.usbisousage.feedback:
+.. _doxid-enum_member_io_usbisousage_implicit:
+.. _cid-io.usbisousage.implicit:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Data = 0
+	Feedback = 1
+	Implicit = 2
+

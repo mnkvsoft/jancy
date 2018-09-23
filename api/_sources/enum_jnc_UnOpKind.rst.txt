@@ -1,0 +1,56 @@
+.. index:: pair: enum; jnc_UnOpKind
+.. _doxid-group__operators_1gae611bfb523eb332069f2b7030accb665:
+.. _cid-jnc_unopkind:
+
+enum jnc_UnOpKind
+=================
+
+
+
+
+
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665aa88749dfec83b0c95b0f2024963461df:
+.. _cid-jnc_unopkind::jnc_unopkind_undefined:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665a9942bb0c8147c7cf467760f874b6baee:
+.. _cid-jnc_unopkind::jnc_unopkind_plus:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665ac2ecbf98c05dd8c8a37435dbf4421e8f:
+.. _cid-jnc_unopkind::jnc_unopkind_minus:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665a3635fa0ef0292c9c4b9f9447d09613d0:
+.. _cid-jnc_unopkind::jnc_unopkind_bwnot:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665a6212c04cf713b4cf24847e39d56bb24c:
+.. _cid-jnc_unopkind::jnc_unopkind_indir:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665adf53bad4e00ea01ef31ff5eb00a1914e:
+.. _cid-jnc_unopkind::jnc_unopkind_addr:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665a622abfb2180dc9df22b46a34b282e009:
+.. _cid-jnc_unopkind::jnc_unopkind_lognot:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665acfb0f00d9dae526ee1710ddf08f27789:
+.. _cid-jnc_unopkind::jnc_unopkind_preinc:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665a9af6cc982ac2a3e5cbfd65b81bd7a093:
+.. _cid-jnc_unopkind::jnc_unopkind_predec:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665ac276ebe566dcc46e872e06fc5ee4ea84:
+.. _cid-jnc_unopkind::jnc_unopkind_postinc:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665a0fd9a0a03f91aca78dd192023c7546d1:
+.. _cid-jnc_unopkind::jnc_unopkind_postdec:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665a52b94226cc4dbab303fab929b53d8055:
+.. _cid-jnc_unopkind::jnc_unopkind_ptr:
+.. _doxid-group__operators_1ggae611bfb523eb332069f2b7030accb665a380a3f2b61ac2ff8cf29b771d206afed:
+.. _cid-jnc_unopkind::jnc_unopkind__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_UnOpKind_Undefined = 0
+	jnc_UnOpKind_Plus 
+	jnc_UnOpKind_Minus 
+	jnc_UnOpKind_BwNot 
+	jnc_UnOpKind_Indir 
+	jnc_UnOpKind_Addr 
+	jnc_UnOpKind_LogNot 
+	jnc_UnOpKind_PreInc 
+	jnc_UnOpKind_PreDec 
+	jnc_UnOpKind_PostInc 
+	jnc_UnOpKind_PostDec 
+	jnc_UnOpKind_Ptr 
+	jnc_UnOpKind__Count 
+

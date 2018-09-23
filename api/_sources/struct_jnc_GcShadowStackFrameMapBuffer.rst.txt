@@ -1,0 +1,35 @@
+.. index:: pair: struct; jnc_GcShadowStackFrameMapBuffer
+.. _doxid-structjnc___gc_shadow_stack_frame_map_buffer:
+.. _cid-jnc_gcshadowstackframemapbuffer:
+
+struct jnc_GcShadowStackFrameMapBuffer
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___gc_shadow_stack_frame_map_buffer_1a4eabac549a6a715da26cf5b03f2bcf08:
+.. _cid-jnc_gcshadowstackframemapbuffer::m_link:
+.. _doxid-structjnc___gc_shadow_stack_frame_map_buffer_1a75b62b4cc8920c63d3804ad2b312dba7:
+.. _cid-jnc_gcshadowstackframemapbuffer::m_prev:
+.. _doxid-structjnc___gc_shadow_stack_frame_map_buffer_1a7914d29a03ca0fc03c0f756fa3f160c0:
+.. _cid-jnc_gcshadowstackframemapbuffer::m_mapkind:
+.. _doxid-structjnc___gc_shadow_stack_frame_map_buffer_1a5bf27237ae5a14f01a1daa06396a520f:
+.. _cid-jnc_gcshadowstackframemapbuffer::m_gcrootarray:
+.. _doxid-structjnc___gc_shadow_stack_frame_map_buffer_1adc928de357988fe5c9bf221553170cfc:
+.. _cid-jnc_gcshadowstackframemapbuffer::m_gcroottypearray:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_ListLink<doxid-structjnc___list_link>` m_link
+	jnc_GcShadowStackFrameMap* m_prev
+	intptr_t m_mapKind
+	intptr_t m_gcRootArray[3]
+	intptr_t m_gcRootTypeArray[3]
+

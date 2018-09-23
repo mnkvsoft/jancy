@@ -1,0 +1,26 @@
+.. index:: pair: enum; jnc_FunctionKindFlag
+.. _doxid-group__function_1ga5eda7904134fe6916fe7a43ee1c4798c:
+.. _cid-jnc_functionkindflag:
+
+enum jnc_FunctionKindFlag
+=========================
+
+
+
+
+
+.. _doxid-group__function_1gga5eda7904134fe6916fe7a43ee1c4798ca1bf651896ac71c0fac17efd09944d140:
+.. _cid-jnc_functionkindflag::jnc_functionkindflag_nostorage:
+.. _doxid-group__function_1gga5eda7904134fe6916fe7a43ee1c4798ca92c87e5fd86ad168065a7d5da19991aa:
+.. _cid-jnc_functionkindflag::jnc_functionkindflag_nooverloads:
+.. _doxid-group__function_1gga5eda7904134fe6916fe7a43ee1c4798cacad327adf31337f12094660cbdbe2a44:
+.. _cid-jnc_functionkindflag::jnc_functionkindflag_noargs:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_FunctionKindFlag_NoStorage = 0x01
+	jnc_FunctionKindFlag_NoOverloads = 0x02
+	jnc_FunctionKindFlag_NoArgs = 0x04
+

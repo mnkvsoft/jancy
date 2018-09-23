@@ -1,0 +1,24 @@
+.. include:: def.rst
+.. index:: pair: struct; io.win.DeviceMonitorMouseEventParams
+.. _doxid-type_io_win_devicemonitormouseeventparams:
+.. _cid-io.win.devicemonitormouseeventparams:
+
+struct io.win.DeviceMonitorMouseEventParams
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_win_devicemonitormouseeventparams_m_inputcount:
+.. _cid-io.win.devicemonitormouseeventparams.m_inputcount:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_inputCount
+

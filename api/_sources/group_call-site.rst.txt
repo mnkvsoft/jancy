@@ -1,0 +1,41 @@
+.. index:: pair: group; Call Site
+.. _doxid-group__call-site:
+.. _cid-call-site:
+
+Call Site
+=========
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-group__call-site_1gae5037d846eb3184509c3d1a243cb2400:
+.. _cid-jnc_begin_call_site:
+.. _doxid-group__call-site_1gaac077a1c9e0ad6a10d7edc972b8fc0e8:
+.. _cid-jnc_begin_call_site_impl:
+.. _doxid-group__call-site_1ga77d26c184021f51bea579414cc909b35:
+.. _cid-jnc_call_site_catch:
+.. _doxid-group__call-site_1ga74fd781597a5f07ffb7cfff615cfeebb:
+.. _cid-jnc_call_site_finally:
+.. _doxid-group__call-site_1ga2859d35d68099292d436b7225d5983a9:
+.. _cid-jnc_end_call_site:
+.. _doxid-group__call-site_1gae0b8fa53ceb8bcaade4ed3ced3d1bb4e:
+.. _cid-jnc_end_call_site_ex:
+.. _doxid-group__call-site_1ga6663b46d878ebd69a6ba1009adf8ceac:
+.. _cid-jnc_end_call_site_impl:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define JNC_BEGIN_CALL_SITE(runtime)
+	#define JNC_BEGIN_CALL_SITE_IMPL(runtime)
+	#define JNC_CALL_SITE_CATCH()
+	#define JNC_CALL_SITE_FINALLY()
+	#define JNC_END_CALL_SITE()
+	#define JNC_END_CALL_SITE_EX(result)
+	#define JNC_END_CALL_SITE_IMPL()
+

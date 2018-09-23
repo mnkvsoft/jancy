@@ -1,0 +1,23 @@
+.. index:: pair: struct; jnc_SjljFrame
+.. _doxid-structjnc___sjlj_frame:
+.. _cid-jnc_sjljframe:
+
+struct jnc_SjljFrame
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___sjlj_frame_1aeae1c32f041cdd977b3404f384c858de:
+.. _cid-jnc_sjljframe::m_jmpbuf:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	jmp_buf m_jmpBuf
+

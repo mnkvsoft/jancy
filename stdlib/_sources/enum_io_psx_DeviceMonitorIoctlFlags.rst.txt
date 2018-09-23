@@ -1,0 +1,30 @@
+.. include:: def.rst
+.. index:: pair: enum; io.psx.DeviceMonitorIoctlFlags
+.. _doxid-type_io_psx_devicemonitorioctlflags:
+.. _cid-io.psx.devicemonitorioctlflags:
+
+bitflag enum io.psx.DeviceMonitorIoctlFlags
+===========================================
+
+
+
+
+
+.. _doxid-enum_member_io_psx_devicemonitorioctlflags_hasargsizefield:
+.. _cid-io.psx.devicemonitorioctlflags.hasargsizefield:
+.. _doxid-enum_member_io_psx_devicemonitorioctlflags_argsizefield8:
+.. _cid-io.psx.devicemonitorioctlflags.argsizefield8:
+.. _doxid-enum_member_io_psx_devicemonitorioctlflags_argsizefield16:
+.. _cid-io.psx.devicemonitorioctlflags.argsizefield16:
+.. _doxid-enum_member_io_psx_devicemonitorioctlflags_argsizefieldbigendian:
+.. _cid-io.psx.devicemonitorioctlflags.argsizefieldbigendian:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	HasArgSizeField 
+	ArgSizeField8 
+	ArgSizeField16 
+	ArgSizeFieldBigEndian 
+

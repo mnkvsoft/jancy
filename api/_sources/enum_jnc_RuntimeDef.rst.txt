@@ -1,0 +1,23 @@
+.. index:: pair: enum; jnc_RuntimeDef
+.. _doxid-group__runtime_1gad4414ce5565f6bdda391e78db833f26a:
+.. _cid-jnc_runtimedef:
+
+enum jnc_RuntimeDef
+===================
+
+
+
+
+
+.. _doxid-group__runtime_1ggad4414ce5565f6bdda391e78db833f26aa1b86e5218df7bf35bd66a94194125d4b:
+.. _cid-jnc_runtimedef::jnc_runtimedef_stacksizelimit:
+.. _doxid-group__runtime_1ggad4414ce5565f6bdda391e78db833f26aad0a4e54016f326771b8c4f56e0c7d025:
+.. _cid-jnc_runtimedef::jnc_runtimedef_minstacksizelimit:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_RuntimeDef_StackSizeLimit = 512* 1024
+	jnc_RuntimeDef_MinStackSizeLimit = 16* 1024
+

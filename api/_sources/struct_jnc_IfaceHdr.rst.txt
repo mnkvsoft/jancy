@@ -1,0 +1,26 @@
+.. index:: pair: struct; jnc_IfaceHdr
+.. _doxid-structjnc___iface_hdr:
+.. _cid-jnc_ifacehdr:
+
+struct jnc_IfaceHdr
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___iface_hdr_1a6a0e4246ae564a45752e94f969d53077:
+.. _cid-jnc_ifacehdr::m_vtable:
+.. _doxid-structjnc___iface_hdr_1a62c05e3138419441fc9c42c234d1d8fc:
+.. _cid-jnc_ifacehdr::m_box:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const void* m_vtable
+	:ref:`jnc_Box<doxid-structjnc___box>`* m_box
+

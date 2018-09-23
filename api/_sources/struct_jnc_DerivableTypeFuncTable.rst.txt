@@ -1,0 +1,50 @@
+.. index:: pair: struct; jnc_DerivableTypeFuncTable
+.. _doxid-structjnc___derivable_type_func_table:
+.. _cid-jnc_derivabletypefunctable:
+
+struct jnc_DerivableTypeFuncTable
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___derivable_type_func_table_1a9517c55ea83b4204829d5ea6f27d11c8:
+.. _cid-jnc_derivabletypefunctable::m_size:
+.. _doxid-structjnc___derivable_type_func_table_1a0b2a2ffe7cb486703abf8cdf4d0b75c0:
+.. _cid-jnc_derivabletypefunctable::m_getstaticconstructorfunc:
+.. _doxid-structjnc___derivable_type_func_table_1a53677d1f04f81d3a7ebb03bff1c32995:
+.. _cid-jnc_derivabletypefunctable::m_getstaticdestructorfunc:
+.. _doxid-structjnc___derivable_type_func_table_1a947e221fa4be9613d7512b65f400b4a7:
+.. _cid-jnc_derivabletypefunctable::m_getpreconstructorfunc:
+.. _doxid-structjnc___derivable_type_func_table_1aac6bf76e2b0ca67675b56bfb60b40c4b:
+.. _cid-jnc_derivabletypefunctable::m_getconstructorfunc:
+.. _doxid-structjnc___derivable_type_func_table_1aa394257ed22f16d5c752559740de12c8:
+.. _cid-jnc_derivabletypefunctable::m_getdestructorfunc:
+.. _doxid-structjnc___derivable_type_func_table_1a0e0743f97f6ebacf62643c03bee6ae39:
+.. _cid-jnc_derivabletypefunctable::m_getunaryoperatorfunc:
+.. _doxid-structjnc___derivable_type_func_table_1acbaf64e531224a5ccf46ecd6347fefbf:
+.. _cid-jnc_derivabletypefunctable::m_getbinaryoperatorfunc:
+.. _doxid-structjnc___derivable_type_func_table_1aac87eaf11c4d5f86717a5be9821ae111:
+.. _cid-jnc_derivabletypefunctable::m_getcalloperatorfunc:
+.. _doxid-structjnc___derivable_type_func_table_1a5669932a10e36e1c59d5e292552f6351:
+.. _cid-jnc_derivabletypefunctable::m_getcastoperatorfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_DerivableType_GetMemberMethodFunc* m_getStaticConstructorFunc
+	jnc_DerivableType_GetMemberMethodFunc* m_getStaticDestructorFunc
+	jnc_DerivableType_GetMemberMethodFunc* m_getPreConstructorFunc
+	jnc_DerivableType_GetMemberMethodFunc* m_getConstructorFunc
+	jnc_DerivableType_GetMemberMethodFunc* m_getDestructorFunc
+	jnc_DerivableType_GetUnaryOperatorFunc* m_getUnaryOperatorFunc
+	jnc_DerivableType_GetBinaryOperatorFunc* m_getBinaryOperatorFunc
+	jnc_DerivableType_GetMemberMethodFunc* m_getCallOperatorFunc
+	jnc_DerivableType_GetCastOperatorFunc* m_getCastOperatorFunc
+

@@ -1,0 +1,41 @@
+.. index:: pair: enum; jnc_BoxFlag
+.. _doxid-group__runtime-structs_1ga7688aba6ff22cec33210cec8cbf1bf7f:
+.. _cid-jnc_boxflag:
+
+enum jnc_BoxFlag
+================
+
+
+
+
+
+.. _doxid-group__runtime-structs_1gga7688aba6ff22cec33210cec8cbf1bf7fa4bc36267c691125a55b603ab96edbb31:
+.. _cid-jnc_boxflag::jnc_boxflag_weakmark:
+.. _doxid-group__runtime-structs_1gga7688aba6ff22cec33210cec8cbf1bf7fa30fed74c207534bec0e8b700e4af22c9:
+.. _cid-jnc_boxflag::jnc_boxflag_closureweakmark:
+.. _doxid-group__runtime-structs_1gga7688aba6ff22cec33210cec8cbf1bf7fa7c68fe36cfdb13a57c81decf264b8e38:
+.. _cid-jnc_boxflag::jnc_boxflag_datamark:
+.. _doxid-group__runtime-structs_1gga7688aba6ff22cec33210cec8cbf1bf7fa555aead81dd931bad55f686d11aef801:
+.. _cid-jnc_boxflag::jnc_boxflag_classmark:
+.. _doxid-group__runtime-structs_1gga7688aba6ff22cec33210cec8cbf1bf7fafbe28fdccd11c40e060fa2e6a62ca224:
+.. _cid-jnc_boxflag::jnc_boxflag_zombie:
+.. _doxid-group__runtime-structs_1gga7688aba6ff22cec33210cec8cbf1bf7fa122687ef7de0a3eb5e2f372c8d748b87:
+.. _cid-jnc_boxflag::jnc_boxflag_staticdata:
+.. _doxid-group__runtime-structs_1gga7688aba6ff22cec33210cec8cbf1bf7fad8d53d49b49324e3fd5813c7e3e6f0ad:
+.. _cid-jnc_boxflag::jnc_boxflag_dynamicarray:
+.. _doxid-group__runtime-structs_1gga7688aba6ff22cec33210cec8cbf1bf7fa753c581dc65e666706809005d98e48d3:
+.. _cid-jnc_boxflag::jnc_boxflag_markmask:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_BoxFlag_WeakMark = 0x01
+	jnc_BoxFlag_ClosureWeakMark = 0x02
+	jnc_BoxFlag_DataMark = 0x04
+	jnc_BoxFlag_ClassMark = 0x08
+	jnc_BoxFlag_Zombie = 0x10
+	jnc_BoxFlag_StaticData = 0x20
+	jnc_BoxFlag_DynamicArray = 0x40
+	jnc_BoxFlag_MarkMask = 0x0f
+

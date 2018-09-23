@@ -1,0 +1,29 @@
+.. index:: pair: struct; jnc_MulticastClassTypeFuncTable
+.. _doxid-structjnc___multicast_class_type_func_table:
+.. _cid-jnc_multicastclasstypefunctable:
+
+struct jnc_MulticastClassTypeFuncTable
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___multicast_class_type_func_table_1adfbb6ad069176f2867a7c7d31190b12d:
+.. _cid-jnc_multicastclasstypefunctable::m_size:
+.. _doxid-structjnc___multicast_class_type_func_table_1a4e5b29dba8ca76d6e41bc7e9f838ab74:
+.. _cid-jnc_multicastclasstypefunctable::m_gettargettypefunc:
+.. _doxid-structjnc___multicast_class_type_func_table_1af15b0a1d19cae2892bd09f8934e1a823:
+.. _cid-jnc_multicastclasstypefunctable::m_getmethodfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_MulticastClassType_GetTargetTypeFunc* m_getTargetTypeFunc
+	jnc_MulticastClassType_GetMethodFunc* m_getMethodFunc
+

@@ -1,0 +1,53 @@
+.. index:: pair: struct; jnc_ModuleItemDeclFuncTable
+.. _doxid-structjnc___module_item_decl_func_table:
+.. _cid-jnc_moduleitemdeclfunctable:
+
+struct jnc_ModuleItemDeclFuncTable
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___module_item_decl_func_table_1a3733bf73297e51bf2ccbe3d1f1794343:
+.. _cid-jnc_moduleitemdeclfunctable::m_size:
+.. _doxid-structjnc___module_item_decl_func_table_1a587a65bc4261df1d767d16c05a2087d2:
+.. _cid-jnc_moduleitemdeclfunctable::m_getnamefunc:
+.. _doxid-structjnc___module_item_decl_func_table_1ac078201ae4fc292ab0dcd043f3ae88c5:
+.. _cid-jnc_moduleitemdeclfunctable::m_getqualifiednamefunc:
+.. _doxid-structjnc___module_item_decl_func_table_1aad4fcf61b882156bf32dec43748451d4:
+.. _cid-jnc_moduleitemdeclfunctable::m_getstoragekindfunc:
+.. _doxid-structjnc___module_item_decl_func_table_1a26ba3ad1624bd96ff391ced5d9d7fba7:
+.. _cid-jnc_moduleitemdeclfunctable::m_getaccesskindfunc:
+.. _doxid-structjnc___module_item_decl_func_table_1a809262b552473bcc989127487a6a428a:
+.. _cid-jnc_moduleitemdeclfunctable::m_getattributeblockfunc:
+.. _doxid-structjnc___module_item_decl_func_table_1af30783248a83533502a3cad0e2781297:
+.. _cid-jnc_moduleitemdeclfunctable::m_getparentnamespacefunc:
+.. _doxid-structjnc___module_item_decl_func_table_1ae13ba9a12fc73caa06f83fc73c9a902c:
+.. _cid-jnc_moduleitemdeclfunctable::m_getparentunitfunc:
+.. _doxid-structjnc___module_item_decl_func_table_1addd8c93b88f964add41e6849fc0bcfaf:
+.. _cid-jnc_moduleitemdeclfunctable::m_getlinefunc:
+.. _doxid-structjnc___module_item_decl_func_table_1a75c9f7a5760a94cad18d633aeff0e801:
+.. _cid-jnc_moduleitemdeclfunctable::m_getcolfunc:
+.. _doxid-structjnc___module_item_decl_func_table_1a96a60e4e1d29689be07dd5bdbb35b8cc:
+.. _cid-jnc_moduleitemdeclfunctable::m_getoffsetfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_ModuleItemDecl_GetNameFunc* m_getNameFunc
+	jnc_ModuleItemDecl_GetQualifiedNameFunc* m_getQualifiedNameFunc
+	jnc_ModuleItemDecl_GetStorageKindFunc* m_getStorageKindFunc
+	jnc_ModuleItemDecl_GetAccessKindFunc* m_getAccessKindFunc
+	jnc_ModuleItemDecl_GetAttributeBlockFunc* m_getAttributeBlockFunc
+	jnc_ModuleItemDecl_GetParentNamespaceFunc* m_getParentNamespaceFunc
+	jnc_ModuleItemDecl_GetParentUnitFunc* m_getParentUnitFunc
+	jnc_ModuleItemDecl_GetLineFunc* m_getLineFunc
+	jnc_ModuleItemDecl_GetColFunc* m_getColFunc
+	jnc_ModuleItemDecl_GetOffsetFunc* m_getOffsetFunc
+

@@ -1,0 +1,29 @@
+.. index:: pair: enum; jnc_FunctionPtrTypeKind
+.. _doxid-group__function-type_1gaea149ac2a4106e9dc5e75172ba689b83:
+.. _cid-jnc_functionptrtypekind:
+
+enum jnc_FunctionPtrTypeKind
+============================
+
+
+
+
+
+.. _doxid-group__function-type_1ggaea149ac2a4106e9dc5e75172ba689b83a1f901e7ecce02124ed0494d7bfd708e1:
+.. _cid-jnc_functionptrtypekind::jnc_functionptrtypekind_normal:
+.. _doxid-group__function-type_1ggaea149ac2a4106e9dc5e75172ba689b83a3a07aa13c122082d222aa41b25290699:
+.. _cid-jnc_functionptrtypekind::jnc_functionptrtypekind_weak:
+.. _doxid-group__function-type_1ggaea149ac2a4106e9dc5e75172ba689b83a256dcb5ac198b995fc9f79c922ca69c7:
+.. _cid-jnc_functionptrtypekind::jnc_functionptrtypekind_thin:
+.. _doxid-group__function-type_1ggaea149ac2a4106e9dc5e75172ba689b83a54843ba4786be01ee66c11d94637f389:
+.. _cid-jnc_functionptrtypekind::jnc_functionptrtypekind__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_FunctionPtrTypeKind_Normal = 0
+	jnc_FunctionPtrTypeKind_Weak 
+	jnc_FunctionPtrTypeKind_Thin 
+	jnc_FunctionPtrTypeKind__Count 
+

@@ -1,0 +1,56 @@
+.. index:: pair: group; Array Type
+.. _doxid-group__array-type:
+.. _cid-array-type:
+
+Array Type
+==========
+
+.. toctree::
+	:hidden:
+
+	enum_jnc_ArrayTypeFlag.rst
+	struct_jnc_ArrayType.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_ArrayType.h>
+
+
+Overview
+~~~~~~~~
+
+Array type is used to represents a one-dimensional sequence of elements of the same type. :ref:`More...<details-doxid-group__array-type>`
+
+.. _doxid-group__array-type_1gabad06c052eb63472b60d8bcabe8c62f9:
+.. _cid-jnc_arraytype_getelementtype:
+.. _doxid-group__array-type_1ga060473d81c00b4cd7d91b6d7541171e7:
+.. _cid-jnc_arraytype_getelementcount:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enums
+
+	enum :ref:`jnc_ArrayTypeFlag<doxid-group__array-type_1ga3320515b517784a659f4dc5dae52a109>`
+
+	// structs
+
+	struct :ref:`jnc_ArrayType<doxid-structjnc___array_type>` 
+
+	// global functions
+
+	:ref:`jnc_Type<doxid-structjnc___type>`*
+	jnc_ArrayType_getElementType (:ref:`jnc_ArrayType<doxid-structjnc___array_type>`* type)
+
+	size_t
+	jnc_ArrayType_getElementCount (:ref:`jnc_ArrayType<doxid-structjnc___array_type>`* type)
+
+.. _details-doxid-group__array-type:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Array type is used to represents a one-dimensional sequence of elements of the same type.
+
+Just like in C, Jancy arrays are not dynamic. Compiler has to know the number of elements in array during compile-time.
+

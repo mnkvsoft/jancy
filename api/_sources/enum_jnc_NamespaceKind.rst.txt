@@ -1,0 +1,44 @@
+.. index:: pair: enum; jnc_NamespaceKind
+.. _doxid-group__namespace_1gad3849431056c1230a30dacf35ce24d3f:
+.. _cid-jnc_namespacekind:
+
+enum jnc_NamespaceKind
+======================
+
+
+
+
+
+.. _doxid-group__namespace_1ggad3849431056c1230a30dacf35ce24d3fa75cad0acdc687374d7b2cfe8735fedc8:
+.. _cid-jnc_namespacekind::jnc_namespacekind_undefined:
+.. _doxid-group__namespace_1ggad3849431056c1230a30dacf35ce24d3fa50e48ed824ea93e21b7f692e44e3c2d1:
+.. _cid-jnc_namespacekind::jnc_namespacekind_global:
+.. _doxid-group__namespace_1ggad3849431056c1230a30dacf35ce24d3fadd1970a083595588cb22aeb2e4ecbc9d:
+.. _cid-jnc_namespacekind::jnc_namespacekind_scope:
+.. _doxid-group__namespace_1ggad3849431056c1230a30dacf35ce24d3fabdbb7121924e89d8f8cf06c0418dc9a7:
+.. _cid-jnc_namespacekind::jnc_namespacekind_type:
+.. _doxid-group__namespace_1ggad3849431056c1230a30dacf35ce24d3fa9a0e84e486670a4e93c9cf21f1ea01df:
+.. _cid-jnc_namespacekind::jnc_namespacekind_extension:
+.. _doxid-group__namespace_1ggad3849431056c1230a30dacf35ce24d3fae534fdf548d68dee706d9f7cc007d795:
+.. _cid-jnc_namespacekind::jnc_namespacekind_property:
+.. _doxid-group__namespace_1ggad3849431056c1230a30dacf35ce24d3fa2d872630f281ade848b927a03d62965a:
+.. _cid-jnc_namespacekind::jnc_namespacekind_propertytemplate:
+.. _doxid-group__namespace_1ggad3849431056c1230a30dacf35ce24d3fac4cb7d44718d73df3fbcb4ee841f4859:
+.. _cid-jnc_namespacekind::jnc_namespacekind_dynamiclib:
+.. _doxid-group__namespace_1ggad3849431056c1230a30dacf35ce24d3fadd7fdcee8419e2eee6b6abe7bcc48aee:
+.. _cid-jnc_namespacekind::jnc_namespacekind__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_NamespaceKind_Undefined 
+	jnc_NamespaceKind_Global 
+	jnc_NamespaceKind_Scope 
+	jnc_NamespaceKind_Type 
+	jnc_NamespaceKind_Extension 
+	jnc_NamespaceKind_Property 
+	jnc_NamespaceKind_PropertyTemplate 
+	jnc_NamespaceKind_DynamicLib 
+	jnc_NamespaceKind__Count 
+

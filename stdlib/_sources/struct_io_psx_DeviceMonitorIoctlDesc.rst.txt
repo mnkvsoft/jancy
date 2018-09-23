@@ -1,0 +1,33 @@
+.. include:: def.rst
+.. index:: pair: struct; io.psx.DeviceMonitorIoctlDesc
+.. _doxid-type_io_psx_devicemonitorioctldesc:
+.. _cid-io.psx.devicemonitorioctldesc:
+
+struct io.psx.DeviceMonitorIoctlDesc
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_psx_devicemonitorioctldesc_m_code:
+.. _cid-io.psx.devicemonitorioctldesc.m_code:
+.. _doxid-struct_member_io_psx_devicemonitorioctldesc_m_argfixedsize:
+.. _cid-io.psx.devicemonitorioctldesc.m_argfixedsize:
+.. _doxid-struct_member_io_psx_devicemonitorioctldesc_m_argsizefieldoffset:
+.. _cid-io.psx.devicemonitorioctldesc.m_argsizefieldoffset:
+.. _doxid-struct_member_io_psx_devicemonitorioctldesc_m_flags:
+.. _cid-io.psx.devicemonitorioctldesc.m_flags:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_code
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_argFixedSize
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_argSizeFieldOffset
+	:ref:`io.psx.DeviceMonitorIoctlFlags<doxid-type_io_psx_devicemonitorioctlflags>` m_flags
+

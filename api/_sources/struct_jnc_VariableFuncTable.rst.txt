@@ -1,0 +1,23 @@
+.. index:: pair: struct; jnc_VariableFuncTable
+.. _doxid-structjnc___variable_func_table:
+.. _cid-jnc_variablefunctable:
+
+struct jnc_VariableFuncTable
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___variable_func_table_1a36387b7d8264880e9a574ee9aa74b301:
+.. _cid-jnc_variablefunctable::m_size:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+

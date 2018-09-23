@@ -1,0 +1,113 @@
+.. include:: def.rst
+.. index:: pair: enum; io.SerialEvents
+.. _doxid-type_io_serialevents:
+.. _cid-io.serialevents:
+
+bitflag enum io.SerialEvents
+============================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_Serial.jnc"
+
+
+Overview
+~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.Serial` object. The set of *active* events is accessible
+via `io.Serial.m_activeEvents`. :ref:`More...<details-doxid-type_io_serialevents>`
+
+.. _doxid-enum_member_io_serialevents_ctson:
+.. _cid-io.serialevents.ctson:
+.. _doxid-enum_member_io_serialevents_ctsoff:
+.. _cid-io.serialevents.ctsoff:
+.. _doxid-enum_member_io_serialevents_dsron:
+.. _cid-io.serialevents.dsron:
+.. _doxid-enum_member_io_serialevents_dsroff:
+.. _cid-io.serialevents.dsroff:
+.. _doxid-enum_member_io_serialevents_ringon:
+.. _cid-io.serialevents.ringon:
+.. _doxid-enum_member_io_serialevents_ringoff:
+.. _cid-io.serialevents.ringoff:
+.. _doxid-enum_member_io_serialevents_dcdon:
+.. _cid-io.serialevents.dcdon:
+.. _doxid-enum_member_io_serialevents_dcdoff:
+.. _cid-io.serialevents.dcdoff:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`IoError<doxid-enum_member_io_serialevents_ioerror>` 
+	:ref:`IncomingData<doxid-enum_member_io_serialevents_incomingdata>` 
+	:ref:`ReadBufferFull<doxid-enum_member_io_serialevents_readbufferfull>` 
+	:ref:`WriteBufferReady<doxid-enum_member_io_serialevents_writebufferready>` 
+	CtsOn 
+	CtsOff 
+	DsrOn 
+	DsrOff 
+	RingOn 
+	RingOff 
+	DcdOn 
+	DcdOff 
+
+.. _details-doxid-type_io_serialevents:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.Serial` object. The set of *active* events is accessible
+via `io.Serial.m_activeEvents`.
+
+
+
+.. rubric:: See also:
+
+`io.Serial`
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_serialevents_ioerror:
+.. _cid-io.serialevents.ioerror:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IoError
+
+An IO error occured on the serial port; detailed information about the
+error is available at `io.Serial.m_ioError`.
+
+.. _doxid-enum_member_io_serialevents_incomingdata:
+.. _cid-io.serialevents.incomingdata:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IncomingData
+
+Incoming data is available on the serial port; this data could be
+fetched with `io.Serial.read` method.
+
+.. _doxid-enum_member_io_serialevents_readbufferfull:
+.. _cid-io.serialevents.readbufferfull:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	ReadBufferFull
+
+Serial port receive buffer is full; upcoming data may be dropped .
+
+.. _doxid-enum_member_io_serialevents_writebufferready:
+.. _cid-io.serialevents.writebufferready:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	WriteBufferReady
+
+Serial port transmit buffer is ready to accept more data; it's OK to
+issue more `io.Serial.write` requests.
+

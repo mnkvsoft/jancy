@@ -1,0 +1,15 @@
+.. include:: def.rst
+.. index:: pair: struct; io.win.DeviceMonitorCloseNotifyParams
+.. _doxid-type_io_win_devicemonitorclosenotifyparams:
+.. _cid-io.win.devicemonitorclosenotifyparams:
+
+struct io.win.DeviceMonitorCloseNotifyParams
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+

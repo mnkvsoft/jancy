@@ -1,0 +1,88 @@
+.. include:: def.rst
+.. index:: pair: enum; io.PcapEvents
+.. _doxid-type_io_pcapevents:
+.. _cid-io.pcapevents:
+
+bitflag enum io.PcapEvents
+==========================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_pcap.jncx"
+
+
+Overview
+~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.Pcap` object. The set of *active* events is accessible
+via `io.Pcap.m_activeEvents`. :ref:`More...<details-doxid-type_io_pcapevents>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`IoError<doxid-enum_member_io_pcapevents_ioerror>` 
+	:ref:`IncomingData<doxid-enum_member_io_pcapevents_incomingdata>` 
+	:ref:`ReadBufferFull<doxid-enum_member_io_pcapevents_readbufferfull>` 
+	:ref:`Eof<doxid-enum_member_io_pcapevents_eof>` 
+
+.. _details-doxid-type_io_pcapevents:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration contains codes of all possible events that might
+happen on `io.Pcap` object. The set of *active* events is accessible
+via `io.Pcap.m_activeEvents`.
+
+
+
+.. rubric:: See also:
+
+`io.Pcap`
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_pcapevents_ioerror:
+.. _cid-io.pcapevents.ioerror:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IoError
+
+An IO error occured on the Pcap device or file; detailed information
+about the error is available at `io.Pcap.m_ioError`.
+
+.. _doxid-enum_member_io_pcapevents_incomingdata:
+.. _cid-io.pcapevents.incomingdata:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IncomingData
+
+New packet(s) are available on the Pcap device or file; the next packet
+could be fetched with `io.Pcap.read` method.
+
+.. _doxid-enum_member_io_pcapevents_readbufferfull:
+.. _cid-io.pcapevents.readbufferfull:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	ReadBufferFull
+
+Pcap device receive buffer is full; upcoming packets may be dropped
+(depending on the internal buffer size of the kernel Pcap provider).
+
+.. _doxid-enum_member_io_pcapevents_eof:
+.. _cid-io.pcapevents.eof:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Eof
+
+End-of-file was reached on the Pcap file.
+

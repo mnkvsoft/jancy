@@ -1,0 +1,140 @@
+.. index:: pair: enum; jnc_StdType
+.. _doxid-group__type_1gada12e3c9caedb0e18d384bfdc7e7def3:
+.. _cid-jnc_stdtype:
+
+enum jnc_StdType
+================
+
+
+
+
+
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3af65f6b806f43dc8768fe042a02de6642:
+.. _cid-jnc_stdtype::jnc_stdtype_byteptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3af4d1b9d279d678f16b83610d9ec4ef5c:
+.. _cid-jnc_stdtype::jnc_stdtype_charconstptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a66cde8ec394ef45f2efc3d676e706a1e:
+.. _cid-jnc_stdtype::jnc_stdtype_simpleifacehdr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3abb535be0d2d77c8598b7ed1317cca3eb:
+.. _cid-jnc_stdtype::jnc_stdtype_simpleifacehdrptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3ab7a8cfe0331d419428708a6266705a4e:
+.. _cid-jnc_stdtype::jnc_stdtype_box:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3af9069d8efd58edaafeae37dd4f100182:
+.. _cid-jnc_stdtype::jnc_stdtype_boxptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a5eef9145d09e1184d0677830eb25445e:
+.. _cid-jnc_stdtype::jnc_stdtype_databox:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a0b972cb83758892928c4f113355afe01:
+.. _cid-jnc_stdtype::jnc_stdtype_databoxptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a282bbfb061dfcb79ab9c75d949443035:
+.. _cid-jnc_stdtype::jnc_stdtype_dynamicarraybox:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a65f17e34d106c829e7e9b0a997eea1ee:
+.. _cid-jnc_stdtype::jnc_stdtype_dynamicarrayboxptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3ad1f82fc092242680d678cceef43bf9de:
+.. _cid-jnc_stdtype::jnc_stdtype_staticdatabox:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a5563e5277960e9a9fc850d10229b9957:
+.. _cid-jnc_stdtype::jnc_stdtype_staticdataboxptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3ab016e22417ff379ba6653040ce555ca7:
+.. _cid-jnc_stdtype::jnc_stdtype_abstractclass:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a1dd673cbb12d68fbae65152172b4d231:
+.. _cid-jnc_stdtype::jnc_stdtype_abstractclassptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a18306494078b62ab0fb8c5bbd41200d0:
+.. _cid-jnc_stdtype::jnc_stdtype_abstractdata:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a0e1eb947f1b8f5c0f00e4a8c0fde8e1b:
+.. _cid-jnc_stdtype::jnc_stdtype_abstractdataptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3aaa5d203e69c1a01b5de2fc804d3f2518:
+.. _cid-jnc_stdtype::jnc_stdtype_simplefunction:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a90c23c799133e2290af64ccf41cee1ed:
+.. _cid-jnc_stdtype::jnc_stdtype_simplemulticast:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a4e844e8f81b46c875491fbaa95d2414e:
+.. _cid-jnc_stdtype::jnc_stdtype_simpleeventptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a02c5704f059fe45e3de85df458863249:
+.. _cid-jnc_stdtype::jnc_stdtype_binder:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a56fcbe4b05677319ec56acc335ece7cd:
+.. _cid-jnc_stdtype::jnc_stdtype_reactorbindsite:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3aea20f38f00c3cb0d6a0a163362923115:
+.. _cid-jnc_stdtype::jnc_stdtype_scheduler:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3ab34be3c2c2b6ccf6b8681a463fb7da14:
+.. _cid-jnc_stdtype::jnc_stdtype_regexmatch:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a2872bdaee3e93398ae2d7954587b8054:
+.. _cid-jnc_stdtype::jnc_stdtype_regexstate:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3acb7137e125f9a6f4c46c9465f70f8489:
+.. _cid-jnc_stdtype::jnc_stdtype_regexdfa:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a078c49148f602690d29ab72e160e4520:
+.. _cid-jnc_stdtype::jnc_stdtype_dynamiclib:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3ad66fdbc6b1e9ecda06d02e9dc7a51ebc:
+.. _cid-jnc_stdtype::jnc_stdtype_dynamiclayout:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a35c33e892ce4529d028331eccbba1e15:
+.. _cid-jnc_stdtype::jnc_stdtype_fmtliteral:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a503398449c48829755ca7a217efa2b5e:
+.. _cid-jnc_stdtype::jnc_stdtype_int64int64:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3aca3d09ab0c0973a8c83286762cfb839d:
+.. _cid-jnc_stdtype::jnc_stdtype_fp64fp64:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a4404f414ff5a1db63d181b574e655a04:
+.. _cid-jnc_stdtype::jnc_stdtype_int64fp64:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a1fd05c9b3235b5d65ffe0c3b049d1563:
+.. _cid-jnc_stdtype::jnc_stdtype_fp64int64:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a081fc4e7b52b321831893899d2195ee9:
+.. _cid-jnc_stdtype::jnc_stdtype_dataptrvalidator:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a8e69c3b0754b5a23455f20443413c881:
+.. _cid-jnc_stdtype::jnc_stdtype_dataptrvalidatorptr:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a0f78d414cc812e3052beae8140bed552:
+.. _cid-jnc_stdtype::jnc_stdtype_dataptrstruct:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a54ac3e13f18d2106666dc2c453e82080:
+.. _cid-jnc_stdtype::jnc_stdtype_functionptrstruct:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3a33fcea11563ed53b50cf599c74442c6f:
+.. _cid-jnc_stdtype::jnc_stdtype_propertyptrstruct:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3ae1ecc1d8745be10cf8b2b5b5e5ad140b:
+.. _cid-jnc_stdtype::jnc_stdtype_variantstruct:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3ae3721a2a6454e3396e8ae3b439c0221c:
+.. _cid-jnc_stdtype::jnc_stdtype_gcshadowstackframe:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3af4e50c00c1c3f64e6069eb8f0510810d:
+.. _cid-jnc_stdtype::jnc_stdtype_sjljframe:
+.. _doxid-group__type_1ggada12e3c9caedb0e18d384bfdc7e7def3ab32dbfd537bce67ced3a4ed3a4e23017:
+.. _cid-jnc_stdtype::jnc_stdtype__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_StdType_BytePtr 
+	jnc_StdType_CharConstPtr 
+	jnc_StdType_SimpleIfaceHdr 
+	jnc_StdType_SimpleIfaceHdrPtr 
+	jnc_StdType_Box 
+	jnc_StdType_BoxPtr 
+	jnc_StdType_DataBox 
+	jnc_StdType_DataBoxPtr 
+	jnc_StdType_DynamicArrayBox 
+	jnc_StdType_DynamicArrayBoxPtr 
+	jnc_StdType_StaticDataBox 
+	jnc_StdType_StaticDataBoxPtr 
+	jnc_StdType_AbstractClass 
+	jnc_StdType_AbstractClassPtr 
+	jnc_StdType_AbstractData 
+	jnc_StdType_AbstractDataPtr 
+	jnc_StdType_SimpleFunction 
+	jnc_StdType_SimpleMulticast 
+	jnc_StdType_SimpleEventPtr 
+	jnc_StdType_Binder 
+	jnc_StdType_ReactorBindSite 
+	jnc_StdType_Scheduler 
+	jnc_StdType_RegexMatch 
+	jnc_StdType_RegexState 
+	jnc_StdType_RegexDfa 
+	jnc_StdType_DynamicLib 
+	jnc_StdType_DynamicLayout 
+	jnc_StdType_FmtLiteral 
+	jnc_StdType_Int64Int64 
+	jnc_StdType_Fp64Fp64 
+	jnc_StdType_Int64Fp64 
+	jnc_StdType_Fp64Int64 
+	jnc_StdType_DataPtrValidator 
+	jnc_StdType_DataPtrValidatorPtr 
+	jnc_StdType_DataPtrStruct 
+	jnc_StdType_FunctionPtrStruct 
+	jnc_StdType_PropertyPtrStruct = jnc_StdType_FunctionPtrStruct
+	jnc_StdType_VariantStruct 
+	jnc_StdType_GcShadowStackFrame 
+	jnc_StdType_SjljFrame 
+	jnc_StdType__Count 
+

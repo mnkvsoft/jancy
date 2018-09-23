@@ -1,0 +1,41 @@
+.. index:: pair: struct; jnc_GcMutatorThread
+.. _doxid-structjnc___gc_mutator_thread:
+.. _cid-jnc_gcmutatorthread:
+
+struct jnc_GcMutatorThread
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___gc_mutator_thread_1a03551192925af0c2c850c3b8bdfa9eec:
+.. _cid-jnc_gcmutatorthread::m_link:
+.. _doxid-structjnc___gc_mutator_thread_1ae40d9f159ce9e572c5ddba5cc5c4acf0:
+.. _cid-jnc_gcmutatorthread::m_threadid:
+.. _doxid-structjnc___gc_mutator_thread_1a771aa02394685ea8f60cb4ad08431ae6:
+.. _cid-jnc_gcmutatorthread::m_issafepoint:
+.. _doxid-structjnc___gc_mutator_thread_1a9f85c126b8ebaf1652850abea1b18570:
+.. _cid-jnc_gcmutatorthread::m_waitregionlevel:
+.. _doxid-structjnc___gc_mutator_thread_1a59ec5a53d6ce6a85a88041872b2528c5:
+.. _cid-jnc_gcmutatorthread::m_nocollectregionlevel:
+.. _doxid-structjnc___gc_mutator_thread_1af8401411f3a76a5abf74dc430ae80ef8:
+.. _cid-jnc_gcmutatorthread::m_dataptrvalidatorpoolbegin:
+.. _doxid-structjnc___gc_mutator_thread_1a70104e1e8dd689a827311f56b8e5bcb9:
+.. _cid-jnc_gcmutatorthread::m_dataptrvalidatorpoolend:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_ListLink<doxid-structjnc___list_link>` m_link
+	uint64_t m_threadId
+	:ref:`bool_t<doxid-group__base-def_1ga812d16e5494522586b3784e55d479912>` m_isSafePoint
+	size_t m_waitRegionLevel
+	size_t m_noCollectRegionLevel
+	:ref:`jnc_DataPtrValidator<doxid-structjnc___data_ptr_validator>`* m_dataPtrValidatorPoolBegin
+	:ref:`jnc_DataPtrValidator<doxid-structjnc___data_ptr_validator>`* m_dataPtrValidatorPoolEnd
+

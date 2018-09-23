@@ -1,0 +1,85 @@
+.. include:: def.rst
+.. index:: pair: enum; io.SerialStatusLines
+.. _doxid-type_io_serialstatuslines:
+.. _cid-io.serialstatuslines:
+
+bitflag enum io.SerialStatusLines
+=================================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_Serial.jnc"
+
+
+Overview
+~~~~~~~~
+
+This enumeration lists all possible status lines on the serial port. :ref:`More...<details-doxid-type_io_serialstatuslines>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`Cts<doxid-enum_member_io_serialstatuslines_cts>` 
+	:ref:`Dsr<doxid-enum_member_io_serialstatuslines_dsr>` 
+	:ref:`Ring<doxid-enum_member_io_serialstatuslines_ring>` 
+	:ref:`Dcd<doxid-enum_member_io_serialstatuslines_dcd>` 
+
+.. _details-doxid-type_io_serialstatuslines:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration lists all possible status lines on the serial port.
+
+You can read values of all the status lines at once by accessing
+`io.Serial.m_statusLines` property.
+
+
+
+.. rubric:: See also:
+
+`io.Serial`
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_serialstatuslines_cts:
+.. _cid-io.serialstatuslines.cts:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Cts
+
+``CTS`` status line (clear-to-send).
+
+.. _doxid-enum_member_io_serialstatuslines_dsr:
+.. _cid-io.serialstatuslines.dsr:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Dsr
+
+``DSR`` status line (data-source-ready)
+
+.. _doxid-enum_member_io_serialstatuslines_ring:
+.. _cid-io.serialstatuslines.ring:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Ring
+
+``RING`` status line (ring-indicator)
+
+.. _doxid-enum_member_io_serialstatuslines_dcd:
+.. _cid-io.serialstatuslines.dcd:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	Dcd
+
+``DCD`` status line (device-carrier-detect)
+

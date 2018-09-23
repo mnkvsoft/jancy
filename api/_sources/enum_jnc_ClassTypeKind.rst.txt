@@ -1,0 +1,44 @@
+.. index:: pair: enum; jnc_ClassTypeKind
+.. _doxid-group__class-type_1gaabc853915c16d345a018ec3ccce9ea25:
+.. _cid-jnc_classtypekind:
+
+enum jnc_ClassTypeKind
+======================
+
+
+
+
+
+.. _doxid-group__class-type_1ggaabc853915c16d345a018ec3ccce9ea25a3fc7c74a8dfbc0009d48ca509a269011:
+.. _cid-jnc_classtypekind::jnc_classtypekind_normal:
+.. _doxid-group__class-type_1ggaabc853915c16d345a018ec3ccce9ea25a17ad67d2601bc455e9b1c25574d7f16a:
+.. _cid-jnc_classtypekind::jnc_classtypekind_abstract:
+.. _doxid-group__class-type_1ggaabc853915c16d345a018ec3ccce9ea25a7f1099192433cb8809c381d8be5c8cdf:
+.. _cid-jnc_classtypekind::jnc_classtypekind_multicast:
+.. _doxid-group__class-type_1ggaabc853915c16d345a018ec3ccce9ea25ae426dd1bcabbe4891c568765be82c4fc:
+.. _cid-jnc_classtypekind::jnc_classtypekind_mcsnapshot:
+.. _doxid-group__class-type_1ggaabc853915c16d345a018ec3ccce9ea25af7759e2045b788ff91cb07623bb20799:
+.. _cid-jnc_classtypekind::jnc_classtypekind_reactor:
+.. _doxid-group__class-type_1ggaabc853915c16d345a018ec3ccce9ea25adfdad705061f72120a8b9647c07a885b:
+.. _cid-jnc_classtypekind::jnc_classtypekind_reactoriface:
+.. _doxid-group__class-type_1ggaabc853915c16d345a018ec3ccce9ea25ade25c9ec8c31c13843fc610afcaf01bb:
+.. _cid-jnc_classtypekind::jnc_classtypekind_functionclosure:
+.. _doxid-group__class-type_1ggaabc853915c16d345a018ec3ccce9ea25afcb8076ad4293481c0de90525f94cb0e:
+.. _cid-jnc_classtypekind::jnc_classtypekind_propertyclosure:
+.. _doxid-group__class-type_1ggaabc853915c16d345a018ec3ccce9ea25a8af86884337ed13272e92d2ebd072a89:
+.. _cid-jnc_classtypekind::jnc_classtypekind_dataclosure:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_ClassTypeKind_Normal = 0
+	jnc_ClassTypeKind_Abstract 
+	jnc_ClassTypeKind_Multicast 
+	jnc_ClassTypeKind_McSnapshot 
+	jnc_ClassTypeKind_Reactor 
+	jnc_ClassTypeKind_ReactorIface 
+	jnc_ClassTypeKind_FunctionClosure 
+	jnc_ClassTypeKind_PropertyClosure 
+	jnc_ClassTypeKind_DataClosure 
+

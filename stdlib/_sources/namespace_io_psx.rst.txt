@@ -1,0 +1,29 @@
+.. include:: def.rst
+.. index:: pair: namespace; psx
+.. _doxid-namespace_io.psx:
+.. _cid-io.psx:
+
+namespace psx
+=============
+
+.. toctree::
+	:hidden:
+
+	enum_io_psx_DeviceMonitorIoctlFlags.rst
+	struct_io_psx_DeviceMonitorIoctlDesc.rst
+
+
+
+
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enums
+
+	bitflag enum :ref:`DeviceMonitorIoctlFlags<doxid-type_io_psx_devicemonitorioctlflags>`
+
+	// structs
+
+	struct :ref:`DeviceMonitorIoctlDesc<doxid-type_io_psx_devicemonitorioctldesc>` 
+

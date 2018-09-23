@@ -1,0 +1,29 @@
+.. index:: pair: struct; jnc_FunctionPtrTypeFuncTable
+.. _doxid-structjnc___function_ptr_type_func_table:
+.. _cid-jnc_functionptrtypefunctable:
+
+struct jnc_FunctionPtrTypeFuncTable
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___function_ptr_type_func_table_1a45f95767efc018be72514daa4032d2a3:
+.. _cid-jnc_functionptrtypefunctable::m_size:
+.. _doxid-structjnc___function_ptr_type_func_table_1af3f5197e081ca11c4a7aad14d96a591b:
+.. _cid-jnc_functionptrtypefunctable::m_getptrtypekindfunc:
+.. _doxid-structjnc___function_ptr_type_func_table_1aaf8f5331791d07f39df2721ec38b364c:
+.. _cid-jnc_functionptrtypefunctable::m_gettargettypefunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_FunctionPtrType_GetPtrTypeKindFunc* m_getPtrTypeKindFunc
+	jnc_FunctionPtrType_GetTargetTypeFunc* m_getTargetTypeFunc
+

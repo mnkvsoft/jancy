@@ -1,0 +1,26 @@
+.. index:: pair: struct; jnc_EnumConstFuncTable
+.. _doxid-structjnc___enum_const_func_table:
+.. _cid-jnc_enumconstfunctable:
+
+struct jnc_EnumConstFuncTable
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___enum_const_func_table_1a76dc44a5a4f609046462fccc28f2da18:
+.. _cid-jnc_enumconstfunctable::m_size:
+.. _doxid-structjnc___enum_const_func_table_1acde330bfc32f394e6b6bdf95cad1bf1f:
+.. _cid-jnc_enumconstfunctable::m_getvaluefunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_EnumConst_GetValueFunc* m_getValueFunc
+

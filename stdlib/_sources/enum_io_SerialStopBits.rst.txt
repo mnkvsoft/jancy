@@ -1,0 +1,71 @@
+.. include:: def.rst
+.. index:: pair: enum; io.SerialStopBits
+.. _doxid-type_io_serialstopbits:
+.. _cid-io.serialstopbits:
+
+enum io.SerialStopBits
+======================
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_base.jncx"
+	import "io_Serial.jnc"
+
+
+Overview
+~~~~~~~~
+
+This enumeration lists all possible values for stop bits setting of
+the serial port. :ref:`More...<details-doxid-type_io_serialstopbits>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`_1<doxid-enum_member_io_serialstopbits__1>` = 0
+	:ref:`_15<doxid-enum_member_io_serialstopbits__15>` = 1
+	:ref:`_2<doxid-enum_member_io_serialstopbits__2>` = 2
+
+.. _details-doxid-type_io_serialstopbits:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This enumeration lists all possible values for stop bits setting of
+the serial port.
+
+Stop bits are auxillary (non-data) bits sent at the end of each character to
+re-synchronize the receiver; normally 1 stop bit is used.
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_serialstopbits__1:
+.. _cid-io.serialstopbits._1:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	_1
+
+One stop bit.
+
+.. _doxid-enum_member_io_serialstopbits__15:
+.. _cid-io.serialstopbits._15:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	_15
+
+One and a half stop bit (1.5 bit duration).
+
+.. _doxid-enum_member_io_serialstopbits__2:
+.. _cid-io.serialstopbits._2:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	_2
+
+Two stop bits.
+

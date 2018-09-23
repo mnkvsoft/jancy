@@ -1,0 +1,26 @@
+.. index:: pair: struct; jnc_StructFieldFuncTable
+.. _doxid-structjnc___struct_field_func_table:
+.. _cid-jnc_structfieldfunctable:
+
+struct jnc_StructFieldFuncTable
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___struct_field_func_table_1a37cbc3234c892b98571b26197ed824fc:
+.. _cid-jnc_structfieldfunctable::m_size:
+.. _doxid-structjnc___struct_field_func_table_1a4dc9ef7ae6e849f71a73242f62d28c5b:
+.. _cid-jnc_structfieldfunctable::m_getoffsetfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_StructField_GetOffsetFunc* m_getOffsetFunc
+

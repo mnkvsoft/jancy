@@ -1,0 +1,90 @@
+.. include:: def.rst
+.. index:: pair: class; std.RbTree
+.. _doxid-type_std_rbtree:
+.. _cid-std.rbtree:
+
+class std.RbTree
+================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_std_rbtree_iface_m_head:
+.. _cid-std.rbtree.m_head:
+.. _doxid-struct_member_std_rbtree_iface_m_tail:
+.. _cid-std.rbtree.m_tail:
+.. _doxid-struct_member_std_rbtree_iface_m_count:
+.. _cid-std.rbtree.m_count:
+.. _doxid-property_std_rbtree_m_isempty:
+.. _cid-std.rbtree.m_isempty:
+.. _doxid-function_std_rbtree_construct:
+.. _cid-std.rbtree.construct:
+.. _doxid-function_std_rbtree_clear:
+.. _cid-std.rbtree.clear:
+.. _doxid-function_std_rbtree_visit:
+.. _cid-std.rbtree.visit:
+.. _doxid-function_std_rbtree_find:
+.. _cid-std.rbtree.find:
+.. _doxid-function_std_rbtree_find_2:
+.. _cid-std.rbtree.find-2:
+.. _doxid-function_std_rbtree_findvalue:
+.. _cid-std.rbtree.findvalue:
+.. _doxid-function_std_rbtree_findvalue_2:
+.. _cid-std.rbtree.findvalue-2:
+.. _doxid-function_std_rbtree_add:
+.. _cid-std.rbtree.add:
+.. _doxid-function_std_rbtree_remove:
+.. _cid-std.rbtree.remove:
+.. _doxid-function_std_rbtree_removekey:
+.. _cid-std.rbtree.removekey:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`std.MapEntry<doxid-type_std_mapentry>` cmut* readonly m_head
+	:ref:`std.MapEntry<doxid-type_std_mapentry>` cmut* readonly m_tail
+	:ref:`size_t<doxid-typedef_size_t>` readonly m_count
+
+	// properties
+
+	bool const property m_isEmpty 
+
+	// construction
+
+	void construct (:ref:`std.CmpFunc<doxid-typedef_std_cmpfunc>` thin* cmpFunc = null)
+
+	// methods
+
+	void clear ()
+	:ref:`std.MapEntry<doxid-type_std_mapentry>` cmut* errorcode visit (variant key)
+	:ref:`std.MapEntry<doxid-type_std_mapentry>` cmut* find (variant key) const
+
+	:ref:`std.MapEntry<doxid-type_std_mapentry>` cmut* find (
+	    variant key,
+	    :ref:`std.BinTreeFindRelOp<doxid-type_std_bintreefindrelop>` relOp
+	    ) const
+
+	variant findValue (
+	    variant key,
+	    variant undefinedValue = null
+	    ) const
+
+	variant findValue (
+	    variant key,
+	    :ref:`std.BinTreeFindRelOp<doxid-type_std_bintreefindrelop>` relOp,
+	    variant undefinedValue = null
+	    ) const
+
+	:ref:`std.MapEntry<doxid-type_std_mapentry>` cmut* errorcode add (
+	    variant key,
+	    variant value
+	    )
+
+	void remove (:ref:`std.MapEntry<doxid-type_std_mapentry>` cmut* entry)
+	bool removeKey (variant key)
+

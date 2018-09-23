@@ -1,0 +1,24 @@
+.. include:: def.rst
+.. index:: pair: enum; io.UsbEndpointOptions
+.. _doxid-type_io_usbendpointoptions:
+.. _cid-io.usbendpointoptions:
+
+bitflag enum io.UsbEndpointOptions
+==================================
+
+
+
+
+
+.. _doxid-enum_member_io_usbendpointoptions_keepreadblocksize:
+.. _cid-io.usbendpointoptions.keepreadblocksize:
+.. _doxid-enum_member_io_usbendpointoptions_keepwriteblocksize:
+.. _cid-io.usbendpointoptions.keepwriteblocksize:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	KeepReadBlockSize 
+	KeepWriteBlockSize 
+

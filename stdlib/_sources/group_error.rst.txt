@@ -1,0 +1,109 @@
+.. include:: def.rst
+.. index:: pair: group; Error Facilities
+.. _doxid-group_error:
+.. _cid-error:
+
+Error Facilities
+================
+
+.. toctree::
+	:hidden:
+
+	struct_std_Error.rst
+
+
+
+Overview
+~~~~~~~~
+
+This section describes types and facilities for setting and retrieving error information. :ref:`More...<details-doxid-group_error>`
+
+.. _doxid-variable_std_g_errnoguid:
+.. _cid-std.g_errnoguid:
+.. _doxid-variable_std_g_winerrorguid:
+.. _cid-std.g_winerrorguid:
+.. _doxid-variable_std_g_ntstatusguid:
+.. _cid-std.g_ntstatusguid:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`std.Error<doxid-type_std_error>` 
+
+	// global variables
+
+	static :ref:`std.Guid<doxid-type_std_guid>` std.g_errnoGuid
+	static :ref:`std.Guid<doxid-type_std_guid>` std.g_winErrorGuid
+	static :ref:`std.Guid<doxid-type_std_guid>` std.g_ntStatusGuid
+
+	// global functions
+
+	:ref:`std.Error<doxid-type_std_error>` const* :ref:`std.getLastError<doxid-function_std_getlasterror>` ()
+	char const* :ref:`std.getLastErrorDescription<doxid-function_std_getlasterrordescription>` ()
+	void :ref:`std.setErrno<doxid-function_std_seterrno>` (int errno)
+	void :ref:`std.setError<doxid-function_std_seterror>` (char const* string)
+
+.. _details-doxid-group_error:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This section describes types and facilities for setting and retrieving error information.
+
+Global Functions
+----------------
+
+.. _doxid-function_std_getlasterror:
+.. _cid-std.getlasterror:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`std.Error<doxid-type_std_error>` const* std.getLastError ()
+
+Returns a pointer to the last error set in the context of the current
+thread.
+
+Currently this function allocates a new error buffer on every call. In the
+future caching will be implemented (if ``AXL`` error has not changed since
+the last invokation of ``getLastError`` then previously allocated error
+buffer could be re-used).
+
+.. _doxid-function_std_getlasterrordescription:
+.. _cid-std.getlasterrordescription:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	char const* std.getLastErrorDescription ()
+
+Returns a human readable description of the the last error set in the
+context of the current thread.
+
+Equivalent to:
+
+.. ref-code-block::
+
+    std.getLastError ().:ref:`m_description<cid-std.error.m_description>`
+
+.. _doxid-function_std_seterrno:
+.. _cid-std.seterrno:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	void std.setErrno (int errno)
+
+Sets ``errno`` error as the last error of the current thread.
+
+.. _doxid-function_std_seterror:
+.. _cid-std.seterror:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	void std.setError (char const* string)
+
+Sets string error described by a null-terminated string pointed to by
+``string`` as the last error of the current thread.
+
+Calling `std.Error.m_description` on a string error will yield a
+null-terminated string identical to ``string``.
+

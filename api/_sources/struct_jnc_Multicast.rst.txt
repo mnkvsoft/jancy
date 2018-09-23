@@ -1,0 +1,38 @@
+.. index:: pair: struct; jnc_Multicast
+.. _doxid-structjnc___multicast:
+.. _cid-jnc_multicast:
+
+struct jnc_Multicast
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___multicast_1ac3c0c88bd615ffc1c7cbff702e647ae3:
+.. _cid-jnc_multicast::m_ifacehdr:
+.. _doxid-structjnc___multicast_1a9b8684005fb181b17902c5df75956e55:
+.. _cid-jnc_multicast::m_lock:
+.. _doxid-structjnc___multicast_1ada6cfa691edc4943026821efe48b7a72:
+.. _cid-jnc_multicast::m_ptr:
+.. _doxid-structjnc___multicast_1ad811c47c656dc4b79ed32c6a24b62e24:
+.. _cid-jnc_multicast::m_count:
+.. _doxid-structjnc___multicast_1abe9cd8b0ffe13c6f1a2b0cfa231c1455:
+.. _cid-jnc_multicast::m_maxcount:
+.. _doxid-structjnc___multicast_1a3ac8b599a1f70e2fd52236d28ee4976e:
+.. _cid-jnc_multicast::m_handletable:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_IfaceHdr<doxid-structjnc___iface_hdr>` m_ifaceHdr
+	intptr_t m_lock
+	:ref:`jnc_DataPtr<doxid-structjnc___data_ptr>` m_ptr
+	size_t m_count
+	size_t m_maxCount
+	void* m_handleTable
+

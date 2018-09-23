@@ -1,0 +1,23 @@
+.. index:: pair: enum; jnc_McSnapshotMethodKind
+.. _doxid-group__class-type_1ga3d91403e9792f9daedf0a9910587442b:
+.. _cid-jnc_mcsnapshotmethodkind:
+
+enum jnc_McSnapshotMethodKind
+=============================
+
+
+
+
+
+.. _doxid-group__class-type_1gga3d91403e9792f9daedf0a9910587442ba2183a99ff9229ae63eee911d06913ad6:
+.. _cid-jnc_mcsnapshotmethodkind::jnc_mcsnapshotmethodkind_call:
+.. _doxid-group__class-type_1gga3d91403e9792f9daedf0a9910587442bac8f1c2ac643059388a1906c3f2394424:
+.. _cid-jnc_mcsnapshotmethodkind::jnc_mcsnapshotmethodkind__count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	jnc_McSnapshotMethodKind_Call 
+	jnc_McSnapshotMethodKind__Count 
+

@@ -1,0 +1,87 @@
+.. include:: def.rst
+.. index:: pair: enum; io.UsbEndpointEvents
+.. _doxid-type_io_usbendpointevents:
+.. _cid-io.usbendpointevents:
+
+bitflag enum io.UsbEndpointEvents
+=================================
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`IoError<doxid-enum_member_io_usbendpointevents_ioerror>` 
+	:ref:`IncomingData<doxid-enum_member_io_usbendpointevents_incomingdata>` 
+	:ref:`ReadBufferFull<doxid-enum_member_io_usbendpointevents_readbufferfull>` 
+	:ref:`WriteBufferReady<doxid-enum_member_io_usbendpointevents_writebufferready>` 
+	:ref:`WriteCompleted<doxid-enum_member_io_usbendpointevents_writecompleted>` 
+
+.. _details-doxid-type_io_usbendpointevents:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Enum Values
+-----------
+
+.. _doxid-enum_member_io_usbendpointevents_ioerror:
+.. _cid-io.usbendpointevents.ioerror:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IoError
+
+An IO error occured on the USB endpoint; detailed information about the
+error is available at `io.UsbEndpoint.m_ioError`.
+
+.. _doxid-enum_member_io_usbendpointevents_incomingdata:
+.. _cid-io.usbendpointevents.incomingdata:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	IncomingData
+
+More data is available on the USB endoint; this data could be fetched
+with `io.UsbEndpoint.read` method.
+
+.. _doxid-enum_member_io_usbendpointevents_readbufferfull:
+.. _cid-io.usbendpointevents.readbufferfull:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	ReadBufferFull
+
+IN-endpoint receive buffer is full; upcoming data may be dropped
+(depending on the endpoint transfer type).
+
+.. _doxid-enum_member_io_usbendpointevents_writebufferready:
+.. _cid-io.usbendpointevents.writebufferready:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	WriteBufferReady
+
+OUT-endpoint transmit buffer is ready to accept more data; it's OK to
+issue more `io.UsbEndpoint.write` requests.
+
+.. _doxid-enum_member_io_usbendpointevents_writecompleted:
+.. _cid-io.usbendpointevents.writecompleted:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	WriteCompleted
+
+OUT-endpoint has no active or pending USB transfers. Useful when you
+need to wait for all outbound transfers to complete before closing an
+endpoint.
+

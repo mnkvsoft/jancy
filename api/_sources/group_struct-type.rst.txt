@@ -1,0 +1,34 @@
+.. index:: pair: group; Struct Type
+.. _doxid-group__struct-type:
+.. _cid-struct-type:
+
+Struct Type
+===========
+
+.. toctree::
+	:hidden:
+
+	struct_jnc_StructType.rst
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_StructType.h>
+
+
+Struct type represents a sequence of zero or more fields.
+
+.. _doxid-group__struct-type_1ga2823784350e5ea4350f1660d57e5d53a:
+.. _cid-jnc_structfield_getoffset:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`jnc_StructType<doxid-structjnc___struct_type>` 
+
+	// global functions
+
+	size_t
+	jnc_StructField_getOffset (jnc_StructField* field)
+

@@ -1,0 +1,20 @@
+.. index:: pair: struct; jnc_Module
+.. _doxid-structjnc___module:
+.. _cid-jnc_module:
+
+struct jnc_Module
+=================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_Module.h>
+
+
+Opaque structure used as a handle to Jancy module.
+
+    Use functions from the :ref:`Module <cid-module>` group to access and manage the contents of this structure.
+

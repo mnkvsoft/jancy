@@ -1,0 +1,78 @@
+.. include:: def.rst
+.. index:: pair: enum; io.win.DeviceMonitorNotifyCode
+.. _doxid-type_io_win_devicemonitornotifycode:
+.. _cid-io.win.devicemonitornotifycode:
+
+enum io.win.DeviceMonitorNotifyCode
+===================================
+
+
+
+
+
+.. _doxid-enum_member_io_win_devicemonitornotifycode_undefined:
+.. _cid-io.win.devicemonitornotifycode.undefined:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_pnpstartdevice:
+.. _cid-io.win.devicemonitornotifycode.pnpstartdevice:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_pnpstopdevice:
+.. _cid-io.win.devicemonitornotifycode.pnpstopdevice:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_pnpremovedevice:
+.. _cid-io.win.devicemonitornotifycode.pnpremovedevice:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_fastiodetachdevice:
+.. _cid-io.win.devicemonitornotifycode.fastiodetachdevice:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_create:
+.. _cid-io.win.devicemonitornotifycode.create:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_createnamedpipe:
+.. _cid-io.win.devicemonitornotifycode.createnamedpipe:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_close:
+.. _cid-io.win.devicemonitornotifycode.close:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_read:
+.. _cid-io.win.devicemonitornotifycode.read:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_write:
+.. _cid-io.win.devicemonitornotifycode.write:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_ioctl:
+.. _cid-io.win.devicemonitornotifycode.ioctl:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_internalioctl:
+.. _cid-io.win.devicemonitornotifycode.internalioctl:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_fsctl:
+.. _cid-io.win.devicemonitornotifycode.fsctl:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_createmailslot:
+.. _cid-io.win.devicemonitornotifycode.createmailslot:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_keyboardevent:
+.. _cid-io.win.devicemonitornotifycode.keyboardevent:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_mouseevent:
+.. _cid-io.win.devicemonitornotifycode.mouseevent:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_fastioread:
+.. _cid-io.win.devicemonitornotifycode.fastioread:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_fastiowrite:
+.. _cid-io.win.devicemonitornotifycode.fastiowrite:
+.. _doxid-enum_member_io_win_devicemonitornotifycode_fastioioctl:
+.. _cid-io.win.devicemonitornotifycode.fastioioctl:
+.. _doxid-enum_member_io_win_devicemonitornotifycode__count:
+.. _cid-io.win.devicemonitornotifycode._count:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Undefined = 0
+	PnpStartDevice 
+	PnpStopDevice 
+	PnpRemoveDevice 
+	FastIoDetachDevice 
+	Create 
+	CreateNamedPipe 
+	Close 
+	Read 
+	Write 
+	Ioctl 
+	InternalIoctl 
+	Fsctl 
+	CreateMailslot 
+	KeyboardEvent 
+	MouseEvent 
+	FastIoRead 
+	FastIoWrite 
+	FastIoIoctl 
+	_Count 
+

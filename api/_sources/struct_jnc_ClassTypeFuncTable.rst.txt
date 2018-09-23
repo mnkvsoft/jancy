@@ -1,0 +1,32 @@
+.. index:: pair: struct; jnc_ClassTypeFuncTable
+.. _doxid-structjnc___class_type_func_table:
+.. _cid-jnc_classtypefunctable:
+
+struct jnc_ClassTypeFuncTable
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___class_type_func_table_1a76ecff8fcd8e02ff4f8f173e6e3efc97:
+.. _cid-jnc_classtypefunctable::m_size:
+.. _doxid-structjnc___class_type_func_table_1a143fd3389c442c3c81d0bb10cc398ebc:
+.. _cid-jnc_classtypefunctable::m_getclasstypekindfunc:
+.. _doxid-structjnc___class_type_func_table_1a1c02a6ad095b0038e35fab97b30f5575:
+.. _cid-jnc_classtypefunctable::m_getifacestructtypefunc:
+.. _doxid-structjnc___class_type_func_table_1a1deddbdea917b337f4aa71d6e6e16759:
+.. _cid-jnc_classtypefunctable::m_getclassptrtypefunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_ClassType_GetClassTypeKindFunc* m_getClassTypeKindFunc
+	jnc_ClassType_GetIfaceStructTypeFunc* m_getIfaceStructTypeFunc
+	jnc_ClassType_GetClassPtrTypeFunc* m_getClassPtrTypeFunc
+

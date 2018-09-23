@@ -1,0 +1,26 @@
+.. index:: pair: struct; jnc_StaticDataBox
+.. _doxid-structjnc___static_data_box:
+.. _cid-jnc_staticdatabox:
+
+struct jnc_StaticDataBox
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___static_data_box_1a3e3a4bbb0776faa224f7ee784a93f6d0:
+.. _cid-jnc_staticdatabox::m_box:
+.. _doxid-structjnc___static_data_box_1a1ec515e853db78decd7903e9f057fc66:
+.. _cid-jnc_staticdatabox::m_p:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_Box<doxid-structjnc___box>` m_box
+	void* m_p
+

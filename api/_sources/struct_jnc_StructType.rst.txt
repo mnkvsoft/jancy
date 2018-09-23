@@ -1,0 +1,20 @@
+.. index:: pair: struct; jnc_StructType
+.. _doxid-structjnc___struct_type:
+.. _cid-jnc_structtype:
+
+struct jnc_StructType
+=====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_StructType.h>
+
+
+Opaque structure used as a handle to Jancy struct type.
+
+    Use functions from the `Struct Type` to access and manage the contents of this structure.
+

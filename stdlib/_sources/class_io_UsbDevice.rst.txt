@@ -1,0 +1,111 @@
+.. include:: def.rst
+.. index:: pair: class; io.UsbDevice
+.. _doxid-type_io_usbdevice:
+.. _cid-io.usbdevice:
+
+class io.UsbDevice
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_usbdevice_iface_m_isopen:
+.. _cid-io.usbdevice.m_isopen:
+.. _doxid-property_io_usbdevice_m_devicedesc:
+.. _cid-io.usbdevice.m_devicedesc:
+.. _doxid-property_io_usbdevice_m_activeconfigurationdesc:
+.. _cid-io.usbdevice.m_activeconfigurationdesc:
+.. _doxid-property_io_usbdevice_m_configurationid:
+.. _cid-io.usbdevice.m_configurationid:
+.. _doxid-property_io_usbdevice_m_bus:
+.. _cid-io.usbdevice.m_bus:
+.. _doxid-property_io_usbdevice_m_address:
+.. _cid-io.usbdevice.m_address:
+.. _doxid-property_io_usbdevice_m_speed:
+.. _cid-io.usbdevice.m_speed:
+.. _doxid-property_io_usbdevice_m_isautodetachkerneldriverenabled:
+.. _cid-io.usbdevice.m_isautodetachkerneldriverenabled:
+.. _doxid-property_io_usbdevice_m_iskerneldriveractive:
+.. _cid-io.usbdevice.m_iskerneldriveractive:
+.. _doxid-function_io_usbdevice_open:
+.. _cid-io.usbdevice.open:
+.. _doxid-function_io_usbdevice_close:
+.. _cid-io.usbdevice.close:
+.. _doxid-function_io_usbdevice_getstringdesc:
+.. _cid-io.usbdevice.getstringdesc:
+.. _doxid-function_io_usbdevice_attachkerneldriver:
+.. _cid-io.usbdevice.attachkerneldriver:
+.. _doxid-function_io_usbdevice_detachkerneldriver:
+.. _cid-io.usbdevice.detachkerneldriver:
+.. _doxid-function_io_usbdevice_claiminterface:
+.. _cid-io.usbdevice.claiminterface:
+.. _doxid-function_io_usbdevice_controltransfer:
+.. _cid-io.usbdevice.controltransfer:
+.. _doxid-function_io_usbdevice_controltransfer_2:
+.. _cid-io.usbdevice.controltransfer-2:
+.. _doxid-function_io_usbdevice_cancelcontroltransfers:
+.. _cid-io.usbdevice.cancelcontroltransfers:
+.. _doxid-alias_io_usbdevice_dispose:
+.. _cid-io.usbdevice.dispose:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	bool readonly m_isOpen
+
+	// properties
+
+	:ref:`io.UsbDeviceDesc<doxid-type_io_usbdevicedesc>` const* const property m_deviceDesc 
+	:ref:`io.UsbConfigurationDesc<doxid-type_io_usbconfigurationdesc>` const* const property m_activeConfigurationDesc 
+	:ref:`uint8_t<doxid-typedef_uint8_t>` property m_configurationId 
+	:ref:`uint8_t<doxid-typedef_uint8_t>` const property m_bus 
+	:ref:`uint8_t<doxid-typedef_uint8_t>` const property m_address 
+	:ref:`io.UsbSpeed<doxid-type_io_usbspeed>` const property m_speed 
+	bool autoget property m_isAutoDetachKernelDriverEnabled 
+	bool const indexed property m_isKernelDriverActive (:ref:`uint_t<doxid-typedef_uint_t>` interfaceId)
+
+	// methods
+
+	bool errorcode open ()
+	void close ()
+	char const* errorcode getStringDesc (:ref:`uint8_t<doxid-typedef_uint8_t>` stringId)
+	bool errorcode attachKernelDriver (:ref:`uint_t<doxid-typedef_uint_t>` interfaceId)
+	bool errorcode detachKernelDriver (:ref:`uint_t<doxid-typedef_uint_t>` interfaceId)
+
+	:ref:`io.UsbInterface<doxid-type_io_usbinterface>`* errorcode claimInterface (
+	    :ref:`uint8_t<doxid-typedef_uint8_t>` interfaceId,
+	    :ref:`uint8_t<doxid-typedef_uint8_t>` altSettingId = 0
+	    )
+
+	:ref:`size_t<doxid-typedef_size_t>` errorcode controlTransfer (
+	    :ref:`uint_t<doxid-typedef_uint_t>` requestType,
+	    :ref:`uint_t<doxid-typedef_uint_t>` requestCode,
+	    :ref:`uint_t<doxid-typedef_uint_t>` value,
+	    :ref:`uint_t<doxid-typedef_uint_t>` index,
+	    void* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size,
+	    :ref:`uint_t<doxid-typedef_uint_t>` timeout = - 1
+	    )
+
+	bool errorcode controlTransfer (
+	    :ref:`uint_t<doxid-typedef_uint_t>` requestType,
+	    :ref:`uint_t<doxid-typedef_uint_t>` requestCode,
+	    :ref:`uint_t<doxid-typedef_uint_t>` value,
+	    :ref:`uint_t<doxid-typedef_uint_t>` index,
+	    void* p,
+	    :ref:`size_t<doxid-typedef_size_t>` size,
+	    :ref:`uint_t<doxid-typedef_uint_t>` timeout = - 1,
+	    void function* onCompleted (size_t size, std.Error const* error)
+	    )
+
+	void cancelControlTransfers ()
+
+	// aliases
+
+	alias dispose = close
+

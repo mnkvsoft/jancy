@@ -1,0 +1,32 @@
+.. index:: pair: struct; jnc_DataPtrValidator
+.. _doxid-structjnc___data_ptr_validator:
+.. _cid-jnc_dataptrvalidator:
+
+struct jnc_DataPtrValidator
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___data_ptr_validator_1a6d412385788417ceb53e8632074c6185:
+.. _cid-jnc_dataptrvalidator::m_validatorbox:
+.. _doxid-structjnc___data_ptr_validator_1aef69b99745ff5137337f33476562237f:
+.. _cid-jnc_dataptrvalidator::m_targetbox:
+.. _doxid-structjnc___data_ptr_validator_1afac496d01a0437d3eb3c025d3f905930:
+.. _cid-jnc_dataptrvalidator::m_rangebegin:
+.. _doxid-structjnc___data_ptr_validator_1a5ba89a4f4125d8931a7222bd846c9607:
+.. _cid-jnc_dataptrvalidator::m_rangeend:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_Box<doxid-structjnc___box>`* m_validatorBox
+	:ref:`jnc_Box<doxid-structjnc___box>`* m_targetBox
+	const void* m_rangeBegin
+	const void* m_rangeEnd
+

@@ -1,0 +1,33 @@
+.. include:: def.rst
+.. index:: pair: struct; io.lnx.DeviceMonitorReadWriteNotifyParams
+.. _doxid-type_io_lnx_devicemonitorreadwritenotifyparams:
+.. _cid-io.lnx.devicemonitorreadwritenotifyparams:
+
+struct io.lnx.DeviceMonitorReadWriteNotifyParams
+================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_lnx_devicemonitorreadwritenotifyparams_m_fileid:
+.. _cid-io.lnx.devicemonitorreadwritenotifyparams.m_fileid:
+.. _doxid-struct_member_io_lnx_devicemonitorreadwritenotifyparams_m_offset:
+.. _cid-io.lnx.devicemonitorreadwritenotifyparams.m_offset:
+.. _doxid-struct_member_io_lnx_devicemonitorreadwritenotifyparams_m_buffersize:
+.. _cid-io.lnx.devicemonitorreadwritenotifyparams.m_buffersize:
+.. _doxid-struct_member_io_lnx_devicemonitorreadwritenotifyparams_m_datasize:
+.. _cid-io.lnx.devicemonitorreadwritenotifyparams.m_datasize:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_fileId
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_offset
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_bufferSize
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_dataSize
+

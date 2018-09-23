@@ -1,0 +1,42 @@
+.. include:: def.rst
+.. index:: pair: enum; io.lnx.DeviceMonitorNotifyCode
+.. _doxid-type_io_lnx_devicemonitornotifycode:
+.. _cid-io.lnx.devicemonitornotifycode:
+
+enum io.lnx.DeviceMonitorNotifyCode
+===================================
+
+
+
+
+
+.. _doxid-enum_member_io_lnx_devicemonitornotifycode_undefined:
+.. _cid-io.lnx.devicemonitornotifycode.undefined:
+.. _doxid-enum_member_io_lnx_devicemonitornotifycode_open:
+.. _cid-io.lnx.devicemonitornotifycode.open:
+.. _doxid-enum_member_io_lnx_devicemonitornotifycode_close:
+.. _cid-io.lnx.devicemonitornotifycode.close:
+.. _doxid-enum_member_io_lnx_devicemonitornotifycode_read:
+.. _cid-io.lnx.devicemonitornotifycode.read:
+.. _doxid-enum_member_io_lnx_devicemonitornotifycode_write:
+.. _cid-io.lnx.devicemonitornotifycode.write:
+.. _doxid-enum_member_io_lnx_devicemonitornotifycode_unlockedioctl:
+.. _cid-io.lnx.devicemonitornotifycode.unlockedioctl:
+.. _doxid-enum_member_io_lnx_devicemonitornotifycode_compatioctl:
+.. _cid-io.lnx.devicemonitornotifycode.compatioctl:
+.. _doxid-enum_member_io_lnx_devicemonitornotifycode_count:
+.. _cid-io.lnx.devicemonitornotifycode.count:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	Undefined = 0
+	Open 
+	Close 
+	Read 
+	Write 
+	UnlockedIoctl 
+	CompatIoctl 
+	Count 
+

@@ -1,0 +1,33 @@
+.. include:: def.rst
+.. index:: pair: struct; io.win.DeviceMonitorIoctlNotifyParams
+.. _doxid-type_io_win_devicemonitorioctlnotifyparams:
+.. _cid-io.win.devicemonitorioctlnotifyparams:
+
+struct io.win.DeviceMonitorIoctlNotifyParams
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_win_devicemonitorioctlnotifyparams_m_code:
+.. _cid-io.win.devicemonitorioctlnotifyparams.m_code:
+.. _doxid-struct_member_io_win_devicemonitorioctlnotifyparams_m_indatasize:
+.. _cid-io.win.devicemonitorioctlnotifyparams.m_indatasize:
+.. _doxid-struct_member_io_win_devicemonitorioctlnotifyparams_m_outbuffersize:
+.. _cid-io.win.devicemonitorioctlnotifyparams.m_outbuffersize:
+.. _doxid-struct_member_io_win_devicemonitorioctlnotifyparams_m_outdatasize:
+.. _cid-io.win.devicemonitorioctlnotifyparams.m_outdatasize:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_code
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_inDataSize
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_outBufferSize
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_outDataSize
+

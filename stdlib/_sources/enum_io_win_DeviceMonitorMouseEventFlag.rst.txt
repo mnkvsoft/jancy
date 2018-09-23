@@ -1,0 +1,63 @@
+.. include:: def.rst
+.. index:: pair: enum; io.win.DeviceMonitorMouseEventFlag
+.. _doxid-type_io_win_devicemonitormouseeventflag:
+.. _cid-io.win.devicemonitormouseeventflag:
+
+enum io.win.DeviceMonitorMouseEventFlag
+=======================================
+
+
+
+
+
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_relativecoordinates:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_relativecoordinates:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_absolutecoordinates:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_absolutecoordinates:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_virtualdesktop:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_virtualdesktop:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_movenocoalesce:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_movenocoalesce:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_leftbuttondown:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_leftbuttondown:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_leftbuttonup:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_leftbuttonup:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_rightbuttondown:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_rightbuttondown:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_rightbuttonup:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_rightbuttonup:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_middlebuttondown:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_middlebuttondown:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_middlebuttonup:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_middlebuttonup:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_button4down:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_button4down:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_button4up:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_button4up:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_button5down:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_button5down:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_button5up:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_button5up:
+.. _doxid-enum_member_io_win_devicemonitormouseeventflag_devicemonitormouseeventflag_wheel:
+.. _cid-io.win.devicemonitormouseeventflag.devicemonitormouseeventflag_wheel:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	DeviceMonitorMouseEventFlag_RelativeCoordinates = 0x0001
+	DeviceMonitorMouseEventFlag_AbsoluteCoordinates = 0x0002
+	DeviceMonitorMouseEventFlag_VirtualDesktop = 0x0004
+	DeviceMonitorMouseEventFlag_MoveNoCoalesce = 0x0008
+	DeviceMonitorMouseEventFlag_LeftButtonDown = 0x0010
+	DeviceMonitorMouseEventFlag_LeftButtonUp = 0x0020
+	DeviceMonitorMouseEventFlag_RightButtonDown = 0x0040
+	DeviceMonitorMouseEventFlag_RightButtonUp = 0x0080
+	DeviceMonitorMouseEventFlag_MiddleButtonDown = 0x0100
+	DeviceMonitorMouseEventFlag_MiddleButtonUp = 0x0200
+	DeviceMonitorMouseEventFlag_Button4Down = 0x0400
+	DeviceMonitorMouseEventFlag_Button4Up = 0x0800
+	DeviceMonitorMouseEventFlag_Button5Down = 0x1000
+	DeviceMonitorMouseEventFlag_Button5Up = 0x2000
+	DeviceMonitorMouseEventFlag_Wheel = 0x4000
+

@@ -1,0 +1,38 @@
+.. index:: pair: struct; jnc_Tls
+.. _doxid-structjnc___tls:
+.. _cid-jnc_tls:
+
+struct jnc_Tls
+==============
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___tls_1ac39ba9a570de893e7792d9091c1fd13d:
+.. _cid-jnc_tls::m_link:
+.. _doxid-structjnc___tls_1ac507021de25cd70318b0d43ce81ae466:
+.. _cid-jnc_tls::m_prevtls:
+.. _doxid-structjnc___tls_1ad2b4aef105c7ed24e6cac0833a3352b6:
+.. _cid-jnc_tls::m_runtime:
+.. _doxid-structjnc___tls_1a3273abb5b1655a4c22d047a79e7e3f11:
+.. _cid-jnc_tls::m_initializelevel:
+.. _doxid-structjnc___tls_1ae7f97b4eadc5877f5a31de426f63ee89:
+.. _cid-jnc_tls::m_stackepoch:
+.. _doxid-structjnc___tls_1a15539b9d1e11cb619de350f6a7130622:
+.. _cid-jnc_tls::m_gcmutatorthread:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_ListLink<doxid-structjnc___list_link>` m_link
+	:ref:`jnc_Tls<doxid-structjnc___tls>`* m_prevTls
+	:ref:`jnc_Runtime<doxid-structjnc___runtime>`* m_runtime
+	size_t m_initializeLevel
+	void* m_stackEpoch
+	:ref:`jnc_GcMutatorThread<doxid-structjnc___gc_mutator_thread>` m_gcMutatorThread
+

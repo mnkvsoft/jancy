@@ -1,0 +1,47 @@
+.. index:: pair: struct; jnc_ModuleItemFuncTable
+.. _doxid-structjnc___module_item_func_table:
+.. _cid-jnc_moduleitemfunctable:
+
+struct jnc_ModuleItemFuncTable
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___module_item_func_table_1aea09ea273f52c1cb948fdd89ef2111b0:
+.. _cid-jnc_moduleitemfunctable::m_size:
+.. _doxid-structjnc___module_item_func_table_1aa5e4249f8e9708b4c0483decf7cfbd20:
+.. _cid-jnc_moduleitemfunctable::m_getmodulefunc:
+.. _doxid-structjnc___module_item_func_table_1ae9966a9c77a34a0dff5f194cae297c43:
+.. _cid-jnc_moduleitemfunctable::m_getitemkindfunc:
+.. _doxid-structjnc___module_item_func_table_1a8ed342b4f2878ffcabf9acaaa3ed790d:
+.. _cid-jnc_moduleitemfunctable::m_getflagsfunc:
+.. _doxid-structjnc___module_item_func_table_1a2e6a2d261b1214bc2b906f984784eced:
+.. _cid-jnc_moduleitemfunctable::m_getdeclfunc:
+.. _doxid-structjnc___module_item_func_table_1a9f6b293249050072b1c39a8f63266d03:
+.. _cid-jnc_moduleitemfunctable::m_getnamespacefunc:
+.. _doxid-structjnc___module_item_func_table_1ad75487c152616c11f30702048d698127:
+.. _cid-jnc_moduleitemfunctable::m_gettypefunc:
+.. _doxid-structjnc___module_item_func_table_1a113b00ed6607e25dc95a09b26e35714a:
+.. _cid-jnc_moduleitemfunctable::m_verifymoduleitemisderivabletypefunc:
+.. _doxid-structjnc___module_item_func_table_1aab89b601cc4e533d5465925de51ce820:
+.. _cid-jnc_moduleitemfunctable::m_verifymoduleitemisclasstypefunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_ModuleItem_GetModuleFunc* m_getModuleFunc
+	jnc_ModuleItem_GetItemKindFunc* m_getItemKindFunc
+	jnc_ModuleItem_GetFlagsFunc* m_getFlagsFunc
+	jnc_ModuleItem_GetDeclFunc* m_getDeclFunc
+	jnc_ModuleItem_GetNamespaceFunc* m_getNamespaceFunc
+	jnc_ModuleItem_GetTypeFunc* m_getTypeFunc
+	jnc_VerifyModuleItemIsDerivableTypeFunc* m_verifyModuleItemIsDerivableTypeFunc
+	jnc_VerifyModuleItemIsClassTypeFunc* m_verifyModuleItemIsClassTypeFunc
+

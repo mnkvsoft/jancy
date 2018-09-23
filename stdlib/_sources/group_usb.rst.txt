@@ -1,0 +1,83 @@
+.. include:: def.rst
+.. index:: pair: group; USB Communications
+.. _doxid-group_usb:
+.. _cid-usb:
+
+USB Communications
+==================
+
+.. toctree::
+	:hidden:
+
+	enum_io_UsbClass.rst
+	enum_io_UsbEndpointEvents.rst
+	enum_io_UsbEndpointOptions.rst
+	enum_io_UsbIsoSyncType.rst
+	enum_io_UsbIsoUsage.rst
+	enum_io_UsbSpeed.rst
+	enum_io_UsbTransferType.rst
+	struct_io_UsbConfigurationDesc.rst
+	struct_io_UsbDeviceDesc.rst
+	struct_io_UsbEndpointDesc.rst
+	struct_io_UsbInterfaceDesc.rst
+	class_io_UsbDevice.rst
+	class_io_UsbEndpoint.rst
+	class_io_UsbInterface.rst
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "io_usb.jncx"
+
+
+This section describes types and facilities used for accessing USB devices with ``libusb``.
+
+.. _doxid-function_io_createusbdevicearray:
+.. _cid-io.createusbdevicearray:
+.. _doxid-function_io_openusbdevice:
+.. _cid-io.openusbdevice:
+.. _doxid-function_io_getusbclassstring:
+.. _cid-io.getusbclassstring:
+.. _doxid-function_io_getusbspeedstring:
+.. _cid-io.getusbspeedstring:
+.. _doxid-function_io_getusbtransfertypestring:
+.. _cid-io.getusbtransfertypestring:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enums
+
+	enum :ref:`UsbClass<doxid-type_io_usbclass>`
+	bitflag enum :ref:`UsbEndpointEvents<doxid-type_io_usbendpointevents>`
+	bitflag enum :ref:`UsbEndpointOptions<doxid-type_io_usbendpointoptions>`
+	enum :ref:`UsbIsoSyncType<doxid-type_io_usbisosynctype>`
+	enum :ref:`UsbIsoUsage<doxid-type_io_usbisousage>`
+	enum :ref:`UsbSpeed<doxid-type_io_usbspeed>`
+	enum :ref:`UsbTransferType<doxid-type_io_usbtransfertype>`
+
+	// structs
+
+	struct :ref:`io.UsbConfigurationDesc<doxid-type_io_usbconfigurationdesc>` 
+	struct :ref:`io.UsbDeviceDesc<doxid-type_io_usbdevicedesc>` 
+	struct :ref:`io.UsbEndpointDesc<doxid-type_io_usbendpointdesc>` 
+	struct :ref:`io.UsbInterfaceDesc<doxid-type_io_usbinterfacedesc>` 
+
+	// classes
+
+	class :ref:`io.UsbDevice<doxid-type_io_usbdevice>` 
+	class :ref:`io.UsbEndpoint<doxid-type_io_usbendpoint>` 
+	class :ref:`io.UsbInterface<doxid-type_io_usbinterface>` 
+
+	// global functions
+
+	:ref:`io.UsbDevice<doxid-type_io_usbdevice>`* const* errorcode io.createUsbDeviceArray (:ref:`size_t<doxid-typedef_size_t>`* count = null)
+
+	:ref:`io.UsbDevice<doxid-type_io_usbdevice>`* errorcode io.openUsbDevice (
+	    :ref:`uint_t<doxid-typedef_uint_t>` vendorId,
+	    :ref:`uint_t<doxid-typedef_uint_t>` productId
+	    )
+
+	char const* io.getUsbClassString (:ref:`io.UsbClass<doxid-type_io_usbclass>` cls)
+	char const* io.getUsbSpeedString (:ref:`io.UsbSpeed<doxid-type_io_usbspeed>` speed)
+	char const* io.getUsbTransferTypeString (:ref:`io.UsbTransferType<doxid-type_io_usbtransfertype>` type)
+

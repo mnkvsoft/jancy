@@ -1,0 +1,59 @@
+.. include:: def.rst
+.. index:: pair: struct; io.win.DeviceMonitorCreateNamedPipeNotifyParams
+.. _doxid-type_io_win_devicemonitorcreatenamedpipenotifyparams:
+.. _cid-io.win.devicemonitorcreatenamedpipenotifyparams:
+
+struct io.win.DeviceMonitorCreateNamedPipeNotifyParams
+======================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_win_devicemonitorcreatenamedpipenotifyparams_m_pipetype:
+.. _cid-io.win.devicemonitorcreatenamedpipenotifyparams.m_pipetype:
+.. _doxid-struct_member_io_win_devicemonitorcreatenamedpipenotifyparams_m_readmode:
+.. _cid-io.win.devicemonitorcreatenamedpipenotifyparams.m_readmode:
+.. _doxid-struct_member_io_win_devicemonitorcreatenamedpipenotifyparams_m_completionmode:
+.. _cid-io.win.devicemonitorcreatenamedpipenotifyparams.m_completionmode:
+.. _doxid-struct_member_io_win_devicemonitorcreatenamedpipenotifyparams_m_maxinstancecount:
+.. _cid-io.win.devicemonitorcreatenamedpipenotifyparams.m_maxinstancecount:
+.. _doxid-struct_member_io_win_devicemonitorcreatenamedpipenotifyparams_m_inboundquota:
+.. _cid-io.win.devicemonitorcreatenamedpipenotifyparams.m_inboundquota:
+.. _doxid-struct_member_io_win_devicemonitorcreatenamedpipenotifyparams_m_outboundquota:
+.. _cid-io.win.devicemonitorcreatenamedpipenotifyparams.m_outboundquota:
+.. _doxid-struct_member_io_win_devicemonitorcreatenamedpipenotifyparams_m_defaulttimeout:
+.. _cid-io.win.devicemonitorcreatenamedpipenotifyparams.m_defaulttimeout:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	struct DeviceMonitorCreateNamedPipeNotifyParams: :ref:`io.win.DeviceMonitorCreateNotifyParams<doxid-type_io_win_devicemonitorcreatenotifyparams>`
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_pipeType
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_readMode
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_completionMode
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_maxInstanceCount
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_inBoundQuota
+	:ref:`uint32_t<doxid-typedef_uint32_t>` m_outBoundQuota
+	:ref:`uint64_t<doxid-typedef_uint64_t>` m_defaultTimeout
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: jancy
+	:class: overview-inherited-code-block
+
+	// fields
+
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_options<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_options>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_desiredAccess<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_desiredaccess>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_shareAccess<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_shareaccess>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_fileAttributes<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_fileattributes>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`m_fileNameLength<doxid-struct_member_io_win_devicemonitorcreatenotifyparams_m_filenamelength>`
+	:ref:`uint32_t<doxid-typedef_uint32_t>` :ref:`_m_padding<doxid-struct_member_io_win_devicemonitorcreatenotifyparams__m_padding>`
+

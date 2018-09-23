@@ -1,0 +1,82 @@
+.. include:: def.rst
+.. index:: pair: group; Thread Management
+.. _doxid-group_thread:
+.. _cid-thread:
+
+Thread Management
+=================
+
+.. toctree::
+	:hidden:
+
+	class_sys_Thread.rst
+
+.. code-block:: jancy
+	:class: overview-code-block
+
+	import "sys_Thread.jnc"
+
+
+Overview
+~~~~~~~~
+
+This section describes types and facilities for thread creation and management. :ref:`More...<details-doxid-group_thread>`
+
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// classes
+
+	class :ref:`sys.Thread<doxid-type_sys_thread>` 
+
+	// global functions
+
+	:ref:`uintptr_t<doxid-typedef_uintptr_t>` :ref:`sys.getCurrentThreadId<doxid-function_sys_getcurrentthreadid>` ()
+	bool :ref:`sys.createThread<doxid-function_sys_createthread>` (void function* threadFunc ())
+
+.. _details-doxid-group_thread:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This section describes types and facilities for thread creation and management.
+
+Global Functions
+----------------
+
+.. _doxid-function_sys_getcurrentthreadid:
+.. _cid-sys.getcurrentthreadid:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	:ref:`uintptr_t<doxid-typedef_uintptr_t>` sys.getCurrentThreadId ()
+
+Returns the thread identifier (TID) of the current thread.
+
+Translates to ``GetCurrentThreadId`` on Windows and ``pthread_self`` on
+POSIX.
+
+.. _doxid-function_sys_createthread:
+.. _cid-sys.createthread:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	bool sys.createThread (void function* threadFunc ())
+
+Creates a new thead and executes ``threadFunc`` in the context of the newly
+created thread.
+
+If you need to pass extra context parameters to the ``threadFunc``, use
+partial application as such::
+
+    myThreadFunc (
+        int intContext,
+        char const* stringContext
+        )
+    {
+    }
+
+    // ...
+
+    sys.createThread (myThreadFunc ~(100, "string-context"));
+

@@ -1,0 +1,63 @@
+.. include:: def.rst
+.. index:: pair: struct; io.SshConnectParams
+.. _doxid-type_io_sshconnectparams:
+.. _cid-io.sshconnectparams:
+
+struct io.SshConnectParams
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_sshconnectparams_m_address:
+.. _cid-io.sshconnectparams.m_address:
+.. _doxid-struct_member_io_sshconnectparams_m_username:
+.. _cid-io.sshconnectparams.m_username:
+.. _doxid-struct_member_io_sshconnectparams_m_privatekey:
+.. _cid-io.sshconnectparams.m_privatekey:
+.. _doxid-struct_member_io_sshconnectparams_m_privatekeysize:
+.. _cid-io.sshconnectparams.m_privatekeysize:
+.. _doxid-struct_member_io_sshconnectparams_m_password:
+.. _cid-io.sshconnectparams.m_password:
+.. _doxid-struct_member_io_sshconnectparams_m_channeltype:
+.. _cid-io.sshconnectparams.m_channeltype:
+.. _doxid-struct_member_io_sshconnectparams_m_channelextra:
+.. _cid-io.sshconnectparams.m_channelextra:
+.. _doxid-struct_member_io_sshconnectparams_m_channelextrasize:
+.. _cid-io.sshconnectparams.m_channelextrasize:
+.. _doxid-struct_member_io_sshconnectparams_m_processtype:
+.. _cid-io.sshconnectparams.m_processtype:
+.. _doxid-struct_member_io_sshconnectparams_m_processextra:
+.. _cid-io.sshconnectparams.m_processextra:
+.. _doxid-struct_member_io_sshconnectparams_m_processextrasize:
+.. _cid-io.sshconnectparams.m_processextrasize:
+.. _doxid-struct_member_io_sshconnectparams_m_ptytype:
+.. _cid-io.sshconnectparams.m_ptytype:
+.. _doxid-struct_member_io_sshconnectparams_m_ptywidth:
+.. _cid-io.sshconnectparams.m_ptywidth:
+.. _doxid-struct_member_io_sshconnectparams_m_ptyheight:
+.. _cid-io.sshconnectparams.m_ptyheight:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`io.SocketAddress<doxid-type_io_socketaddress>` m_address
+	char const* m_userName
+	void const* m_privateKey
+	:ref:`size_t<doxid-typedef_size_t>` m_privateKeySize
+	char const* m_password
+	char const* m_channelType
+	void const* m_channelExtra
+	:ref:`size_t<doxid-typedef_size_t>` m_channelExtraSize
+	char const* m_processType
+	void const* m_processExtra
+	:ref:`size_t<doxid-typedef_size_t>` m_processExtraSize
+	char const* m_ptyType
+	:ref:`uint_t<doxid-typedef_uint_t>` m_ptyWidth
+	:ref:`uint_t<doxid-typedef_uint_t>` m_ptyHeight
+

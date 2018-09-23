@@ -1,0 +1,21 @@
+.. include:: def.rst
+.. index:: pair: enum; io.MailslotOptions
+.. _doxid-type_io_mailslotoptions:
+.. _cid-io.mailslotoptions:
+
+bitflag enum io.MailslotOptions
+===============================
+
+
+
+
+
+.. _doxid-enum_member_io_mailslotoptions_keepreadblocksize:
+.. _cid-io.mailslotoptions.keepreadblocksize:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// enum values
+
+	KeepReadBlockSize 
+

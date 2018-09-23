@@ -1,0 +1,45 @@
+.. include:: def.rst
+.. index:: pair: class; io.UsbInterface
+.. _doxid-type_io_usbinterface:
+.. _cid-io.usbinterface:
+
+class io.UsbInterface
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_usbinterface_iface_m_parentdevice:
+.. _cid-io.usbinterface.m_parentdevice:
+.. _doxid-struct_member_io_usbinterface_iface_m_interfacedesc:
+.. _cid-io.usbinterface.m_interfacedesc:
+.. _doxid-struct_member_io_usbinterface_iface_m_isclaimed:
+.. _cid-io.usbinterface.m_isclaimed:
+.. _doxid-function_io_usbinterface_release:
+.. _cid-io.usbinterface.release:
+.. _doxid-function_io_usbinterface_openendpoint:
+.. _cid-io.usbinterface.openendpoint:
+.. _doxid-alias_io_usbinterface_dispose:
+.. _cid-io.usbinterface.dispose:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`io.UsbDevice<doxid-type_io_usbdevice>`* const m_parentDevice
+	:ref:`io.UsbInterfaceDesc<doxid-type_io_usbinterfacedesc>` const* const m_interfaceDesc
+	bool readonly m_isClaimed
+
+	// methods
+
+	void release ()
+	:ref:`io.UsbEndpoint<doxid-type_io_usbendpoint>`* errorcode openEndpoint (:ref:`uint8_t<doxid-typedef_uint8_t>` endpointId)
+
+	// aliases
+
+	alias dispose = release
+

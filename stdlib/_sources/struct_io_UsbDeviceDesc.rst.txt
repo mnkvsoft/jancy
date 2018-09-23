@@ -1,0 +1,57 @@
+.. include:: def.rst
+.. index:: pair: struct; io.UsbDeviceDesc
+.. _doxid-type_io_usbdevicedesc:
+.. _cid-io.usbdevicedesc:
+
+struct io.UsbDeviceDesc
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_io_usbdevicedesc_m_configurationtable:
+.. _cid-io.usbdevicedesc.m_configurationtable:
+.. _doxid-struct_member_io_usbdevicedesc_m_configurationcount:
+.. _cid-io.usbdevicedesc.m_configurationcount:
+.. _doxid-struct_member_io_usbdevicedesc_m_usbversion:
+.. _cid-io.usbdevicedesc.m_usbversion:
+.. _doxid-struct_member_io_usbdevicedesc_m_deviceversion:
+.. _cid-io.usbdevicedesc.m_deviceversion:
+.. _doxid-struct_member_io_usbdevicedesc_m_vendorid:
+.. _cid-io.usbdevicedesc.m_vendorid:
+.. _doxid-struct_member_io_usbdevicedesc_m_productid:
+.. _cid-io.usbdevicedesc.m_productid:
+.. _doxid-struct_member_io_usbdevicedesc_m_vendorstringid:
+.. _cid-io.usbdevicedesc.m_vendorstringid:
+.. _doxid-struct_member_io_usbdevicedesc_m_productstringid:
+.. _cid-io.usbdevicedesc.m_productstringid:
+.. _doxid-struct_member_io_usbdevicedesc_m_serialstringid:
+.. _cid-io.usbdevicedesc.m_serialstringid:
+.. _doxid-struct_member_io_usbdevicedesc_m_class:
+.. _cid-io.usbdevicedesc.m_class:
+.. _doxid-struct_member_io_usbdevicedesc_m_subclass:
+.. _cid-io.usbdevicedesc.m_subclass:
+.. _doxid-struct_member_io_usbdevicedesc_m_protocol:
+.. _cid-io.usbdevicedesc.m_protocol:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`io.UsbConfigurationDesc<doxid-type_io_usbconfigurationdesc>` const* m_configurationTable
+	:ref:`size_t<doxid-typedef_size_t>` m_configurationCount
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_usbVersion
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_deviceVersion
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_vendorId
+	:ref:`uint16_t<doxid-typedef_uint16_t>` m_productId
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_vendorStringId
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_productStringId
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_serialStringId
+	:ref:`io.UsbClass<doxid-type_io_usbclass>` m_class
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_subClass
+	:ref:`uint8_t<doxid-typedef_uint8_t>` m_protocol
+

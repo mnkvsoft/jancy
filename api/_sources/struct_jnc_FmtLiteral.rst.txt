@@ -1,0 +1,29 @@
+.. index:: pair: struct; jnc_FmtLiteral
+.. _doxid-structjnc___fmt_literal:
+.. _cid-jnc_fmtliteral:
+
+struct jnc_FmtLiteral
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___fmt_literal_1aeb5e31a9cf1e1ce86bac8679baff9ce1:
+.. _cid-jnc_fmtliteral::m_ptr:
+.. _doxid-structjnc___fmt_literal_1acd90caaaa7c24fa8e57a6da8227dd948:
+.. _cid-jnc_fmtliteral::m_length:
+.. _doxid-structjnc___fmt_literal_1aefaacbb4ae48661067a916eac54288e6:
+.. _cid-jnc_fmtliteral::m_maxlength:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`jnc_DataPtr<doxid-structjnc___data_ptr>` m_ptr
+	size_t m_length
+	size_t m_maxLength
+

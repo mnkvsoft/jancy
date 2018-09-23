@@ -1,0 +1,61 @@
+.. include:: def.rst
+.. index:: pair: group; Garbage-Collected Heap
+.. _doxid-group_gc:
+.. _cid-gc:
+
+Garbage-Collected Heap
+======================
+
+.. toctree::
+	:hidden:
+
+	struct_sys_GcStats.rst
+	struct_sys_GcTriggers.rst
+
+
+
+Overview
+~~~~~~~~
+
+This section describes types and facilities used for the GC (garbage-collected heap) management. :ref:`More...<details-doxid-group_gc>`
+
+.. _doxid-property_sys_g_gctriggers:
+.. _cid-sys.g_gctriggers:
+.. _doxid-function_sys_getgcstats:
+.. _cid-sys.getgcstats:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// structs
+
+	struct :ref:`sys.GcStats<doxid-type_sys_gcstats>` 
+	struct :ref:`sys.GcTriggers<doxid-type_sys_gctriggers>` 
+
+	// properties
+
+	:ref:`sys.GcTriggers<doxid-type_sys_gctriggers>` property sys.g_gcTriggers 
+
+	// global functions
+
+	:ref:`sys.GcStats<doxid-type_sys_gcstats>` sys.getGcStats ()
+	void :ref:`sys.collectGarbage<doxid-function_sys_collectgarbage>` ()
+
+.. _details-doxid-group_gc:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This section describes types and facilities used for the GC (garbage-collected heap) management.
+
+Global Functions
+----------------
+
+.. _doxid-function_sys_collectgarbage:
+.. _cid-sys.collectgarbage:
+.. ref-code-block:: jancy
+	:class: title-code-block
+
+	void sys.collectGarbage ()
+
+Forces a full cycle of garbage collection.
+

@@ -1,0 +1,20 @@
+.. index:: pair: struct; jnc_ArrayType
+.. _doxid-structjnc___array_type:
+.. _cid-jnc_arraytype:
+
+struct jnc_ArrayType
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <jnc_ArrayType.h>
+
+
+Opaque structure used as a handle to Jancy array type.
+
+    Use functions from the `Array Type` to access and manage the contents of this structure.
+

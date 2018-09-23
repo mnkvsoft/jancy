@@ -1,0 +1,47 @@
+.. index:: pair: struct; jnc_GcStats
+.. _doxid-structjnc___gc_stats:
+.. _cid-jnc_gcstats:
+
+struct jnc_GcStats
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___gc_stats_1a745a0a77c74b43e1637426769bbd2daf:
+.. _cid-jnc_gcstats::m_currentallocsize:
+.. _doxid-structjnc___gc_stats_1a5bc9cc11abb8a9df94fce10bf5ec96dc:
+.. _cid-jnc_gcstats::m_totalallocsize:
+.. _doxid-structjnc___gc_stats_1ae8cd0b5ba1cc9a8faa05c43dfa929a7b:
+.. _cid-jnc_gcstats::m_peakallocsize:
+.. _doxid-structjnc___gc_stats_1ab9a6bae64ffd2d090626c0bf383da4dc:
+.. _cid-jnc_gcstats::m_currentperiodsize:
+.. _doxid-structjnc___gc_stats_1abae3d4cafb60fb15b674dc056cd78393:
+.. _cid-jnc_gcstats::m_totalcollectcount:
+.. _doxid-structjnc___gc_stats_1acc7fa6a110e3d5af04ae3d72070146cc:
+.. _cid-jnc_gcstats::m_lastcollectfreesize:
+.. _doxid-structjnc___gc_stats_1accf897561b6e258a60b9ba3be899ed2c:
+.. _cid-jnc_gcstats::m_lastcollecttime:
+.. _doxid-structjnc___gc_stats_1abb615e5c062b9293568ac57b1a6885fd:
+.. _cid-jnc_gcstats::m_lastcollecttimetaken:
+.. _doxid-structjnc___gc_stats_1a91f5bd11346a47c82f6af188874b01ae:
+.. _cid-jnc_gcstats::m_totalcollecttimetaken:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_currentAllocSize
+	size_t m_totalAllocSize
+	size_t m_peakAllocSize
+	size_t m_currentPeriodSize
+	size_t m_totalCollectCount
+	size_t m_lastCollectFreeSize
+	uint64_t m_lastCollectTime
+	uint64_t m_lastCollectTimeTaken
+	uint64_t m_totalCollectTimeTaken
+

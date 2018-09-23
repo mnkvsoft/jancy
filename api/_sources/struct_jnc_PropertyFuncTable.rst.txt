@@ -1,0 +1,29 @@
+.. index:: pair: struct; jnc_PropertyFuncTable
+.. _doxid-structjnc___property_func_table:
+.. _cid-jnc_propertyfunctable:
+
+struct jnc_PropertyFuncTable
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___property_func_table_1ad548be7768e975a7a8bf891c23e82728:
+.. _cid-jnc_propertyfunctable::m_size:
+.. _doxid-structjnc___property_func_table_1af02b6a4344ca2a8b64cd78d5f971298e:
+.. _cid-jnc_propertyfunctable::m_getgetterfunc:
+.. _doxid-structjnc___property_func_table_1a2240e87552daf4b22dfe148f50f08e56:
+.. _cid-jnc_propertyfunctable::m_getsetterfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_Property_GetGetterFunc* m_getGetterFunc
+	jnc_Property_GetSetterFunc* m_getSetterFunc
+

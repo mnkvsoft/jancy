@@ -1,0 +1,27 @@
+.. include:: def.rst
+.. index:: pair: struct; sys.GcTriggers
+.. _doxid-type_sys_gctriggers:
+.. _cid-sys.gctriggers:
+
+struct sys.GcTriggers
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-struct_member_sys_gctriggers_m_allocsizetrigger:
+.. _cid-sys.gctriggers.m_allocsizetrigger:
+.. _doxid-struct_member_sys_gctriggers_m_periodsizetrigger:
+.. _cid-sys.gctriggers.m_periodsizetrigger:
+.. ref-code-block:: jancy
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`size_t<doxid-typedef_size_t>` m_allocSizeTrigger
+	:ref:`size_t<doxid-typedef_size_t>` m_periodSizeTrigger
+

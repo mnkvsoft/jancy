@@ -1,0 +1,92 @@
+.. index:: pair: struct; jnc_RuntimeFuncTable
+.. _doxid-structjnc___runtime_func_table:
+.. _cid-jnc_runtimefunctable:
+
+struct jnc_RuntimeFuncTable
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structjnc___runtime_func_table_1a999b7d8c2ba51fa13810d3d98bbd1fa4:
+.. _cid-jnc_runtimefunctable::m_size:
+.. _doxid-structjnc___runtime_func_table_1aff0bef2e687c37d87ab56df2b11f2fb7:
+.. _cid-jnc_runtimefunctable::m_createfunc:
+.. _doxid-structjnc___runtime_func_table_1a492c9d1f6320e1a041fd568bf558fee1:
+.. _cid-jnc_runtimefunctable::m_destroyfunc:
+.. _doxid-structjnc___runtime_func_table_1a93ad731b6c668ebf31872171da5259a9:
+.. _cid-jnc_runtimefunctable::m_getmodulefunc:
+.. _doxid-structjnc___runtime_func_table_1a572156f6bb085d2e8ae5d50d016cf332:
+.. _cid-jnc_runtimefunctable::m_getgcheapfunc:
+.. _doxid-structjnc___runtime_func_table_1a8bc7e494b3b06452c300ea243cdaa40f:
+.. _cid-jnc_runtimefunctable::m_isabortedfunc:
+.. _doxid-structjnc___runtime_func_table_1a5b0f464035a964378533e790dcd4ded6:
+.. _cid-jnc_runtimefunctable::m_getstacksizelimitfunc:
+.. _doxid-structjnc___runtime_func_table_1adec7a7ce9a4e671477c42ee92341ecf8:
+.. _cid-jnc_runtimefunctable::m_setstacksizelimitfunc:
+.. _doxid-structjnc___runtime_func_table_1a9e35dbbc3255b2eef8d8b0f3490a94c9:
+.. _cid-jnc_runtimefunctable::m_startupfunc:
+.. _doxid-structjnc___runtime_func_table_1a244305e351af5012c646ab2332486147:
+.. _cid-jnc_runtimefunctable::m_shutdownfunc:
+.. _doxid-structjnc___runtime_func_table_1aac480643f1f3fe237955b4ec0b170934:
+.. _cid-jnc_runtimefunctable::m_abortfunc:
+.. _doxid-structjnc___runtime_func_table_1a8e34c0b1eebf40e42a66b67135a9d9b8:
+.. _cid-jnc_runtimefunctable::m_initializecallsitefunc:
+.. _doxid-structjnc___runtime_func_table_1a5ff97b621fc948d4ae10574a2647b1a2:
+.. _cid-jnc_runtimefunctable::m_uninitializecallsitefunc:
+.. _doxid-structjnc___runtime_func_table_1a280736cc57d06f9a1369a31f4e5aa3f2:
+.. _cid-jnc_runtimefunctable::m_setsjljframefunc:
+.. _doxid-structjnc___runtime_func_table_1ac3a4c4d62912f44fc93851df50691a00:
+.. _cid-jnc_runtimefunctable::m_getuserdatafunc:
+.. _doxid-structjnc___runtime_func_table_1a77d63efb708dc1c66782496721c4903e:
+.. _cid-jnc_runtimefunctable::m_setuserdatafunc:
+.. _doxid-structjnc___runtime_func_table_1ad3ffbcf59d0a2f880b2819cf22013ad1:
+.. _cid-jnc_runtimefunctable::m_checkstackoverflowfunc:
+.. _doxid-structjnc___runtime_func_table_1a3c89b31822efeb135df16ea71d271b42:
+.. _cid-jnc_runtimefunctable::m_getcurrentthreadruntimefunc:
+.. _doxid-structjnc___runtime_func_table_1a03c68e9f9227f0bf3c961992d9da4bef:
+.. _cid-jnc_runtimefunctable::m_getcurrentthreadtlsfunc:
+.. _doxid-structjnc___runtime_func_table_1af2cf22b689c2d4ccf56387748ea48c79:
+.. _cid-jnc_runtimefunctable::m_dynamicthrowfunc:
+.. _doxid-structjnc___runtime_func_table_1a4c7e4b7af2dfc04c5c757fd4ad13f454:
+.. _cid-jnc_runtimefunctable::m_primeclassfunc:
+.. _doxid-structjnc___runtime_func_table_1a9328f7c9f7fcd780fae214c064f9e36c:
+.. _cid-jnc_runtimefunctable::m_strlenfunc:
+.. _doxid-structjnc___runtime_func_table_1adfcbc582a01673c5834950795efdd304:
+.. _cid-jnc_runtimefunctable::m_strdupfunc:
+.. _doxid-structjnc___runtime_func_table_1a103672441e41cad388468d979597e84f:
+.. _cid-jnc_runtimefunctable::m_memdupfunc:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	size_t m_size
+	jnc_Runtime_CreateFunc* m_createFunc
+	jnc_Runtime_DestroyFunc* m_destroyFunc
+	jnc_Runtime_GetModuleFunc* m_getModuleFunc
+	jnc_Runtime_GetGcHeapFunc* m_getGcHeapFunc
+	jnc_Runtime_IsAbortedFunc* m_isAbortedFunc
+	jnc_Runtime_GetStackSizeLimitFunc* m_getStackSizeLimitFunc
+	jnc_Runtime_SetStackSizeLimitFunc* m_setStackSizeLimitFunc
+	jnc_Runtime_StartupFunc* m_startupFunc
+	jnc_Runtime_ShutdownFunc* m_shutdownFunc
+	jnc_Runtime_AbortFunc* m_abortFunc
+	jnc_Runtime_InitializeCallSiteFunc* m_initializeCallSiteFunc
+	jnc_Runtime_UninitializeCallSiteFunc* m_uninitializeCallSiteFunc
+	jnc_Runtime_SetSjljFrameFunc* m_setSjljFrameFunc
+	jnc_Runtime_GetUserDataFunc* m_getUserDataFunc
+	jnc_Runtime_SetUserDataFunc* m_setUserDataFunc
+	jnc_Runtime_CheckStackOverflowFunc* m_checkStackOverflowFunc
+	jnc_GetCurrentThreadRuntimeFunc* m_getCurrentThreadRuntimeFunc
+	jnc_GetCurrentThreadTlsFunc* m_getCurrentThreadTlsFunc
+	jnc_DynamicThrowFunc* m_dynamicThrowFunc
+	jnc_PrimeClassFunc* m_primeClassFunc
+	jnc_StrLenFunc* m_strLenFunc
+	jnc_StrDupFunc* m_strDupFunc
+	jnc_MemDupFunc* m_memDupFunc
+
